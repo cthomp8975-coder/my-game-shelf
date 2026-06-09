@@ -598,10 +598,10 @@
     "series": "7 Wonders",
     "played": true,
     "ratings": {
-      "Fun": 0,
-      "Replayability": 0,
-      "Complexity": 0,
-      "Presentation": 0
+      "Fun": 4,
+      "Replayability": 5,
+      "Complexity": 3,
+      "Presentation": 3
     },
     "notes": "",
     "added": 1780983376102,
