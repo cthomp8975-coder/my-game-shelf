@@ -1,0 +1,3740 @@
+[
+  {
+    "id": "343o2omg",
+    "name": "Scooby-Doo! Betrayal at Mystery Mansion",
+    "edition": "",
+    "copies": 1,
+    "players": "3-6",
+    "time": "45-75 min",
+    "genre": "Horror / Adventure",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780981346102,
+    "expansions": []
+  },
+  {
+    "id": "wxeufq3s",
+    "name": "5-Minute Dungeon",
+    "edition": "",
+    "copies": 1,
+    "players": "2-5",
+    "time": "5 min",
+    "genre": "Co-op / Party",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 3,
+      "Replayability": 2,
+      "Complexity": 1,
+      "Presentation": 2
+    },
+    "notes": "",
+    "added": 1780981446102,
+    "expansions": [
+      {
+        "id": "crq6axap",
+        "name": "Curses! Foiled Again",
+        "owned": false
+      }
+    ]
+  },
+  {
+    "id": "p0uhn79p",
+    "name": "Betrayal at House on the Hill",
+    "edition": "2nd Edition",
+    "copies": 2,
+    "players": "3-6",
+    "time": "60 min",
+    "genre": "Horror / Adventure",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780981546102,
+    "expansions": [
+      {
+        "id": "wp2ua8db",
+        "name": "The Evil of Pennywise",
+        "owned": true
+      },
+      {
+        "id": "hgcvqumx",
+        "name": "Widow's Walk",
+        "owned": true
+      },
+      {
+        "id": "qo5kgyi0",
+        "name": "Betrayal Legacy",
+        "owned": false
+      },
+      {
+        "id": "crz2qouh",
+        "name": "Betrayal at Baldur's Gate",
+        "owned": false
+      }
+    ]
+  },
+  {
+    "id": "752ip6y6",
+    "name": "Stardew Valley: The Board Game",
+    "edition": "",
+    "copies": 1,
+    "players": "1-4",
+    "time": "45-200 min",
+    "genre": "Co-op / Farming",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 4,
+      "Replayability": 2,
+      "Complexity": 3,
+      "Presentation": 5
+    },
+    "notes": "",
+    "added": 1780981646102,
+    "expansions": []
+  },
+  {
+    "id": "p3hjko1q",
+    "name": "Chronicles of Avel",
+    "edition": "",
+    "copies": 1,
+    "players": "1-4",
+    "time": "60-90 min",
+    "genre": "Adventure / Co-op",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780981746102,
+    "expansions": [
+      {
+        "id": "zkh9dnx7",
+        "name": "Adventurer's Toolkit",
+        "owned": true
+      },
+      {
+        "id": "xvksn9bo",
+        "name": "New Adventures",
+        "owned": false
+      },
+      {
+        "id": "bsl3jytt",
+        "name": "Knightly Companions",
+        "owned": false
+      }
+    ]
+  },
+  {
+    "id": "udnzpy54",
+    "name": "The Big Book of Madness",
+    "edition": "",
+    "copies": 1,
+    "players": "2-5",
+    "time": "60-90 min",
+    "genre": "Co-op / Deck Building",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780981846102,
+    "expansions": []
+  },
+  {
+    "id": "g4g21juq",
+    "name": "Flock Together",
+    "edition": "",
+    "copies": 1,
+    "players": "1-5",
+    "time": "25 min/player",
+    "genre": "Strategy",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 5,
+      "Replayability": 3,
+      "Complexity": 3,
+      "Presentation": 5
+    },
+    "notes": "",
+    "added": 1780981946102,
+    "expansions": [
+      {
+        "id": "pu79ob6w",
+        "name": "#SaveTheChickens Promo Pack",
+        "owned": true
+      },
+      {
+        "id": "lv7031ln",
+        "name": "Birds of a Feather Eggspansion",
+        "owned": true
+      }
+    ]
+  },
+  {
+    "id": "24jyu3q3",
+    "name": "California Trivia",
+    "edition": "",
+    "copies": 1,
+    "players": "2+",
+    "time": "",
+    "genre": "Trivia",
+    "series": "Games Room",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780982046102,
+    "expansions": []
+  },
+  {
+    "id": "k17i7oc1",
+    "name": "Point of View: Spooky Festival",
+    "edition": "",
+    "copies": 1,
+    "players": "1 team",
+    "time": "",
+    "genre": "Party / Observation",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780982146102,
+    "expansions": []
+  },
+  {
+    "id": "wpp18j83",
+    "name": "Dice Forge",
+    "edition": "",
+    "copies": 1,
+    "players": "2-4",
+    "time": "45 min",
+    "genre": "Strategy / Dice",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780982246102,
+    "expansions": [
+      {
+        "id": "ppur7wpu",
+        "name": "Rebellion",
+        "owned": false
+      }
+    ]
+  },
+  {
+    "id": "fajegn2h",
+    "name": "Potions of Azerland",
+    "edition": "",
+    "copies": 1,
+    "players": "",
+    "time": "",
+    "genre": "Fantasy / Strategy",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780982346102,
+    "expansions": []
+  },
+  {
+    "id": "1ffdfruz",
+    "name": "The Initiative",
+    "edition": "",
+    "copies": 1,
+    "players": "1-4",
+    "time": "",
+    "genre": "Co-op / Codebreaking",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780982446102,
+    "expansions": []
+  },
+  {
+    "id": "9dhx7tdb",
+    "name": "Spirit Island",
+    "edition": "",
+    "copies": 2,
+    "players": "1-4",
+    "time": "90-120 min",
+    "genre": "Co-op / Strategy",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780982546102,
+    "expansions": [
+      {
+        "id": "87ihync4",
+        "name": "Branch & Claw",
+        "owned": true
+      },
+      {
+        "id": "tq481gfo",
+        "name": "Jagged Earth",
+        "owned": false
+      },
+      {
+        "id": "hfk2sfwn",
+        "name": "Feather & Flame",
+        "owned": false
+      },
+      {
+        "id": "vx2qlaok",
+        "name": "Nature Incarnate",
+        "owned": true
+      }
+    ]
+  },
+  {
+    "id": "nyo68ngr",
+    "name": "Pop Culture Trivia",
+    "edition": "First Edition",
+    "copies": 1,
+    "players": "2+",
+    "time": "",
+    "genre": "Trivia",
+    "series": "Games Room",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780982646102,
+    "expansions": []
+  },
+  {
+    "id": "lsihsj3b",
+    "name": "Movie Buff Trivia",
+    "edition": "Second Edition",
+    "copies": 1,
+    "players": "2+",
+    "time": "",
+    "genre": "Trivia",
+    "series": "Games Room",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780982746102,
+    "expansions": []
+  },
+  {
+    "id": "i9t1zxsr",
+    "name": "Magical Kitties Save the Day!",
+    "edition": "",
+    "copies": 1,
+    "players": "2+",
+    "time": "",
+    "genre": "RPG",
+    "series": "",
+    "played": false,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780982846102,
+    "expansions": []
+  },
+  {
+    "id": "kkknscc3",
+    "name": "The Lord of the Rings Adventure Book Game",
+    "edition": "Book 3",
+    "copies": 1,
+    "players": "2-4",
+    "time": "30-60 min",
+    "genre": "Adventure / Co-op",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 1,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "Ravensburger",
+    "added": 1780982946102,
+    "expansions": []
+  },
+  {
+    "id": "dvdiprfw",
+    "name": "Mysterium",
+    "edition": "",
+    "copies": 1,
+    "players": "2-7",
+    "time": "42 min",
+    "genre": "Co-op / Deduction",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780983046102,
+    "expansions": [
+      {
+        "id": "ds761pjn",
+        "name": "Hidden Signs",
+        "owned": false
+      },
+      {
+        "id": "h9t1ti6t",
+        "name": "Secrets & Lies",
+        "owned": true
+      },
+      {
+        "id": "d74kurd2",
+        "name": "Mysterium Park",
+        "owned": false
+      }
+    ]
+  },
+  {
+    "id": "jf3l80ns",
+    "name": "Obscurio",
+    "edition": "",
+    "copies": 1,
+    "players": "2-8",
+    "time": "45 min",
+    "genre": "Co-op / Deduction",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780983146102,
+    "expansions": []
+  },
+  {
+    "id": "wgd7i6d7",
+    "name": "Chronicles of Crime",
+    "edition": "",
+    "copies": 1,
+    "players": "1-4",
+    "time": "60-90 min",
+    "genre": "Co-op / Mystery",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780983246102,
+    "expansions": [
+      {
+        "id": "85ikmz5w",
+        "name": "Millenium Series",
+        "owned": false
+      },
+      {
+        "id": "ac0dxd7a",
+        "name": "1400",
+        "owned": false
+      },
+      {
+        "id": "ubbjrqz8",
+        "name": "1900",
+        "owned": false
+      },
+      {
+        "id": "fxigjhs8",
+        "name": "Noir",
+        "owned": false
+      },
+      {
+        "id": "audajhxt",
+        "name": "Welcome to Redview",
+        "owned": false
+      },
+      {
+        "id": "1ig92thv",
+        "name": "The Conspiracy",
+        "owned": false
+      }
+    ]
+  },
+  {
+    "id": "mh3tbjox",
+    "name": "Weirdwood Manor",
+    "edition": "",
+    "copies": 1,
+    "players": "1-5",
+    "time": "60-90 min",
+    "genre": "Adventure / Co-op",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780983346102,
+    "expansions": []
+  },
+  {
+    "id": "ljz62ak6",
+    "name": "A Place for All My Books",
+    "edition": "",
+    "copies": 1,
+    "players": "1-4",
+    "time": "60 min",
+    "genre": "Puzzle / Strategy",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "Smirk & Dagger",
+    "added": 1780983356102,
+    "expansions": []
+  },
+  {
+    "id": "yzm2t62h",
+    "name": "Windmill Valley",
+    "edition": "",
+    "copies": 1,
+    "players": "",
+    "time": "",
+    "genre": "Strategy",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "Board & Dice",
+    "added": 1780983366102,
+    "expansions": []
+  },
+  {
+    "id": "a8ihwah9",
+    "name": "7 Wonders",
+    "edition": "",
+    "copies": 1,
+    "players": "2-7",
+    "time": "30 min",
+    "genre": "Strategy / Card",
+    "series": "7 Wonders",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780983376102,
+    "expansions": [
+      {
+        "id": "jhcgg1st",
+        "name": "Leaders",
+        "owned": false
+      },
+      {
+        "id": "kt0qebfh",
+        "name": "Cities",
+        "owned": false
+      },
+      {
+        "id": "feuwx1x5",
+        "name": "Armada",
+        "owned": false
+      },
+      {
+        "id": "m73tq1gz",
+        "name": "Babel",
+        "owned": false
+      },
+      {
+        "id": "0d0rtdp5",
+        "name": "Edifice",
+        "owned": false
+      }
+    ]
+  },
+  {
+    "id": "zeqoltb4",
+    "name": "7 Wonders Duel",
+    "edition": "",
+    "copies": 1,
+    "players": "2",
+    "time": "30 min",
+    "genre": "Strategy / Card",
+    "series": "7 Wonders",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780983377102,
+    "expansions": [
+      {
+        "id": "uc9zn0fu",
+        "name": "Pantheon",
+        "owned": false
+      },
+      {
+        "id": "5pd552qa",
+        "name": "Agora",
+        "owned": false
+      }
+    ]
+  },
+  {
+    "id": "nt9wlha6",
+    "name": "Path of Civilization: A Story of Humankind",
+    "edition": "",
+    "copies": 1,
+    "players": "1-5",
+    "time": "20 min/player",
+    "genre": "Strategy / Civilization",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "Captain Games",
+    "added": 1780983386102,
+    "expansions": []
+  },
+  {
+    "id": "nshv737j",
+    "name": "Coming of Age",
+    "edition": "",
+    "copies": 1,
+    "players": "1-4",
+    "time": "40-80 min",
+    "genre": "Strategy",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "A life-changing board game",
+    "added": 1780983396102,
+    "expansions": []
+  },
+  {
+    "id": "xlk9tbmk",
+    "name": "Harvest",
+    "edition": "",
+    "copies": 1,
+    "players": "1-4",
+    "time": "30-70 min",
+    "genre": "Strategy",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "Keymaster Games",
+    "added": 1780983406102,
+    "expansions": [
+      {
+        "id": "sh69tjop",
+        "name": "Playmat",
+        "owned": true
+      }
+    ]
+  },
+  {
+    "id": "er68bq9z",
+    "name": "Critter Kitchen",
+    "edition": "",
+    "copies": 1,
+    "players": "",
+    "time": "",
+    "genre": "Family / Cooking",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "Lucky Duck / Cardboard Alchemy",
+    "added": 1780983416102,
+    "expansions": [
+      {
+        "id": "2m9u3jwa",
+        "name": "A La Cart",
+        "owned": true
+      }
+    ]
+  },
+  {
+    "id": "idzzq00o",
+    "name": "Fromage",
+    "edition": "",
+    "copies": 1,
+    "players": "",
+    "time": "",
+    "genre": "Strategy",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780983426102,
+    "expansions": []
+  },
+  {
+    "id": "ycu4m79n",
+    "name": "Earth",
+    "edition": "",
+    "copies": 1,
+    "players": "1-5",
+    "time": "45-90 min",
+    "genre": "Strategy / Nature",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 5,
+      "Replayability": 3,
+      "Complexity": 3,
+      "Presentation": 4
+    },
+    "notes": "Inside Up Games",
+    "added": 1780983436102,
+    "expansions": [
+      {
+        "id": "hc6yti65",
+        "name": "Abundance",
+        "owned": true
+      },
+      {
+        "id": "udy9ec1v",
+        "name": "Underground",
+        "owned": false
+      }
+    ]
+  },
+  {
+    "id": "ek4lpluo",
+    "name": "Steam Up: A Feast of Dim Sum",
+    "edition": "Deluxe Edition",
+    "copies": 1,
+    "players": "",
+    "time": "",
+    "genre": "Strategy / Cooking",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "Hot Banana Games",
+    "added": 1780983446102,
+    "expansions": []
+  },
+  {
+    "id": "6fkd0gzy",
+    "name": "Ticket to Ride: Europe",
+    "edition": "",
+    "copies": 1,
+    "players": "2-5",
+    "time": "30-90 min",
+    "genre": "Strategy / Family",
+    "series": "Ticket to Ride",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "Days of Wonder",
+    "added": 1780983456102,
+    "expansions": []
+  },
+  {
+    "id": "ld5gcsg4",
+    "name": "Horrified: Dungeons & Dragons",
+    "edition": "",
+    "copies": 1,
+    "players": "1-5",
+    "time": "60 min",
+    "genre": "Co-op / Horror",
+    "series": "Horrified",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "Ravensburger",
+    "added": 1780983466102,
+    "expansions": []
+  },
+  {
+    "id": "n0t48hso",
+    "name": "Horrified: Universal Monsters",
+    "edition": "",
+    "copies": 1,
+    "players": "1-5",
+    "time": "60 min",
+    "genre": "Co-op / Horror",
+    "series": "Horrified",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "Ravensburger",
+    "added": 1780983476102,
+    "expansions": [
+      {
+        "id": "j70nkzmd",
+        "name": "American Monsters",
+        "owned": false
+      },
+      {
+        "id": "0gbpabjf",
+        "name": "Greek Monsters",
+        "owned": false
+      }
+    ]
+  },
+  {
+    "id": "fenkyz8n",
+    "name": "Aeon's End",
+    "edition": "",
+    "copies": 1,
+    "players": "1-4",
+    "time": "60 min",
+    "genre": "Co-op / Deck Building",
+    "series": "Aeon's End",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780983486102,
+    "expansions": [
+      {
+        "id": "5x9uhx7r",
+        "name": "The Nameless",
+        "owned": true
+      },
+      {
+        "id": "64p7jt6j",
+        "name": "War Eternal",
+        "owned": false
+      },
+      {
+        "id": "7ltv29fh",
+        "name": "The New Age",
+        "owned": false
+      },
+      {
+        "id": "38efwu3w",
+        "name": "Outcasts",
+        "owned": false
+      },
+      {
+        "id": "8rk8jfv0",
+        "name": "Into the Wild",
+        "owned": false
+      },
+      {
+        "id": "03axk7rb",
+        "name": "The Void",
+        "owned": false
+      },
+      {
+        "id": "wyn9bmmd",
+        "name": "Legacy of Gravehold",
+        "owned": false
+      },
+      {
+        "id": "jbz07dsd",
+        "name": "The Depths",
+        "owned": true
+      }
+    ]
+  },
+  {
+    "id": "e9o6c7cd",
+    "name": "LA-1: A CyberNoir Detective Board Game",
+    "edition": "",
+    "copies": 1,
+    "players": "1-5",
+    "time": "",
+    "genre": "Co-op / Mystery",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "Trick or Treat Studios",
+    "added": 1780983496102,
+    "expansions": [
+      {
+        "id": "02od7d5w",
+        "name": "When Laws Fail",
+        "owned": false
+      }
+    ]
+  },
+  {
+    "id": "2c5lbk95",
+    "name": "Taco Cat Goat Cheese Pizza",
+    "edition": "Ridiculously Large",
+    "copies": 1,
+    "players": "2-8",
+    "time": "15 min",
+    "genre": "Party / Card",
+    "series": "",
+    "played": false,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780983506102,
+    "expansions": []
+  },
+  {
+    "id": "tflf389q",
+    "name": "Far Away",
+    "edition": "",
+    "copies": 1,
+    "players": "",
+    "time": "",
+    "genre": "Adventure",
+    "series": "",
+    "played": false,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "Pablosaur",
+    "added": 1780983507102,
+    "expansions": []
+  },
+  {
+    "id": "h9pcwx4s",
+    "name": "Skyrim: The Adventure Game",
+    "edition": "",
+    "copies": 1,
+    "players": "1-4",
+    "time": "60-180 min",
+    "genre": "Adventure / RPG",
+    "series": "",
+    "played": false,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "Modiphius / Bethesda. Still sealed!",
+    "added": 1780983508102,
+    "expansions": [
+      {
+        "id": "cior8sng",
+        "name": "The Prophecy of Bone Expansion",
+        "owned": false
+      },
+      {
+        "id": "9hn4gd1p",
+        "name": "The Gates of Oblivion",
+        "owned": false
+      },
+      {
+        "id": "yuoke66m",
+        "name": "The Rise of the Brotherhood",
+        "owned": false
+      }
+    ]
+  },
+  {
+    "id": "9p6fbdvx",
+    "name": "Shadows of Brimstone: Swamps of Death",
+    "edition": "Core Set",
+    "copies": 1,
+    "players": "1-4",
+    "time": "90-180 min",
+    "genre": "Dungeon Crawler / Co-op",
+    "series": "Shadows of Brimstone",
+    "played": false,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "Flying Frog Productions",
+    "added": 1780983509102,
+    "expansions": []
+  },
+  {
+    "id": "u11pre85",
+    "name": "Tea Witches",
+    "edition": "",
+    "copies": 1,
+    "players": "",
+    "time": "",
+    "genre": "Co-op / Cozy",
+    "series": "",
+    "played": false,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780983510102,
+    "expansions": []
+  },
+  {
+    "id": "gaij13hr",
+    "name": "Comanauts",
+    "edition": "",
+    "copies": 1,
+    "players": "2-4",
+    "time": "60-120 min",
+    "genre": "Adventure / Co-op",
+    "series": "",
+    "played": false,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780983511102,
+    "expansions": []
+  },
+  {
+    "id": "bjcwdqdi",
+    "name": "Tales from the Red Dragon Inn",
+    "edition": "",
+    "copies": 1,
+    "players": "2-4",
+    "time": "45-90 min",
+    "genre": "Adventure / RPG",
+    "series": "Red Dragon Inn",
+    "played": false,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780983512102,
+    "expansions": []
+  },
+  {
+    "id": "v0s617x5",
+    "name": "Sushi Go!",
+    "edition": "",
+    "copies": 1,
+    "players": "2-5",
+    "time": "15 min",
+    "genre": "Card / Family",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780983513102,
+    "expansions": [
+      {
+        "id": "vp54bk5v",
+        "name": "Sushi Go Party!",
+        "owned": false
+      }
+    ]
+  },
+  {
+    "id": "yr2nj5b3",
+    "name": "My Father's Work",
+    "edition": "",
+    "copies": 1,
+    "players": "1-4",
+    "time": "30-120 min",
+    "genre": "Strategy / Horror",
+    "series": "",
+    "played": false,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "Renegade Game Studios. Still sealed!",
+    "added": 1780983514102,
+    "expansions": []
+  },
+  {
+    "id": "mitw46zg",
+    "name": "Legends of Sleepy Hollow",
+    "edition": "",
+    "copies": 1,
+    "players": "1-4",
+    "time": "",
+    "genre": "Horror / Adventure",
+    "series": "",
+    "played": false,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "Still sealed!",
+    "added": 1780983515102,
+    "expansions": []
+  },
+  {
+    "id": "0fs1jlfl",
+    "name": "Deep Rock Galactic: Danger. Darkness. Dwarves.",
+    "edition": "2nd Edition",
+    "copies": 1,
+    "players": "",
+    "time": "",
+    "genre": "Co-op / Dungeon Crawler",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780983516102,
+    "expansions": [
+      {
+        "id": "lmigxleu",
+        "name": "Into the Deep",
+        "owned": false
+      }
+    ]
+  },
+  {
+    "id": "p3na4svt",
+    "name": "Terraria: The Board Game",
+    "edition": "",
+    "copies": 1,
+    "players": "1-4",
+    "time": "45 min/player",
+    "genre": "Adventure / Co-op",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "Re-Logic / Paper Fort Games",
+    "added": 1780983517102,
+    "expansions": []
+  },
+  {
+    "id": "dt6nmahh",
+    "name": "Tales of the Arthurian Knights",
+    "edition": "",
+    "copies": 1,
+    "players": "",
+    "time": "",
+    "genre": "Adventure / Story",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "WizKids",
+    "added": 1780983518102,
+    "expansions": []
+  },
+  {
+    "id": "9w8unvyp",
+    "name": "Pericle: Gathering Darkness",
+    "edition": "",
+    "copies": 1,
+    "players": "1-4",
+    "time": "30 min",
+    "genre": "Strategy / Horror",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780983519102,
+    "expansions": [
+      {
+        "id": "79gcl4u5",
+        "name": "Labyrinth",
+        "owned": true
+      }
+    ]
+  },
+  {
+    "id": "rxyg5qsd",
+    "name": "The City of Kings",
+    "edition": "",
+    "copies": 1,
+    "players": "1-4",
+    "time": "60-150 min",
+    "genre": "Adventure / Co-op",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780983520102,
+    "expansions": []
+  },
+  {
+    "id": "gmo9hggr",
+    "name": "Pandemic Legacy: Season 0",
+    "edition": "",
+    "copies": 1,
+    "players": "2-4",
+    "time": "60 min",
+    "genre": "Co-op / Legacy",
+    "series": "Pandemic Legacy",
+    "played": false,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "Z-Man Games",
+    "added": 1780983521102,
+    "expansions": []
+  },
+  {
+    "id": "g72yxxhh",
+    "name": "Pandemic Legacy: Season 1",
+    "edition": "",
+    "copies": 1,
+    "players": "2-4",
+    "time": "60 min",
+    "genre": "Co-op / Legacy",
+    "series": "Pandemic Legacy",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "Z-Man Games",
+    "added": 1780983522102,
+    "expansions": []
+  },
+  {
+    "id": "t1f7yo1e",
+    "name": "Pandemic Legacy: Season 2",
+    "edition": "",
+    "copies": 1,
+    "players": "2-4",
+    "time": "60 min",
+    "genre": "Co-op / Legacy",
+    "series": "Pandemic Legacy",
+    "played": false,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "Z-Man Games",
+    "added": 1780983523102,
+    "expansions": []
+  },
+  {
+    "id": "azugfcpb",
+    "name": "Clank! Legacy 2: Acquisitions Incorporated",
+    "edition": "",
+    "copies": 1,
+    "players": "2-4",
+    "time": "90 min",
+    "genre": "Deck Building / Adventure",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780983524102,
+    "expansions": []
+  },
+  {
+    "id": "5giqstoi",
+    "name": "Charterstone",
+    "edition": "",
+    "copies": 1,
+    "players": "1-6",
+    "time": "45-75 min",
+    "genre": "Strategy / Legacy",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780983525102,
+    "expansions": [
+      {
+        "id": "ca7f2zl8",
+        "name": "Recharge Pack",
+        "owned": false
+      }
+    ]
+  },
+  {
+    "id": "3p6hhjhf",
+    "name": "Everdell Duo",
+    "edition": "",
+    "copies": 1,
+    "players": "2",
+    "time": "30-60 min",
+    "genre": "Strategy / Card",
+    "series": "Everdell",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780983526102,
+    "expansions": []
+  },
+  {
+    "id": "bhdg6b7c",
+    "name": "Frosthaven",
+    "edition": "",
+    "copies": 1,
+    "players": "1-4",
+    "time": "30 min/player",
+    "genre": "Dungeon Crawler / Co-op",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780983528102,
+    "expansions": [
+      {
+        "id": "xzz5kdol",
+        "name": "Envelope X",
+        "owned": false
+      },
+      {
+        "id": "93968g2x",
+        "name": "Buttons & Bugs Solo Mode",
+        "owned": false
+      }
+    ]
+  },
+  {
+    "id": "i7toi2ee",
+    "name": "Knitting Circle",
+    "edition": "",
+    "copies": 1,
+    "players": "1-4",
+    "time": "30-45 min",
+    "genre": "Puzzle / Tile Laying",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "Standalone follow-up to Calico. AEG / Flatout Games.",
+    "added": 1780983529102,
+    "expansions": []
+  },
+  {
+    "id": "ugro9rxi",
+    "name": "We're Not Really Strangers",
+    "edition": "",
+    "copies": 1,
+    "players": "2-6",
+    "time": "30-90 min",
+    "genre": "Party / Social",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780983530102,
+    "expansions": []
+  },
+  {
+    "id": "yvzx9gra",
+    "name": "ATMA: A Roleplaying Card Game",
+    "edition": "Act I",
+    "copies": 2,
+    "players": "2-5",
+    "time": "120 min",
+    "genre": "RPG / Card",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780983531102,
+    "expansions": []
+  },
+  {
+    "id": "u1mnoyry",
+    "name": "Choose Your Own Adventure: House of Danger",
+    "edition": "",
+    "copies": 1,
+    "players": "1-5",
+    "time": "60 min",
+    "genre": "Co-op / Adventure",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780983532102,
+    "expansions": []
+  },
+  {
+    "id": "fvh795v0",
+    "name": "The Ultimate Game for Couples",
+    "edition": "",
+    "copies": 1,
+    "players": "2",
+    "time": "",
+    "genre": "Party / Social",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780983533102,
+    "expansions": []
+  },
+  {
+    "id": "mxoeicco",
+    "name": "The Couples Game",
+    "edition": "",
+    "copies": 1,
+    "players": "2",
+    "time": "",
+    "genre": "Party / Social",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780983534102,
+    "expansions": []
+  },
+  {
+    "id": "1ir30hvv",
+    "name": "Adventure Tactics: Domianne's Tower",
+    "edition": "",
+    "copies": 1,
+    "players": "1-5",
+    "time": "45-90 min",
+    "genre": "Adventure / Co-op",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780983535102,
+    "expansions": []
+  },
+  {
+    "id": "53li7v2a",
+    "name": "Terrorscape",
+    "edition": "Collector's Big Box",
+    "copies": 1,
+    "players": "1-4",
+    "time": "",
+    "genre": "Horror / Co-op",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780983536102,
+    "expansions": [
+      {
+        "id": "8q9s7hk7",
+        "name": "Amorphous Peril",
+        "owned": true
+      },
+      {
+        "id": "y8hadqcl",
+        "name": "Feral Instincts",
+        "owned": true
+      },
+      {
+        "id": "wqxpgnam",
+        "name": "Lethal Immortals",
+        "owned": true
+      }
+    ]
+  },
+  {
+    "id": "11x09d9w",
+    "name": "Cozy Stickerville",
+    "edition": "",
+    "copies": 1,
+    "players": "",
+    "time": "",
+    "genre": "Cozy / Puzzle",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "Unexpected Games",
+    "added": 1780983537102,
+    "expansions": []
+  },
+  {
+    "id": "60hput48",
+    "name": "Creature Caravan",
+    "edition": "",
+    "copies": 1,
+    "players": "",
+    "time": "",
+    "genre": "Adventure",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780983538102,
+    "expansions": []
+  },
+  {
+    "id": "ew8vecfw",
+    "name": "Mansions of Madness",
+    "edition": "Second Edition",
+    "copies": 1,
+    "players": "1-5",
+    "time": "120-180 min",
+    "genre": "Horror / Co-op",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "Fantasy Flight Games",
+    "added": 1780983539102,
+    "expansions": [
+      {
+        "id": "nrm3r26h",
+        "name": "Suppressed Memories",
+        "owned": false
+      },
+      {
+        "id": "lbevw3wz",
+        "name": "Beyond the Threshold",
+        "owned": false
+      },
+      {
+        "id": "jruu0mng",
+        "name": "Streets of Arkham",
+        "owned": false
+      },
+      {
+        "id": "uo28v8g5",
+        "name": "Horrific Journeys",
+        "owned": false
+      },
+      {
+        "id": "byk763ht",
+        "name": "Path of the Serpent",
+        "owned": false
+      },
+      {
+        "id": "k37gcz0g",
+        "name": "What Lies Within",
+        "owned": false
+      }
+    ]
+  },
+  {
+    "id": "rxtzrrh3",
+    "name": "Legendary: A Marvel Deck Building Game",
+    "edition": "",
+    "copies": 1,
+    "players": "1-5",
+    "time": "45 min",
+    "genre": "Deck Building / Co-op",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "Upper Deck",
+    "added": 1780983540102,
+    "expansions": [
+      {
+        "id": "nqk7mi1l",
+        "name": "Dark City",
+        "owned": false
+      },
+      {
+        "id": "dhotg3ti",
+        "name": "Fantastic Four",
+        "owned": true
+      },
+      {
+        "id": "ayefu7ie",
+        "name": "Guardians of the Galaxy",
+        "owned": true
+      },
+      {
+        "id": "qtzopria",
+        "name": "Doctor Strange and the Shadows of Nightmare",
+        "owned": true
+      },
+      {
+        "id": "0yr10mlj",
+        "name": "Paint the Town Red",
+        "owned": false
+      },
+      {
+        "id": "cugn6mzb",
+        "name": "Secret Wars Vol. 1",
+        "owned": false
+      },
+      {
+        "id": "z585jg84",
+        "name": "Secret Wars Vol. 2",
+        "owned": false
+      },
+      {
+        "id": "i0s0k6l3",
+        "name": "Marvel Studios Phase 1",
+        "owned": false
+      },
+      {
+        "id": "af8p5cir",
+        "name": "Captain America 75th Anniversary",
+        "owned": false
+      },
+      {
+        "id": "pmfjjpq5",
+        "name": "Villains",
+        "owned": false
+      }
+    ]
+  },
+  {
+    "id": "hx2fpt62",
+    "name": "Root: A Game of Woodland Might and Right",
+    "edition": "",
+    "copies": 1,
+    "players": "2-4",
+    "time": "60-90 min",
+    "genre": "Strategy / Asymmetric",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780983541102,
+    "expansions": [
+      {
+        "id": "abob6rpx",
+        "name": "The Riverfolk Expansion",
+        "owned": false
+      },
+      {
+        "id": "38oerxbe",
+        "name": "The Underworld Expansion",
+        "owned": false
+      },
+      {
+        "id": "b1x15c0t",
+        "name": "The Marauder Expansion",
+        "owned": false
+      },
+      {
+        "id": "lqfue6fc",
+        "name": "The Clockwork Expansion",
+        "owned": false
+      },
+      {
+        "id": "z0drlbcx",
+        "name": "The Homeland Expansion",
+        "owned": false
+      },
+      {
+        "id": "p7cpmybi",
+        "name": "Vagabond Pack",
+        "owned": false
+      }
+    ]
+  },
+  {
+    "id": "2hizhsvp",
+    "name": "Arkham Horror: The Card Game",
+    "edition": "",
+    "copies": 2,
+    "players": "1-4",
+    "time": "60-120 min",
+    "genre": "Co-op / LCG",
+    "series": "Arkham Horror",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780983542102,
+    "expansions": [
+      {
+        "id": "yp9kpvwj",
+        "name": "The Dunwich Legacy",
+        "owned": false
+      },
+      {
+        "id": "aczf4eu0",
+        "name": "The Path to Carcosa",
+        "owned": false
+      },
+      {
+        "id": "aw8rcb0z",
+        "name": "The Forgotten Age",
+        "owned": false
+      },
+      {
+        "id": "4sbydk7k",
+        "name": "The Circle Undone",
+        "owned": false
+      },
+      {
+        "id": "2j6xygvj",
+        "name": "The Dream-Eaters",
+        "owned": false
+      },
+      {
+        "id": "0wx1qvf6",
+        "name": "The Innsmouth Conspiracy",
+        "owned": false
+      },
+      {
+        "id": "sdtb6jhl",
+        "name": "Edge of the Earth",
+        "owned": false
+      },
+      {
+        "id": "ubl74eeh",
+        "name": "The Scarlet Keys",
+        "owned": false
+      },
+      {
+        "id": "c8oi82ei",
+        "name": "The Feast of Hemlock Vale",
+        "owned": false
+      }
+    ]
+  },
+  {
+    "id": "v8tpo02k",
+    "name": "Welcome to the Moon",
+    "edition": "",
+    "copies": 1,
+    "players": "1-6",
+    "time": "25 min",
+    "genre": "Puzzle / Roll & Write",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "Blue Cocker",
+    "added": 1780983543102,
+    "expansions": []
+  },
+  {
+    "id": "r75vtuin",
+    "name": "Gloomhaven: Buttons & Bugs",
+    "edition": "",
+    "copies": 1,
+    "players": "1",
+    "time": "20 min",
+    "genre": "Solo / Dungeon Crawler",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "Cephalofair. Solo only.",
+    "added": 1780983544102,
+    "expansions": []
+  },
+  {
+    "id": "lkljqfy6",
+    "name": "Arkham Horror",
+    "edition": "",
+    "copies": 1,
+    "players": "1-8",
+    "time": "120-240 min",
+    "genre": "Horror / Co-op",
+    "series": "Arkham Horror",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780983544602,
+    "expansions": [
+      {
+        "id": "k3elo2fq",
+        "name": "Dunwich Horror",
+        "owned": false
+      },
+      {
+        "id": "jk3i3wkk",
+        "name": "The King in Yellow",
+        "owned": false
+      },
+      {
+        "id": "emula6t2",
+        "name": "Kingsport Horror",
+        "owned": false
+      },
+      {
+        "id": "sxw56d3j",
+        "name": "Innsmouth Horror",
+        "owned": false
+      }
+    ]
+  },
+  {
+    "id": "5o5erirn",
+    "name": "Descent: Legends of the Dark",
+    "edition": "",
+    "copies": 1,
+    "players": "1-4",
+    "time": "60-150 min",
+    "genre": "Dungeon Crawler / Co-op",
+    "series": "Descent",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "Fantasy Flight Games",
+    "added": 1780983545102,
+    "expansions": [
+      {
+        "id": "bhzsptb7",
+        "name": "The Betrayer's War",
+        "owned": true
+      }
+    ]
+  },
+  {
+    "id": "x49xru97",
+    "name": "Heat: Pedal to the Metal",
+    "edition": "",
+    "copies": 1,
+    "players": "1-6",
+    "time": "30-60 min",
+    "genre": "Racing / Strategy",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "Days of Wonder",
+    "added": 1780983545302,
+    "expansions": [
+      {
+        "id": "e3rlxg22",
+        "name": "Tunnel Vision",
+        "owned": true
+      },
+      {
+        "id": "2y8gniv2",
+        "name": "Heavy Rain",
+        "owned": false
+      },
+      {
+        "id": "0m6nzcfl",
+        "name": "Rough Roads",
+        "owned": false
+      }
+    ]
+  },
+  {
+    "id": "wozq4p2j",
+    "name": "Sleeping Gods",
+    "edition": "",
+    "copies": 1,
+    "players": "1-4",
+    "time": "60-120 min",
+    "genre": "Adventure / Co-op",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780983545402,
+    "expansions": [
+      {
+        "id": "g1o7dwef",
+        "name": "Tides of Ruin",
+        "owned": true
+      },
+      {
+        "id": "avyxlv2i",
+        "name": "Dungeons",
+        "owned": true
+      },
+      {
+        "id": "fgddysha",
+        "name": "Primeval Peril",
+        "owned": false
+      },
+      {
+        "id": "cqe5ahdr",
+        "name": "Distant Skies",
+        "owned": false
+      }
+    ]
+  },
+  {
+    "id": "ro9hg418",
+    "name": "Mythwind",
+    "edition": "",
+    "copies": 1,
+    "players": "1-4",
+    "time": "30-60 min",
+    "genre": "Adventure / Exploration",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780983545502,
+    "expansions": [
+      {
+        "id": "h6l50oku",
+        "name": "Winds of Magic",
+        "owned": true
+      },
+      {
+        "id": "fthmoqc1",
+        "name": "Expanded Horizons",
+        "owned": true
+      },
+      {
+        "id": "38j5d0qj",
+        "name": "Friends & Family",
+        "owned": true
+      }
+    ]
+  },
+  {
+    "id": "djsu9whk",
+    "name": "Vantage",
+    "edition": "",
+    "copies": 1,
+    "players": "1-5",
+    "time": "",
+    "genre": "Strategy",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "Engelstein Media. 14+",
+    "added": 1780983545602,
+    "expansions": []
+  },
+  {
+    "id": "ep4hjf8m",
+    "name": "Fit to Print",
+    "edition": "",
+    "copies": 1,
+    "players": "1-4",
+    "time": "30-45 min",
+    "genre": "Puzzle / Tile Laying",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 5,
+      "Replayability": 5,
+      "Complexity": 1,
+      "Presentation": 5
+    },
+    "notes": "Flatout Games",
+    "added": 1780983545712,
+    "expansions": []
+  },
+  {
+    "id": "xbd0pmu0",
+    "name": "Meadow",
+    "edition": "",
+    "copies": 1,
+    "players": "1-4",
+    "time": "60-90 min",
+    "genre": "Strategy / Nature",
+    "series": "",
+    "played": false,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780983545722,
+    "expansions": [
+      {
+        "id": "3rrdgj06",
+        "name": "Adventure Book",
+        "owned": true
+      },
+      {
+        "id": "y3eyp1gr",
+        "name": "Downstream",
+        "owned": false
+      }
+    ]
+  },
+  {
+    "id": "tznnyxgv",
+    "name": "Reykjolt",
+    "edition": "",
+    "copies": 1,
+    "players": "",
+    "time": "30-60 min",
+    "genre": "Strategy",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "Renegade Game Studios. 12+",
+    "added": 1780983545732,
+    "expansions": []
+  },
+  {
+    "id": "j7l7uvra",
+    "name": "Everdell",
+    "edition": "",
+    "copies": 1,
+    "players": "1-4",
+    "time": "40-80 min",
+    "genre": "Strategy / Card",
+    "series": "Everdell",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780983545742,
+    "expansions": [
+      {
+        "id": "b8r75pku",
+        "name": "Pearlbrook",
+        "owned": false
+      },
+      {
+        "id": "hx9mk8ef",
+        "name": "Spirecrest",
+        "owned": false
+      },
+      {
+        "id": "n7yi1zxn",
+        "name": "Bellfaire",
+        "owned": false
+      },
+      {
+        "id": "k4wcovxe",
+        "name": "Newleaf",
+        "owned": false
+      },
+      {
+        "id": "yrt9migy",
+        "name": "Mistwood",
+        "owned": false
+      },
+      {
+        "id": "3arnjkij",
+        "name": "Glimmergold",
+        "owned": false
+      }
+    ]
+  },
+  {
+    "id": "zxg5htoi",
+    "name": "Threads of Fate",
+    "edition": "",
+    "copies": 1,
+    "players": "",
+    "time": "",
+    "genre": "Puzzle / Story",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "A puzzletale",
+    "added": 1780983545752,
+    "expansions": []
+  },
+  {
+    "id": "hviamlkm",
+    "name": "Unlock!",
+    "edition": "",
+    "copies": 1,
+    "players": "1-6",
+    "time": "60 min",
+    "genre": "Co-op / Escape Room",
+    "series": "Unlock!",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780983545762,
+    "expansions": [
+      {
+        "id": "okh4o7fm",
+        "name": "Escape Adventures",
+        "owned": false
+      },
+      {
+        "id": "mrev1iik",
+        "name": "Mystery Adventures",
+        "owned": false
+      },
+      {
+        "id": "t679ojdw",
+        "name": "Secret Adventures",
+        "owned": false
+      },
+      {
+        "id": "kp5s3b7r",
+        "name": "Heroic Adventures",
+        "owned": false
+      },
+      {
+        "id": "vmzkbdqa",
+        "name": "Timeless Adventures",
+        "owned": false
+      },
+      {
+        "id": "qtshfrce",
+        "name": "Exotic Adventures",
+        "owned": false
+      },
+      {
+        "id": "vwl1pou1",
+        "name": "Epic Adventures",
+        "owned": false
+      },
+      {
+        "id": "uyq6xo73",
+        "name": "Star Wars",
+        "owned": false
+      },
+      {
+        "id": "bn4c9ajq",
+        "name": "Mythic Adventures",
+        "owned": false
+      },
+      {
+        "id": "7u5kktnw",
+        "name": "Legendary Adventures",
+        "owned": false
+      },
+      {
+        "id": "qo2xbjqm",
+        "name": "Game Adventures",
+        "owned": false
+      },
+      {
+        "id": "xm4zpmwo",
+        "name": "Short Adventures",
+        "owned": false
+      },
+      {
+        "id": "u6soxyyt",
+        "name": "Kids Adventures",
+        "owned": false
+      },
+      {
+        "id": "um0kth25",
+        "name": "Crazy Mystery",
+        "owned": false
+      },
+      {
+        "id": "7p3b1qsh",
+        "name": "Remarkable Adventures",
+        "owned": false
+      },
+      {
+        "id": "xfbu179z",
+        "name": "Enchanted Adventures",
+        "owned": true
+      }
+    ]
+  },
+  {
+    "id": "717zw722",
+    "name": "Shadows of Brimstone: Gates of Valhalla",
+    "edition": "",
+    "copies": 1,
+    "players": "1-4",
+    "time": "90-180 min",
+    "genre": "Dungeon Crawler / Co-op",
+    "series": "Shadows of Brimstone",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "Flying Frog Productions. Standalone core set.",
+    "added": 1780983545772,
+    "expansions": []
+  },
+  {
+    "id": "2z0tb7yu",
+    "name": "Herd Mentality",
+    "edition": "",
+    "copies": 1,
+    "players": "4-20",
+    "time": "20 min",
+    "genre": "Party",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "Big Potato Games",
+    "added": 1780983545782,
+    "expansions": []
+  },
+  {
+    "id": "3n2iebzu",
+    "name": "Jenga",
+    "edition": "Classic",
+    "copies": 1,
+    "players": "1+",
+    "time": "",
+    "genre": "Dexterity / Party",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780983545792,
+    "expansions": []
+  },
+  {
+    "id": "zx8xs2lg",
+    "name": "Blank Slate",
+    "edition": "",
+    "copies": 1,
+    "players": "3-8",
+    "time": "30 min",
+    "genre": "Party / Word",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "The game where minds think alike",
+    "added": 1780983545802,
+    "expansions": []
+  },
+  {
+    "id": "22h38bzt",
+    "name": "Namiji",
+    "edition": "",
+    "copies": 1,
+    "players": "2-5",
+    "time": "45 min",
+    "genre": "Strategy / Journey",
+    "series": "Tokaido",
+    "played": false,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "Tokaido follow-up by Funforge",
+    "added": 1780983545812,
+    "expansions": []
+  },
+  {
+    "id": "muec16w6",
+    "name": "Small World Underground",
+    "edition": "",
+    "copies": 1,
+    "players": "2-5",
+    "time": "40-80 min",
+    "genre": "Strategy",
+    "series": "Small World",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "Days of Wonder",
+    "added": 1780983545822,
+    "expansions": []
+  },
+  {
+    "id": "xdt86zme",
+    "name": "Trekking the National Parks",
+    "edition": "",
+    "copies": 1,
+    "players": "2-5",
+    "time": "30-60 min",
+    "genre": "Strategy / Family",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "Underdog Games",
+    "added": 1780983545832,
+    "expansions": []
+  },
+  {
+    "id": "u9kfqqsv",
+    "name": "The Search for Lost Species",
+    "edition": "",
+    "copies": 1,
+    "players": "",
+    "time": "",
+    "genre": "Strategy / Nature",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780983545842,
+    "expansions": []
+  },
+  {
+    "id": "ak0hedgy",
+    "name": "Super Dungeon Explore",
+    "edition": "",
+    "copies": 1,
+    "players": "2-6",
+    "time": "60-120 min",
+    "genre": "Dungeon Crawler",
+    "series": "",
+    "played": false,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "Soda Pop Miniatures",
+    "added": 1780983545852,
+    "expansions": []
+  },
+  {
+    "id": "alieeq1k",
+    "name": "Mycelia",
+    "edition": "",
+    "copies": 1,
+    "players": "2-4",
+    "time": "",
+    "genre": "Strategy",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "Ravensburger. 9+",
+    "added": 1780983545862,
+    "expansions": []
+  },
+  {
+    "id": "a161dufb",
+    "name": "Dungeons, Dice & Danger",
+    "edition": "",
+    "copies": 1,
+    "players": "1-4",
+    "time": "",
+    "genre": "Puzzle / Dice",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "Alea",
+    "added": 1780983545872,
+    "expansions": []
+  },
+  {
+    "id": "09n7azv0",
+    "name": "Monopoly",
+    "edition": "Classic",
+    "copies": 1,
+    "players": "2-8",
+    "time": "60-180 min",
+    "genre": "Family / Classic",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780983545882,
+    "expansions": []
+  },
+  {
+    "id": "ysc2jo8i",
+    "name": "Wow Okay",
+    "edition": "",
+    "copies": 1,
+    "players": "2+",
+    "time": "",
+    "genre": "Party / Challenges",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "The hilarious challenges of family & party game",
+    "added": 1780983545892,
+    "expansions": []
+  },
+  {
+    "id": "k176xa9g",
+    "name": "Skull",
+    "edition": "",
+    "copies": 1,
+    "players": "2-6",
+    "time": "15 min",
+    "genre": "Bluffing / Party",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780983545902,
+    "expansions": []
+  },
+  {
+    "id": "fetw9kbr",
+    "name": "Loaded Questions Adult",
+    "edition": "",
+    "copies": 1,
+    "players": "3-6",
+    "time": "",
+    "genre": "Party",
+    "series": "Loaded Questions",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780983545903,
+    "expansions": []
+  },
+  {
+    "id": "iz245v9p",
+    "name": "Loaded Questions",
+    "edition": "Classic",
+    "copies": 1,
+    "players": "3-6",
+    "time": "",
+    "genre": "Party",
+    "series": "Loaded Questions",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780983545904,
+    "expansions": []
+  },
+  {
+    "id": "goauee5u",
+    "name": "Agatha Christie's Death on the Cards",
+    "edition": "",
+    "copies": 1,
+    "players": "2-6",
+    "time": "30 min",
+    "genre": "Deduction / Party",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780983545905,
+    "expansions": []
+  },
+  {
+    "id": "qffssoxl",
+    "name": "Catan",
+    "edition": "",
+    "copies": 1,
+    "players": "3-4",
+    "time": "60-120 min",
+    "genre": "Strategy",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "Klaus Teuber",
+    "added": 1780983545906,
+    "expansions": [
+      {
+        "id": "lx46w6hv",
+        "name": "Seafarers",
+        "owned": false
+      },
+      {
+        "id": "nk1vh87s",
+        "name": "Cities & Knights",
+        "owned": false
+      },
+      {
+        "id": "0krd5xlg",
+        "name": "Traders & Barbarians",
+        "owned": false
+      },
+      {
+        "id": "hyflhljy",
+        "name": "Explorers & Pirates",
+        "owned": false
+      },
+      {
+        "id": "f0wzaakb",
+        "name": "Legend of the Conquerors",
+        "owned": false
+      }
+    ]
+  },
+  {
+    "id": "wifq22l3",
+    "name": "Shadows in the Forest",
+    "edition": "",
+    "copies": 1,
+    "players": "2-7",
+    "time": "20 min",
+    "genre": "Strategy / Party",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "ThinkFun. Play in the dark!",
+    "added": 1780983545907,
+    "expansions": []
+  },
+  {
+    "id": "kqmre3a2",
+    "name": "Roll Player",
+    "edition": "",
+    "copies": 1,
+    "players": "1-4",
+    "time": "60-90 min",
+    "genre": "Strategy / Dice",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "Keith Matejka",
+    "added": 1780983545908,
+    "expansions": [
+      {
+        "id": "tko0nu1c",
+        "name": "Monsters & Minions",
+        "owned": false
+      },
+      {
+        "id": "d87rxa1k",
+        "name": "Fiends & Familiars",
+        "owned": false
+      },
+      {
+        "id": "l6yrouov",
+        "name": "Undead & Unstoppable",
+        "owned": false
+      }
+    ]
+  },
+  {
+    "id": "c3n70tnl",
+    "name": "Oath: Chronicles of Empire & Exile",
+    "edition": "",
+    "copies": 1,
+    "players": "1-6",
+    "time": "60-120 min",
+    "genre": "Strategy / Asymmetric",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780983545909,
+    "expansions": []
+  },
+  {
+    "id": "lr1sktxf",
+    "name": "Dice Miner",
+    "edition": "",
+    "copies": 1,
+    "players": "2-4",
+    "time": "20-40 min",
+    "genre": "Dice / Strategy",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780983545910,
+    "expansions": []
+  },
+  {
+    "id": "bml9olk2",
+    "name": "Stonespine Architects",
+    "edition": "",
+    "copies": 1,
+    "players": "",
+    "time": "",
+    "genre": "Strategy",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780983545911,
+    "expansions": []
+  },
+  {
+    "id": "bbk1ue57",
+    "name": "Kepler 3042",
+    "edition": "",
+    "copies": 1,
+    "players": "1-4",
+    "time": "90 min",
+    "genre": "Strategy / Sci-Fi",
+    "series": "",
+    "played": false,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "Indie Boards & Cards",
+    "added": 1780983545912,
+    "expansions": []
+  },
+  {
+    "id": "p4vl0nzx",
+    "name": "Kodama Forest",
+    "edition": "",
+    "copies": 1,
+    "players": "",
+    "time": "",
+    "genre": "Strategy / Nature",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780983545913,
+    "expansions": []
+  },
+  {
+    "id": "yleowr7z",
+    "name": "Dragonrealm",
+    "edition": "",
+    "copies": 1,
+    "players": "3-8",
+    "time": "30 min",
+    "genre": "Party / Bluffing",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "A game of goblins & gold",
+    "added": 1780983545914,
+    "expansions": []
+  },
+  {
+    "id": "uvtp8puk",
+    "name": "Eco Sfera",
+    "edition": "",
+    "copies": 1,
+    "players": "",
+    "time": "",
+    "genre": "Strategy / Nature",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "Julibert",
+    "added": 1780983545915,
+    "expansions": []
+  },
+  {
+    "id": "5nxqch9c",
+    "name": "The Red Dragon Inn",
+    "edition": "",
+    "copies": 1,
+    "players": "2-4",
+    "time": "30-60 min",
+    "genre": "Party / Card",
+    "series": "Red Dragon Inn",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "Slugfest Games",
+    "added": 1780983545916,
+    "expansions": []
+  },
+  {
+    "id": "lckge3n2",
+    "name": "The Red Dragon Inn 3",
+    "edition": "",
+    "copies": 1,
+    "players": "2-4",
+    "time": "30-60 min",
+    "genre": "Party / Card",
+    "series": "Red Dragon Inn",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "Slugfest Games",
+    "added": 1780983545917,
+    "expansions": []
+  },
+  {
+    "id": "8isvh4vy",
+    "name": "Meeples & Monsters",
+    "edition": "",
+    "copies": 1,
+    "players": "1-4",
+    "time": "45-75 min",
+    "genre": "Strategy / Adventure",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "AEG",
+    "added": 1780983545918,
+    "expansions": []
+  },
+  {
+    "id": "esaw19hx",
+    "name": "Castles of Mad King Ludwig",
+    "edition": "",
+    "copies": 1,
+    "players": "1-4",
+    "time": "75 min",
+    "genre": "Strategy / Tile Laying",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "Ted Alspach / Bezier Games",
+    "added": 1780983545919,
+    "expansions": [
+      {
+        "id": "gjhnlonw",
+        "name": "Secrets",
+        "owned": false
+      },
+      {
+        "id": "mlyj9kmj",
+        "name": "Moat",
+        "owned": false
+      }
+    ]
+  },
+  {
+    "id": "1zk7z5hh",
+    "name": "Eternal Palace",
+    "edition": "",
+    "copies": 1,
+    "players": "1-4",
+    "time": "45-75 min",
+    "genre": "Strategy / Dice",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "Alley Cat Games",
+    "added": 1780983545920,
+    "expansions": []
+  },
+  {
+    "id": "r8jwf0rk",
+    "name": "Cosmogenesis",
+    "edition": "",
+    "copies": 1,
+    "players": "",
+    "time": "",
+    "genre": "Strategy / Sci-Fi",
+    "series": "",
+    "played": false,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "Yves Tourigny",
+    "added": 1780983545921,
+    "expansions": []
+  },
+  {
+    "id": "lnuv2a63",
+    "name": "The Guild of Merchant Explorers",
+    "edition": "",
+    "copies": 1,
+    "players": "1-4",
+    "time": "45-60 min",
+    "genre": "Strategy / Exploration",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "AEG",
+    "added": 1780983545922,
+    "expansions": []
+  },
+  {
+    "id": "tnpjo66f",
+    "name": "Ticket to Ride",
+    "edition": "",
+    "copies": 1,
+    "players": "2-5",
+    "time": "30-90 min",
+    "genre": "Strategy / Family",
+    "series": "Ticket to Ride",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "Alan R. Moon / Days of Wonder. Original 2004 edition.",
+    "added": 1780983545923,
+    "expansions": []
+  },
+  {
+    "id": "ezltjd9p",
+    "name": "Drunk Stoned or Stupid",
+    "edition": "",
+    "copies": 1,
+    "players": "4+",
+    "time": "30 min",
+    "genre": "Party",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780983545924,
+    "expansions": []
+  },
+  {
+    "id": "jtk3w6y0",
+    "name": "Midnight Taboo",
+    "edition": "",
+    "copies": 1,
+    "players": "4+",
+    "time": "",
+    "genre": "Party / Word",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "Hasbro",
+    "added": 1780983545925,
+    "expansions": []
+  },
+  {
+    "id": "zfqzn6em",
+    "name": "One Night Ultimate Werewolf",
+    "edition": "",
+    "copies": 1,
+    "players": "3-10",
+    "time": "10 min",
+    "genre": "Party / Deduction",
+    "series": "One Night Ultimate",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "Bezier Games",
+    "added": 1780983545926,
+    "expansions": []
+  },
+  {
+    "id": "6h7ije1s",
+    "name": "Unstable Unicorns",
+    "edition": "",
+    "copies": 1,
+    "players": "2-8",
+    "time": "30-45 min",
+    "genre": "Party / Card",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "Build a unicorn army. Betray your friends.",
+    "added": 1780983545927,
+    "expansions": []
+  },
+  {
+    "id": "rc3z2f2c",
+    "name": "Do You Know Me?",
+    "edition": "",
+    "copies": 1,
+    "players": "4+",
+    "time": "30 min",
+    "genre": "Party / Social",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "It's about to get personal",
+    "added": 1780983545928,
+    "expansions": []
+  },
+  {
+    "id": "6o40p9qx",
+    "name": "Uno",
+    "edition": "",
+    "copies": 1,
+    "players": "2-10",
+    "time": "15 min",
+    "genre": "Card / Family",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780983545929,
+    "expansions": []
+  },
+  {
+    "id": "z3s3guen",
+    "name": "Caverna: The Cave Farmers",
+    "edition": "",
+    "copies": 1,
+    "players": "1-7",
+    "time": "30 min/player",
+    "genre": "Strategy / Worker Placement",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "Uwe Rosenberg / Lookout Games. 12+",
+    "added": 1780983545930,
+    "expansions": []
+  },
+  {
+    "id": "a36ps0g4",
+    "name": "Ghosted: The Game of Boo-Dunnit",
+    "edition": "",
+    "copies": 1,
+    "players": "3-6",
+    "time": "30 min",
+    "genre": "Party / Deduction",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780983545931,
+    "expansions": []
+  },
+  {
+    "id": "qzbqix5f",
+    "name": "The Chameleon",
+    "edition": "",
+    "copies": 1,
+    "players": "3-8",
+    "time": "15 min",
+    "genre": "Party / Deduction",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "Blend in. Don't get caught.",
+    "added": 1780983545932,
+    "expansions": []
+  },
+  {
+    "id": "prgmqxr9",
+    "name": "Let's Go! To Japan",
+    "edition": "",
+    "copies": 1,
+    "players": "",
+    "time": "",
+    "genre": "Strategy / Travel",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "AEG",
+    "added": 1780983545933,
+    "expansions": []
+  },
+  {
+    "id": "zk3i5v0u",
+    "name": "Smash Up",
+    "edition": "",
+    "copies": 1,
+    "players": "2-4",
+    "time": "45 min",
+    "genre": "Strategy / Card",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780983545934,
+    "expansions": [
+      {
+        "id": "k4tzgd57",
+        "name": "The Obligatory Cthulhu Set",
+        "owned": false
+      },
+      {
+        "id": "0zs4escr",
+        "name": "Science Fiction Double Feature",
+        "owned": false
+      },
+      {
+        "id": "staqx448",
+        "name": "Pretty Pretty Smash Up",
+        "owned": true
+      },
+      {
+        "id": "0bmkr82i",
+        "name": "Monster Smash",
+        "owned": false
+      },
+      {
+        "id": "0nx706wp",
+        "name": "Big in Japan",
+        "owned": false
+      },
+      {
+        "id": "mu7cwx6b",
+        "name": "It's Your Fault!",
+        "owned": false
+      },
+      {
+        "id": "3441zgb6",
+        "name": "What Were We Thinking",
+        "owned": false
+      },
+      {
+        "id": "eltvfh1x",
+        "name": "Munchkin",
+        "owned": true
+      }
+    ]
+  },
+  {
+    "id": "xe2id5cr",
+    "name": "Clue Conspiracy",
+    "edition": "",
+    "copies": 1,
+    "players": "",
+    "time": "45 min",
+    "genre": "Deduction / Party",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "14+",
+    "added": 1780983545935,
+    "expansions": []
+  },
+  {
+    "id": "53sq4xkx",
+    "name": "Rack-O",
+    "edition": "Classic",
+    "copies": 1,
+    "players": "2-4",
+    "time": "",
+    "genre": "Card / Family",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "Winning Moves Games",
+    "added": 1780983545936,
+    "expansions": []
+  },
+  {
+    "id": "yyucmwvn",
+    "name": "Star Wars R2-D2 is in Trouble",
+    "edition": "",
+    "copies": 1,
+    "players": "2-4",
+    "time": "",
+    "genre": "Family / Classic",
+    "series": "",
+    "played": false,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "Hasbro. Pop-O-Matic Trouble variant.",
+    "added": 1780983545937,
+    "expansions": []
+  },
+  {
+    "id": "68bsrwe3",
+    "name": "Exploding Kittens",
+    "edition": "",
+    "copies": 1,
+    "players": "2-5",
+    "time": "15 min",
+    "genre": "Party / Card",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780983545938,
+    "expansions": [
+      {
+        "id": "60iko3lv",
+        "name": "Imploding Kittens",
+        "owned": false
+      },
+      {
+        "id": "clv3ao68",
+        "name": "Streaking Kittens",
+        "owned": false
+      },
+      {
+        "id": "15fzyl6r",
+        "name": "Barking Kittens",
+        "owned": false
+      }
+    ]
+  },
+  {
+    "id": "5adps2qk",
+    "name": "Vedur",
+    "edition": "",
+    "copies": 1,
+    "players": "2-4",
+    "time": "10-20 min/player",
+    "genre": "Deck Building / Strategy",
+    "series": "Nordic Heritage",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "Part of the Nordic Heritage collection.",
+    "added": 1780983545939,
+    "expansions": []
+  },
+  {
+    "id": "a2nay7ji",
+    "name": "Bang!",
+    "edition": "",
+    "copies": 1,
+    "players": "4-7",
+    "time": "20-40 min",
+    "genre": "Card / Bluffing",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780983545940,
+    "expansions": [
+      {
+        "id": "r3rwojx6",
+        "name": "Dodge City",
+        "owned": false
+      },
+      {
+        "id": "r9y1zdfh",
+        "name": "The Bullet",
+        "owned": false
+      }
+    ]
+  },
+  {
+    "id": "8xp635st",
+    "name": "Phase 10",
+    "edition": "",
+    "copies": 1,
+    "players": "2-6",
+    "time": "45-90 min",
+    "genre": "Card / Family",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780983545941,
+    "expansions": []
+  },
+  {
+    "id": "m7w7pd1z",
+    "name": "Bananagrams",
+    "edition": "",
+    "copies": 1,
+    "players": "1-8",
+    "time": "15 min",
+    "genre": "Word / Party",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780983545942,
+    "expansions": []
+  },
+  {
+    "id": "qm24p92n",
+    "name": "Ramen Fury",
+    "edition": "",
+    "copies": 1,
+    "players": "2-5",
+    "time": "20-30 min",
+    "genre": "Card / Family",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780983545943,
+    "expansions": []
+  },
+  {
+    "id": "i5obfbto",
+    "name": "Dutch Blitz",
+    "edition": "",
+    "copies": 1,
+    "players": "2-4",
+    "time": "15 min",
+    "genre": "Card / Speed",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780983545944,
+    "expansions": [
+      {
+        "id": "5gucusu4",
+        "name": "Expansion Pack",
+        "owned": false
+      }
+    ]
+  },
+  {
+    "id": "mdft905i",
+    "name": "Space Cadets",
+    "edition": "",
+    "copies": 1,
+    "players": "3-6",
+    "time": "60-120 min",
+    "genre": "Co-op / Party",
+    "series": "",
+    "played": false,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "added": 1780983545949,
+    "expansions": []
+  },
+  {
+    "id": "8g0jmuv5",
+    "name": "Too Many Bones",
+    "edition": "",
+    "copies": 1,
+    "players": "1-4",
+    "time": "60-120 min",
+    "genre": "Solo / RPG / Dice",
+    "series": "",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "Chip Theory Games",
+    "added": 1780983545950,
+    "expansions": [
+      {
+        "id": "spbza84m",
+        "name": "Undertow",
+        "owned": false
+      },
+      {
+        "id": "g6zas5gj",
+        "name": "Splice & Dice",
+        "owned": false
+      },
+      {
+        "id": "12rp70uv",
+        "name": "Age of Tyranny",
+        "owned": false
+      }
+    ]
+  },
+  {
+    "id": "twspmois",
+    "name": "Aeon's End Legacy",
+    "edition": "",
+    "copies": 1,
+    "players": "1-4",
+    "time": "60-120 min",
+    "genre": "Legacy / Deck Building",
+    "series": "Aeon's End",
+    "played": true,
+    "ratings": {
+      "Fun": 0,
+      "Replayability": 0,
+      "Complexity": 0,
+      "Presentation": 0
+    },
+    "notes": "",
+    "expansions": [],
+    "added": 1780986314740
+  }
+]
