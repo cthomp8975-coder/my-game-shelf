@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Board Game Shelf</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root { --ink:#1a1410;--felt:#2d4a3e;--gold:#c9a84c;--gold-pale:#f5e9c8;--cream:#faf7f2;--card:#ffffff;--muted:#7a7570;--border:#e8e2d8;--red:#c0392b;--played:#2d4a3e; }
+  body { font-family:'Inter',sans-serif; background:var(--cream); color:var(--ink); min-height:100vh; }
+
+  /* PASSWORD LOCK */
+  #lock-screen {
+    position:fixed; inset:0; z-index:9999;
+    background:var(--felt);
+    display:flex; align-items:center; justify-content:center;
+    flex-direction:column; gap:0;
+  }
+  .lock-box {
+    background:#fff; border-radius:16px; padding:40px 36px;
+    width:100%; max-width:360px;
+    box-shadow:0 24px 60px rgba(0,0,0,0.3);
+    display:flex; flex-direction:column; align-items:center; gap:16px;
+  }
+  .lock-icon { font-size:2.8rem; line-height:1; }
+  .lock-title { font-family:'Playfair Display',serif; font-size:1.5rem; font-weight:900; color:var(--felt); }
+  .lock-subtitle { font-size:0.82rem; color:var(--muted); text-align:center; }
+  .lock-input-wrap { width:100%; position:relative; }
+  .lock-input {
+    width:100%; padding:12px 44px 12px 14px;
+    border:2px solid var(--border); border-radius:8px;
+    font-size:1rem; font-family:'Inter',sans-serif;
+    color:var(--ink); background:var(--cream);
+    outline:none; transition:border-color 0.2s;
+    letter-spacing:0.1em;
+  }
+  .lock-input:focus { border-color:var(--felt); }
+  .lock-toggle {
+    position:absolute; right:12px; top:50%; transform:translateY(-50%);
+    background:none; border:none; cursor:pointer; color:var(--muted);
+    font-size:1.1rem; padding:2px;
+  }
+  .lock-btn {
+    width:100%; padding:12px;
+    background:var(--felt); color:#fff;
+    border:none; border-radius:8px;
+    font-size:0.95rem; font-family:'Inter',sans-serif; font-weight:600;
+    cursor:pointer; transition:opacity 0.15s;
+  }
+  .lock-btn:hover { opacity:0.88; }
+  .lock-error { font-size:0.8rem; color:var(--red); min-height:18px; }
+  header { background:var(--felt); padding:28px 32px 24px; position:sticky; top:0; z-index:100; box-shadow:0 2px 12px rgba(0,0,0,0.18); }
+  .header-inner { max-width:1100px; margin:0 auto; display:flex; align-items:center; gap:20px; flex-wrap:wrap; }
+  .logo-block h1 { font-family:'Playfair Display',serif; font-weight:900; font-size:1.8rem; color:var(--gold); letter-spacing:-0.5px; line-height:1; }
+  .logo-block p { font-size:0.72rem; color:rgba(255,255,255,0.5); letter-spacing:0.12em; text-transform:uppercase; margin-top:3px; }
+  .header-controls { display:flex; align-items:center; gap:10px; flex:1; flex-wrap:wrap; }
+  .search-wrap { position:relative; flex:1; min-width:180px; }
+  .search-wrap svg { position:absolute; left:11px; top:50%; transform:translateY(-50%); color:rgba(255,255,255,0.4); pointer-events:none; }
+  input[type="text"] { width:100%; padding:9px 12px 9px 34px; background:rgba(255,255,255,0.12); border:1px solid rgba(255,255,255,0.2); border-radius:6px; color:#fff; font-size:0.88rem; font-family:'Inter',sans-serif; outline:none; transition:background 0.2s,border-color 0.2s; }
+  input[type="text"]::placeholder { color:rgba(255,255,255,0.4); }
+  input[type="text"]:focus { background:rgba(255,255,255,0.18); border-color:var(--gold); }
+  .filter-select { padding:9px 12px; background:rgba(255,255,255,0.12); border:1px solid rgba(255,255,255,0.2); border-radius:6px; color:#fff; font-size:0.82rem; font-family:'Inter',sans-serif; outline:none; cursor:pointer; }
+  .filter-select option { background:var(--felt); color:#fff; }
+  .btn { padding:9px 16px; border-radius:6px; font-size:0.82rem; font-family:'Inter',sans-serif; font-weight:600; cursor:pointer; border:none; transition:opacity 0.15s,transform 0.1s; white-space:nowrap; }
+  .btn:active { transform:scale(0.97); }
+  .btn-gold { background:var(--gold); color:var(--ink); }
+  .btn-outline { background:transparent; border:1px solid rgba(255,255,255,0.3); color:#fff; }
+  .btn-outline:hover { background:rgba(255,255,255,0.08); }
+  .btn-sm { padding:5px 10px; font-size:0.76rem; }
+  .btn-danger { background:var(--red); color:#fff; }
+  .btn-felt { background:var(--felt); color:#fff; }
+  .stats-bar { background:var(--gold-pale); border-bottom:1px solid var(--border); padding:10px 32px; }
+  .stats-inner { max-width:1100px; margin:0 auto; display:flex; gap:24px; align-items:center; font-size:0.8rem; color:var(--muted); flex-wrap:wrap; }
+  .stat-item strong { color:var(--ink); font-weight:600; }
+  .stat-sep { color:var(--border); }
+  main { max-width:1100px; margin:0 auto; padding:24px 32px 60px; }
+  .sort-row { display:flex; align-items:center; gap:8px; margin-bottom:16px; flex-wrap:wrap; }
+  .sort-row span { font-size:0.78rem; color:var(--muted); }
+  .sort-btn { padding:5px 11px; border-radius:4px; border:1px solid var(--border); background:#fff; font-size:0.78rem; font-family:'Inter',sans-serif; cursor:pointer; color:var(--ink); transition:background 0.15s; }
+  .sort-btn.active { background:var(--felt); color:#fff; border-color:var(--felt); }
+  .view-btn { padding:5px 11px; border-radius:4px; border:1px solid var(--border); background:#fff; font-size:0.78rem; font-family:'Inter',sans-serif; cursor:pointer; color:var(--ink); transition:background 0.15s; }
+  .view-btn.active { background:var(--gold); color:var(--ink); border-color:var(--gold); font-weight:600; }
+  .share-btn-wrap { margin-left:auto; }
+  #game-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:16px; align-items:start; }
+
+  /* SERIES GROUPING */
+  .series-group { margin-bottom:32px; }
+  .series-header {
+    display:flex; align-items:center; gap:12px;
+    margin-bottom:14px; padding-bottom:10px;
+    border-bottom:2px solid var(--felt);
+  }
+  .series-title { font-family:'Playfair Display',serif; font-size:1.2rem; font-weight:700; color:var(--felt); }
+  .series-count { font-size:0.72rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--muted); background:var(--gold-pale); padding:2px 8px; border-radius:10px; }
+  .series-note { font-size:0.72rem; color:var(--muted); font-style:italic; }
+  .series-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:16px; align-items:start; }
+
+  .game-card { background:var(--card); border:1px solid var(--border); border-radius:10px; overflow:hidden; transition:box-shadow 0.2s; }
+  .game-card:hover { box-shadow:0 4px 18px rgba(0,0,0,0.1); }
+  .card-header { background:var(--felt); padding:12px 14px 10px; display:flex; align-items:flex-start; gap:10px; }
+  .card-title-block { flex:1; min-width:0; }
+  .game-name { font-family:'Playfair Display',serif; font-weight:700; font-size:1.05rem; color:#fff; line-height:1.2; word-break:break-word; }
+  .game-edition { font-size:0.72rem; color:var(--gold); margin-top:2px; letter-spacing:0.04em; }
+  .series-badge { flex-shrink:0; background:rgba(201,168,76,0.25); color:var(--gold); font-size:0.65rem; font-weight:700; padding:2px 6px; border-radius:10px; margin-top:2px; white-space:nowrap; border:1px solid rgba(201,168,76,0.4); }
+  .copy-badge { flex-shrink:0; background:var(--gold); color:var(--ink); font-size:0.68rem; font-weight:700; padding:2px 7px; border-radius:12px; margin-top:2px; white-space:nowrap; }
+  .card-body { padding:12px 14px; }
+  .card-meta { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:10px; }
+  .tag { font-size:0.7rem; font-weight:500; padding:2px 8px; border-radius:4px; background:var(--gold-pale); color:var(--felt); }
+  .tag.players { background:#e8f0ee; }
+  .tag.time { background:#f0ebe0; color:#7a5c1a; }
+  .played-row { display:flex; align-items:center; gap:8px; margin-bottom:10px; }
+  .played-toggle { display:flex; align-items:center; gap:6px; cursor:pointer; user-select:none; }
+  .played-toggle input { display:none; }
+  .toggle-pill { width:34px; height:18px; border-radius:9px; background:#d5d0c8; position:relative; transition:background 0.2s; flex-shrink:0; }
+  .toggle-pill::after { content:''; position:absolute; width:12px; height:12px; border-radius:50%; background:#fff; top:3px; left:3px; transition:left 0.2s; }
+  .played-toggle input:checked + .toggle-pill { background:var(--played); }
+  .played-toggle input:checked + .toggle-pill::after { left:19px; }
+  .toggle-label { font-size:0.78rem; color:var(--muted); font-weight:500; }
+  .played-toggle input:checked ~ .toggle-label { color:var(--played); }
+  .expansions-section { margin-bottom:10px; border:1px solid var(--border); border-radius:7px; overflow:hidden; }
+  .expansions-header { display:flex; align-items:center; justify-content:space-between; padding:7px 10px; background:#f5f2ed; cursor:pointer; user-select:none; gap:8px; }
+  .expansions-header:hover { background:#ede9e2; }
+  .expansions-title { font-size:0.72rem; font-weight:600; letter-spacing:0.07em; text-transform:uppercase; color:var(--muted); display:flex; align-items:center; gap:6px; flex-wrap:wrap; }
+  .exp-count-badge { background:var(--felt); color:#fff; font-size:0.65rem; font-weight:700; padding:1px 6px; border-radius:10px; }
+  .exp-owned-badge { background:var(--gold); color:var(--ink); font-size:0.65rem; font-weight:700; padding:1px 6px; border-radius:10px; }
+  .expansions-chevron { font-size:0.7rem; color:var(--muted); transition:transform 0.2s; flex-shrink:0; }
+  .expansions-chevron.open { transform:rotate(180deg); }
+  .expansions-body { padding:8px 10px; border-top:1px solid var(--border); display:none; }
+  .expansions-body.open { display:block; }
+  .expansion-item { display:flex; align-items:center; gap:8px; padding:5px 2px; border-bottom:1px solid #f0ebe0; }
+  .expansion-item:last-of-type { border-bottom:none; }
+  .exp-checkbox { width:15px; height:15px; accent-color:var(--felt); cursor:pointer; flex-shrink:0; }
+  .exp-name { font-size:0.8rem; flex:1; }
+  .exp-name.owned { color:var(--felt); font-weight:500; }
+  .exp-name.not-owned { color:var(--muted); }
+  .exp-delete { background:none; border:none; cursor:pointer; color:#c0b8b0; font-size:0.75rem; padding:2px 4px; border-radius:3px; line-height:1; }
+  .exp-delete:hover { color:var(--red); background:#fdf0ee; }
+  .add-expansion-row { display:flex; gap:6px; margin-top:8px; padding-top:8px; border-top:1px solid var(--border); }
+  .exp-input { flex:1; padding:5px 8px; border:1px solid var(--border); border-radius:5px; font-size:0.78rem; font-family:'Inter',sans-serif; color:var(--ink); background:var(--cream); outline:none; }
+  .exp-input:focus { border-color:var(--felt); }
+  .btn-add-exp { padding:5px 10px; background:var(--felt); color:#fff; border:none; border-radius:5px; font-size:0.75rem; font-family:'Inter',sans-serif; font-weight:600; cursor:pointer; white-space:nowrap; }
+  .btn-add-exp:hover { opacity:0.88; }
+  .ratings-section { margin-bottom:8px; }
+  .ratings-label { font-size:0.68rem; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; color:var(--muted); margin-bottom:6px; }
+  .rating-row { display:flex; align-items:center; gap:8px; margin-bottom:5px; }
+  .rating-cat { font-size:0.75rem; color:var(--ink); flex:0 0 90px; font-weight:500; }
+  .stars { display:flex; gap:2px; }
+  .star { width:16px; height:16px; cursor:pointer; color:#d5d0c8; transition:color 0.1s; }
+  .star.filled { color:var(--gold); }
+  .star:hover { color:var(--gold); }
+  .notes-area { width:100%; margin-top:4px; padding:7px 9px; border:1px solid var(--border); border-radius:5px; font-size:0.78rem; font-family:'Inter',sans-serif; color:var(--ink); resize:vertical; min-height:44px; outline:none; background:var(--cream); transition:border-color 0.15s; }
+  .notes-area:focus { border-color:var(--felt); }
+  .notes-area::placeholder { color:#b5b0a8; }
+  .card-footer { padding:8px 14px; border-top:1px solid var(--border); display:flex; gap:6px; justify-content:flex-end; background:#fdfcfa; }
+
+  /* COLLAPSIBLE CARD DETAILS */
+  .card-details-toggle {
+    display:flex; align-items:center; justify-content:space-between;
+    padding:7px 14px; cursor:pointer; user-select:none;
+    border-top:1px solid var(--border);
+    background:#fafaf8;
+    gap:8px;
+  }
+  .card-details-toggle:hover { background:#f5f2ed; }
+  .card-details-label { font-size:0.72rem; font-weight:600; letter-spacing:0.07em; text-transform:uppercase; color:var(--muted); display:flex; align-items:center; gap:8px; }
+  .card-details-hints { display:flex; gap:5px; flex-wrap:wrap; }
+  .card-detail-chip { font-size:0.65rem; background:var(--gold-pale); color:var(--felt); padding:1px 6px; border-radius:8px; font-weight:600; }
+  .card-detail-chip.played-chip { background:#e8f0ee; color:var(--played); }
+  .card-details-chevron { font-size:0.7rem; color:var(--muted); transition:transform 0.2s; flex-shrink:0; }
+  .card-details-chevron.open { transform:rotate(180deg); }
+  .card-details-body { display:none; }
+  .card-details-body.open { display:block; }
+  .empty-state { text-align:center; padding:80px 20px; color:var(--muted); grid-column:1/-1; }
+  .empty-state .big-icon { font-size:3.5rem; margin-bottom:12px; }
+  .empty-state h2 { font-family:'Playfair Display',serif; color:var(--ink); margin-bottom:8px; font-size:1.4rem; }
+  .empty-state p { font-size:0.88rem; line-height:1.6; }
+  .modal-overlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.5); z-index:1000; align-items:center; justify-content:center; padding:20px; }
+  .modal-overlay.open { display:flex; }
+  .modal { background:#fff; border-radius:12px; width:100%; max-width:460px; padding:28px; box-shadow:0 20px 60px rgba(0,0,0,0.25); max-height:90vh; overflow-y:auto; }
+  .modal h2 { font-family:'Playfair Display',serif; font-size:1.4rem; margin-bottom:20px; color:var(--felt); }
+  .form-field { margin-bottom:14px; }
+  .form-field label { display:block; font-size:0.78rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--muted); margin-bottom:5px; }
+  .form-field input,.form-field select { width:100%; padding:9px 12px; border:1px solid var(--border); border-radius:6px; font-size:0.88rem; font-family:'Inter',sans-serif; color:var(--ink); background:var(--cream); outline:none; transition:border-color 0.15s; }
+  .form-field input:focus,.form-field select:focus { border-color:var(--felt); }
+  .form-row { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+  .modal-footer { display:flex; gap:10px; justify-content:flex-end; margin-top:20px; }
+  .share-url-wrap { display:flex; gap:8px; margin-top:10px; }
+  .share-url { flex:1; padding:9px 12px; border:1px solid var(--border); border-radius:6px; font-size:0.8rem; background:var(--cream); color:var(--muted); font-family:monospace; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .share-info { font-size:0.82rem; color:var(--muted); line-height:1.6; margin-top:8px; }
+  @media (max-width:600px) { header,main,.stats-bar { padding-left:16px; padding-right:16px; } #game-grid,.series-grid { grid-template-columns:1fr; } .form-row { grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+<div id="lock-screen">
+  <div class="lock-box">
+    <div class="lock-icon">🎲</div>
+    <div class="lock-title">The Shelf</div>
+    <div class="lock-subtitle">Enter your password to access the collection</div>
+    <div class="lock-input-wrap">
+      <input class="lock-input" type="password" id="lock-password" placeholder="Password" onkeydown="if(event.key==='Enter')unlock()">
+      <button class="lock-toggle" onclick="toggleLockVis()" tabindex="-1">👁</button>
+    </div>
+    <div class="lock-error" id="lock-error"></div>
+    <button class="lock-btn" onclick="unlock()">Unlock</button>
+  </div>
+</div>
+<header>
+  <div class="header-inner">
+    <div class="logo-block">
+      <h1>🎲 The Shelf</h1>
+      <p>Board Game Catalogue</p>
+    </div>
+    <div class="header-controls">
+      <div class="search-wrap">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <input type="text" id="search-input" placeholder="Search games or expansions…">
+      </div>
+      <select class="filter-select" id="filter-played">
+        <option value="">All games</option>
+        <option value="played">Played</option>
+        <option value="unplayed">Not yet played</option>
+      </select>
+      <select class="filter-select" id="filter-series">
+        <option value="">All series</option>
+      </select>
+      <button class="btn btn-gold" onclick="openAddModal()">+ Add Game</button>
+      <button class="btn btn-outline btn-sm" onclick="openGhModal()" title="GitHub sync settings" style="font-size:1rem;padding:7px 10px;">⚙</button>
+    </div>
+  </div>
+  <div style="max-width:1100px;margin:0 auto;padding:4px 0 0;min-height:18px;">
+    <span id="sync-status" style="font-size:0.72rem;color:var(--muted);letter-spacing:0.03em;padding-left:2px;"></span>
+  </div>
+</header>
+<div class="stats-bar">
+  <div class="stats-inner">
+    <span class="stat-item"><strong id="stat-total">0</strong> games</span>
+    <span class="stat-sep">·</span>
+    <span class="stat-item"><strong id="stat-played">0</strong> played</span>
+    <span class="stat-sep">·</span>
+    <span class="stat-item"><strong id="stat-unplayed">0</strong> on the shelf</span>
+    <span class="stat-sep">·</span>
+    <span class="stat-item"><strong id="stat-expansions">0</strong> expansions owned</span>
+  </div>
+</div>
+<main>
+  <div class="sort-row">
+    <span>Sort:</span>
+    <button class="sort-btn active" data-sort="name">A–Z</button>
+    <button class="sort-btn" data-sort="added">Recently added</button>
+    <button class="sort-btn" data-sort="rating">Top rated</button>
+    <span style="margin-left:8px;">View:</span>
+    <button class="view-btn active" id="view-all-btn" onclick="setView('all')">All games</button>
+    <button class="view-btn" id="view-series-btn" onclick="setView('series')">By series</button>
+    <div class="share-btn-wrap">
+      <button class="btn btn-outline btn-sm" style="background:rgba(45,74,62,0.08);color:var(--felt);border-color:var(--felt);" onclick="openShareModal()">🔗 Share collection</button>
+    </div>
+  </div>
+  <div id="game-grid"></div>
+</main>
+<div class="modal-overlay" id="add-modal">
+  <div class="modal">
+    <h2 id="modal-title">Add a game</h2>
+    <input type="hidden" id="edit-id">
+    <div class="form-field"><label>Game name *</label><input type="text" id="f-name" placeholder="e.g. Catan"></div>
+    <div class="form-field"><label>Edition / Version</label><input type="text" id="f-edition" placeholder="e.g. 5th Edition, Deluxe…"></div>
+    <div class="form-row">
+      <div class="form-field"><label>Copies owned</label><input type="number" id="f-copies" min="1" max="99" value="1"></div>
+      <div class="form-field"><label>Player count</label><input type="text" id="f-players" placeholder="e.g. 2–4"></div>
+    </div>
+    <div class="form-row">
+      <div class="form-field"><label>Avg play time</label><input type="text" id="f-time" placeholder="e.g. 60–90 min"></div>
+      <div class="form-field"><label>Genre / Type</label><input type="text" id="f-genre" placeholder="e.g. Strategy, Party…"></div>
+    </div>
+    <div class="form-field"><label>Series (optional)</label><input type="text" id="f-series" placeholder="e.g. Unlock!, Shadows of Brimstone…"></div>
+    <div class="modal-footer">
+      <button class="btn btn-outline" style="color:var(--ink);border-color:var(--border);" onclick="closeModal()">Cancel</button>
+      <button class="btn btn-felt" onclick="saveGame()">Save game</button>
+    </div>
+  </div>
+</div>
+<div class="modal-overlay" id="gh-modal">
+  <div class="modal">
+    <h2>⚙ GitHub Sync</h2>
+    <p style="font-size:0.82rem;color:var(--muted);margin-bottom:16px;line-height:1.6;">Your game data is saved to a <strong>private</strong> repo, keeping it hidden from the public. Your token is stored only on this device.</p>
+    <div class="form-field">
+      <label>Personal Access Token</label>
+      <input type="password" id="gh-token" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx">
+    </div>
+    <div class="form-field">
+      <label>GitHub Username</label>
+      <input type="text" id="gh-owner" placeholder="your-username">
+    </div>
+    <div class="form-field">
+      <label>Data Repository Name <span style="font-weight:400;color:var(--muted);">(private repo for your game data)</span></label>
+      <input type="text" id="gh-data-repo" placeholder="game-shelf-data">
+    </div>
+    <div id="gh-status" style="font-size:0.8rem;margin-top:4px;min-height:20px;"></div>
+    <div style="font-size:0.75rem;color:var(--muted);margin-top:12px;line-height:1.7;background:var(--gold-pale);padding:10px 12px;border-radius:6px;">
+      <strong>Setup:</strong> your public <em>my-game-shelf</em> repo hosts the app, and your private <em>game-shelf-data</em> repo stores your collection. Only you can see the data.
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-outline" style="color:var(--red);border-color:var(--red);" onclick="disconnectGh()">Disconnect</button>
+      <button class="btn btn-outline" style="color:var(--ink);border-color:var(--border);" onclick="closeGhModal()">Cancel</button>
+      <button class="btn btn-felt" onclick="connectGh()">Connect & Sync</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="share-modal">
+  <div class="modal">
+    <h2>Share your collection</h2>
+    <p class="share-info">Your full collection — games, expansions, ratings, and notes — is encoded in the link below. Anyone with it can view and search in read-only mode.</p>
+    <div class="share-url-wrap">
+      <div class="share-url" id="share-url-text">Generating…</div>
+      <button class="btn btn-felt btn-sm" onclick="copyShareUrl()">Copy</button>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-outline" style="color:var(--ink);border-color:var(--border);" onclick="closeShareModal()">Done</button>
+    </div>
+  </div>
+</div>
+<script>
+const CATEGORIES = ['Fun','Replayability','Complexity','Presentation'];
+let games = [], currentSort = 'name', currentView = 'all', isReadOnly = false;
+
+// ── PASSWORD LOCK ─────────────────────────────────────────
+const LOCK_KEY = 'shelf-unlocked';
+const HASH_KEY = 'shelf-pw-hash';
+
+async function sha256(str) {
+  const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(str));
+  return Array.from(new Uint8Array(buf)).map(b=>b.toString(16).padStart(2,'0')).join('');
+}
+
+async function unlock() {
+  const pw = document.getElementById('lock-password').value;
+  const err = document.getElementById('lock-error');
+  if (!pw) { err.textContent = 'Please enter a password.'; return; }
+  const hash = await sha256(pw);
+  const stored = localStorage.getItem(HASH_KEY);
+  if (!stored) {
+    // First time — set the password
+    localStorage.setItem(HASH_KEY, hash);
+    localStorage.setItem(LOCK_KEY, '1');
+    document.getElementById('lock-screen').style.display = 'none';
+    load().then(()=>render());
+  } else if (hash === stored) {
+    localStorage.setItem(LOCK_KEY, '1');
+    document.getElementById('lock-screen').style.display = 'none';
+    load().then(()=>render());
+  } else {
+    err.textContent = 'Incorrect password.';
+    document.getElementById('lock-password').value = '';
+    document.getElementById('lock-password').focus();
+  }
+}
+
+function toggleLockVis() {
+  const inp = document.getElementById('lock-password');
+  inp.type = inp.type === 'password' ? 'text' : 'password';
+}
+
+function checkLock() {
+  const stored = localStorage.getItem(HASH_KEY);
+  // If no password set yet, show lock screen to set one
+  // If password set and session unlocked, skip lock screen
+  if (stored && localStorage.getItem(LOCK_KEY) === '1') {
+    document.getElementById('lock-screen').style.display = 'none';
+    load().then(()=>render());
+  }
+  // Otherwise lock screen stays visible
+}
+
+// Clear session lock on page unload so password is required on next visit
+window.addEventListener('beforeunload', ()=>localStorage.removeItem(LOCK_KEY));
+
+
+// ── GITHUB CONFIG ─────────────────────────────────────────
+// Stored in localStorage (device-local, never sent anywhere except GitHub)
+function getConfig() {
+  try { return JSON.parse(localStorage.getItem('shelf-gh-config')||'{}'); } catch(e) { return {}; }
+}
+function setConfig(c) { localStorage.setItem('shelf-gh-config', JSON.stringify(c)); }
+function isConfigured() { const c=getConfig(); return !!(c.token && c.owner && c.dataRepo); }
+
+// ── SYNC STATUS UI ────────────────────────────────────────
+function setSyncStatus(msg, type) {
+  // type: 'saving' | 'saved' | 'error' | 'loading' | ''
+  const el = document.getElementById('sync-status');
+  if (!el) return;
+  const icons = { saving:'⏳', saved:'✓', error:'⚠', loading:'⏳', '':'' };
+  const colors = { saving:'var(--muted)', saved:'var(--played)', error:'var(--red)', loading:'var(--muted)', '':'var(--muted)' };
+  el.textContent = (icons[type]||'') + ' ' + msg;
+  el.style.color = colors[type]||'var(--muted)';
+}
+
+// ── GITHUB API ────────────────────────────────────────────
+const GH_FILE = 'games.json';
+
+async function ghFetch(method, path, body) {
+  const c = getConfig();
+  const url = `https://api.github.com/repos/${c.owner}/${c.dataRepo}/contents/${path}`;
+  const res = await fetch(url, {
+    method,
+    headers: {
+      'Authorization': `token ${c.token}`,
+      'Content-Type': 'application/json',
+      'Accept': 'application/vnd.github.v3+json'
+    },
+    body: body ? JSON.stringify(body) : undefined
+  });
+  if (!res.ok) {
+    const err = await res.json().catch(()=>({}));
+    throw new Error(err.message || `GitHub API error ${res.status}`);
+  }
+  return res.json();
+}
+
+async function ghLoad() {
+  try {
+    const data = await ghFetch('GET', GH_FILE);
+    const content = JSON.parse(atob(data.content.replace(/\n/g,'')));
+    localStorage.setItem('shelf-gh-sha', data.sha);
+    return content;
+  } catch(e) {
+    if (e.message && e.message.includes('Not Found')) return null; // file doesn't exist yet
+    throw e;
+  }
+}
+
+async function ghSave(gamesData) {
+  const c = getConfig();
+  const sha = localStorage.getItem('shelf-gh-sha');
+  const content = btoa(unescape(encodeURIComponent(JSON.stringify(gamesData, null, 2))));
+  const body = {
+    message: `Update collection ${new Date().toISOString().slice(0,10)}`,
+    content,
+    committer: { name: c.owner, email: `${c.owner}@users.noreply.github.com` }
+  };
+  if (sha) body.sha = sha;
+  const result = await ghFetch('PUT', GH_FILE, body);
+  localStorage.setItem('shelf-gh-sha', result.content.sha);
+}
+
+// ── SAVE / LOAD ───────────────────────────────────────────
+let saveTimer = null;
+function save() {
+  if (isReadOnly) return;
+  // Always save to localStorage immediately as a fallback
+  localStorage.setItem('shelf-games', JSON.stringify(games));
+  // Debounce GitHub save by 1.5s to avoid hammering the API
+  if (!isConfigured()) return;
+  clearTimeout(saveTimer);
+  setSyncStatus('Saving…', 'saving');
+  saveTimer = setTimeout(async () => {
+    try {
+      await ghSave(games);
+      setSyncStatus('Saved to GitHub', 'saved');
+      setTimeout(()=>setSyncStatus('',''), 3000);
+    } catch(e) {
+      setSyncStatus('Save failed: ' + e.message, 'error');
+      console.error('GitHub save error:', e);
+    }
+  }, 1500);
+}
+
+function uid() { return Math.random().toString(36).slice(2,10); }
+
+async function load() {
+  const params = new URLSearchParams(window.location.search);
+  const shared = params.get('data');
+  if (shared) {
+    try {
+      games = JSON.parse(decodeURIComponent(escape(atob(shared))));
+      isReadOnly = true;
+      // Hide all editing/sync UI
+      document.querySelector('.btn-gold').style.display='none';
+      document.querySelector('[onclick="openShareModal()"]').style.display='none';
+      document.querySelector('[onclick="openGhModal()"]').style.display='none';
+      document.getElementById('sync-status').style.display='none';
+      document.querySelector('.sort-row .share-btn-wrap').innerHTML='<span style="font-size:0.78rem;color:var(--muted);">👁 Viewing shared collection</span>';
+    } catch(e) { games=[]; }
+  } else if (isConfigured()) {
+    setSyncStatus('Loading from GitHub…', 'loading');
+    try {
+      const ghGames = await ghLoad();
+      if (ghGames) {
+        games = ghGames;
+        localStorage.setItem('shelf-games', JSON.stringify(games));
+        setSyncStatus('Loaded from GitHub', 'saved');
+        setTimeout(()=>setSyncStatus('',''), 3000);
+      } else {
+        // File doesn't exist yet on GitHub — use local or defaults
+        const stored = localStorage.getItem('shelf-games');
+        games = stored ? JSON.parse(stored) : getDefaultGames();
+        setSyncStatus('No GitHub data yet — saving now…', 'saving');
+        await ghSave(games);
+        setSyncStatus('Saved to GitHub', 'saved');
+        setTimeout(()=>setSyncStatus('',''), 3000);
+      }
+    } catch(e) {
+      setSyncStatus('GitHub error — using local data', 'error');
+      const stored = localStorage.getItem('shelf-games');
+      games = stored ? JSON.parse(stored) : getDefaultGames();
+    }
+  } else {
+    const stored = localStorage.getItem('shelf-games');
+    games = stored ? JSON.parse(stored) : getDefaultGames();
+    setSyncStatus('Not connected to GitHub', '');
+  }
+  games.forEach(g => { if (!g.expansions) g.expansions = []; if (!g.series) g.series = ''; });
+  populateSeriesFilter();
+}
+
+
+function populateSeriesFilter() {
+  const sel = document.getElementById('filter-series');
+  const series = [...new Set(games.map(g=>g.series).filter(Boolean))].sort();
+  sel.innerHTML = '<option value="">All series</option>' + series.map(s=>`<option value="${esc(s)}">${esc(s)}</option>`).join('');
+}
+
+function setView(v) {
+  currentView = v;
+  document.getElementById('view-all-btn').classList.toggle('active', v==='all');
+  document.getElementById('view-series-btn').classList.toggle('active', v==='series');
+  // Hide sort + series filter when in series view
+  document.getElementById('filter-series').style.display = v==='series' ? 'none' : '';
+  render();
+}
+
+function getFiltered() {
+  const q = document.getElementById('search-input').value.toLowerCase();
+  const pf = document.getElementById('filter-played').value;
+  const sf = document.getElementById('filter-series').value;
+  let list = games.filter(g => {
+    const matchQ = !q || g.name.toLowerCase().includes(q) || (g.edition||'').toLowerCase().includes(q) || (g.genre||'').toLowerCase().includes(q) || (g.series||'').toLowerCase().includes(q) || (g.expansions||[]).some(e=>e.name.toLowerCase().includes(q));
+    const matchP = !pf || (pf==='played' ? g.played : !g.played);
+    const matchS = !sf || g.series === sf;
+    return matchQ && matchP && matchS;
+  });
+  if (currentSort==='name') list.sort((a,b)=>a.name.localeCompare(b.name));
+  if (currentSort==='added') list.sort((a,b)=>b.added-a.added);
+  if (currentSort==='rating') list.sort((a,b)=>avgRating(b)-avgRating(a));
+  return list;
+}
+
+function avgRating(g) { const v=Object.values(g.ratings).filter(x=>x>0); return v.length?v.reduce((a,b)=>a+b,0)/v.length:0; }
+
+const SERIES_NOTES = {
+  'Unlock!': 'Each box is a standalone escape room scenario — mix and match freely.',
+  'EXIT: The Game': 'One-time play escape room puzzles — each is self-contained.',
+  'Shadows of Brimstone': 'Standalone core sets that are fully compatible — combine for bigger adventures.',
+  'Pandemic Legacy': 'Play in order: Season 0 is a prequel, Season 1 first, then Season 2.',
+};
+
+function render() {
+  const grid = document.getElementById('game-grid');
+  const list = getFiltered();
+
+  if (currentView === 'series') {
+    // Group by series
+    const seriesMap = {};
+    const noSeries = [];
+    list.forEach(g => {
+      if (g.series) {
+        if (!seriesMap[g.series]) seriesMap[g.series] = [];
+        seriesMap[g.series].push(g);
+      } else {
+        noSeries.push(g);
+      }
+    });
+    const sortedSeries = Object.keys(seriesMap).sort();
+    let html = '';
+    sortedSeries.forEach(s => {
+      const sg = seriesMap[s];
+      const note = SERIES_NOTES[s] || '';
+      html += `<div class="series-group">
+        <div class="series-header">
+          <div class="series-title">${esc(s)}</div>
+          <div class="series-count">${sg.length} game${sg.length!==1?'s':''}</div>
+          ${note ? `<div class="series-note">${esc(note)}</div>` : ''}
+        </div>
+        <div class="series-grid">${sg.map(cardHTML).join('')}</div>
+      </div>`;
+    });
+    if (noSeries.length) {
+      html += `<div class="series-group">
+        <div class="series-header">
+          <div class="series-title" style="color:var(--muted);">Other Games</div>
+          <div class="series-count">${noSeries.length} game${noSeries.length!==1?'s':''}</div>
+        </div>
+        <div class="series-grid">${noSeries.map(cardHTML).join('')}</div>
+      </div>`;
+    }
+    grid.innerHTML = html || `<div class="empty-state"><div class="big-icon">🎲</div><h2>No games found</h2><p>Try adjusting your search or filters.</p></div>`;
+  } else {
+    grid.innerHTML = list.length ? list.map(cardHTML).join('') : `<div class="empty-state"><div class="big-icon">🎲</div><h2>No games found</h2><p>${games.length?'Try adjusting your search or filters.':'Add your first game to get started!'}</p></div>`;
+  }
+  updateStats();
+}
+
+function cardHTML(g) {
+  const exps = g.expansions||[];
+  const ownedCount = exps.filter(e=>e.owned).length;
+  const expItems = exps.map(e=>`
+    <div class="expansion-item">
+      <input type="checkbox" class="exp-checkbox" ${e.owned?'checked':''} ${isReadOnly?'disabled':''} onchange="toggleExpansion('${g.id}','${e.id}',this.checked)">
+      <span class="exp-name ${e.owned?'owned':'not-owned'}">${esc(e.name)}</span>
+      ${!isReadOnly?`<button class="exp-delete" onclick="deleteExpansion('${g.id}','${e.id}')" title="Remove">✕</button>`:''}
+    </div>`).join('');
+
+  const expansionsHTML = `
+    <div class="expansions-section">
+      <div class="expansions-header" onclick="toggleExpPanel('${g.id}')">
+        <div class="expansions-title">
+          📦 Expansions
+          ${exps.length?`<span class="exp-count-badge">${exps.length}</span>`:''}
+          ${ownedCount?`<span class="exp-owned-badge">✓ ${ownedCount} owned</span>`:''}
+        </div>
+        <span class="expansions-chevron" id="chev-${g.id}">▼</span>
+      </div>
+      <div class="expansions-body" id="expbody-${g.id}">
+        ${expItems||'<div style="font-size:0.78rem;color:var(--muted);padding:4px 2px;">No expansions added yet.</div>'}
+        ${!isReadOnly?`<div class="add-expansion-row"><input class="exp-input" id="expinput-${g.id}" type="text" placeholder="Expansion name…" onkeydown="if(event.key==='Enter')addExpansion('${g.id}')"><button class="btn-add-exp" onclick="addExpansion('${g.id}')">+ Add</button></div>`:''}
+      </div>
+    </div>`;
+
+  const ratingRows = CATEGORIES.map(cat=>`
+    <div class="rating-row">
+      <div class="rating-cat">${cat}</div>
+      <div class="stars" data-id="${g.id}" data-cat="${cat}">
+        ${[1,2,3,4,5].map(n=>`<svg class="star ${g.ratings[cat]>=n?'filled':''}" data-val="${n}" viewBox="0 0 24 24" fill="${g.ratings[cat]>=n?'currentColor':'none'}" stroke="currentColor" stroke-width="1.5"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>`).join('')}
+      </div>
+    </div>`).join('');
+
+  const badges = [];
+  if (g.copies>1) badges.push(`<div class="copy-badge">×${g.copies}</div>`);
+
+  // Build hint chips for the collapsed state
+  const hints = [];
+  if (g.played) hints.push(`<span class="card-detail-chip played-chip">Played ✓</span>`);
+  if (ownedCount) hints.push(`<span class="card-detail-chip">📦 ${ownedCount} exp</span>`);
+  const avgR = avgRating(g);
+  if (avgR > 0) hints.push(`<span class="card-detail-chip">★ ${avgR.toFixed(1)}</span>`);
+
+  return `<div class="game-card" id="card-${g.id}">
+    <div class="card-header">
+      <div class="card-title-block">
+        <div class="game-name">${esc(g.name)}</div>
+        ${g.edition?`<div class="game-edition">${esc(g.edition)}</div>`:''}
+        ${g.series&&currentView!=='series'?`<div class="game-edition" style="color:rgba(201,168,76,0.7);">📚 ${esc(g.series)}</div>`:''}
+      </div>
+      <div style="display:flex;flex-direction:column;gap:3px;align-items:flex-end;">${badges.join('')}</div>
+    </div>
+    <div class="card-meta" style="padding:10px 14px 8px;">
+      ${g.genre?`<span class="tag">${esc(g.genre)}</span>`:''}
+      ${g.players?`<span class="tag players">👥 ${esc(g.players)}</span>`:''}
+      ${g.time?`<span class="tag time">⏱ ${esc(g.time)}</span>`:''}
+    </div>
+    <div class="card-details-toggle" onclick="toggleCardDetails('${g.id}')">
+      <div class="card-details-label">
+        Details
+        <div class="card-details-hints" id="hints-${g.id}">${hints.join('')}</div>
+      </div>
+      <span class="card-details-chevron" id="cardchev-${g.id}">▼</span>
+    </div>
+    <div class="card-details-body" id="cardbody-${g.id}">
+      <div class="card-body">
+        <div class="played-row">
+          <label class="played-toggle">
+            <input type="checkbox" ${g.played?'checked':''} onchange="togglePlayed('${g.id}',this.checked)" ${isReadOnly?'disabled':''}>
+            <div class="toggle-pill"></div>
+            <span class="toggle-label">${g.played?'Played ✓':'Not played yet'}</span>
+          </label>
+        </div>
+        ${expansionsHTML}
+        <div class="ratings-section" style="margin-top:10px;">
+          <div class="ratings-label">Ratings</div>
+          ${ratingRows}
+        </div>
+        <textarea class="notes-area" placeholder="Notes, house rules, favourite moments…" onchange="updateNotes('${g.id}',this.value)" ${isReadOnly?'readonly':''}>${esc(g.notes)}</textarea>
+      </div>
+      ${!isReadOnly?`<div class="card-footer">
+        <button class="btn btn-outline btn-sm" style="color:var(--felt);border-color:var(--felt);" onclick="openEditModal('${g.id}')">Edit</button>
+        <button class="btn btn-danger btn-sm" onclick="deleteGame('${g.id}')">Remove</button>
+      </div>`:''}
+    </div>
+  </div>`;
+}
+
+function esc(s) { if(!s)return''; return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
+function updateStats() {
+  const total=games.length, played=games.filter(g=>g.played).length;
+  const totalExp=games.reduce((sum,g)=>(g.expansions||[]).filter(e=>e.owned).length+sum,0);
+  document.getElementById('stat-total').textContent=total;
+  document.getElementById('stat-played').textContent=played;
+  document.getElementById('stat-unplayed').textContent=total-played;
+  document.getElementById('stat-expansions').textContent=totalExp;
+}
+
+function toggleCardDetails(gid) {
+  const body = document.getElementById('cardbody-'+gid);
+  const chev = document.getElementById('cardchev-'+gid);
+  const open = body.classList.toggle('open');
+  chev.classList.toggle('open', open);
+}
+
+function toggleExpPanel(gid) {
+  const body=document.getElementById('expbody-'+gid), chev=document.getElementById('chev-'+gid);
+  const open=body.classList.toggle('open');
+  chev.classList.toggle('open',open);
+}
+function addExpansion(gid) {
+  const input=document.getElementById('expinput-'+gid);
+  const name=input.value.trim(); if(!name)return;
+  const g=games.find(x=>x.id===gid); if(!g)return;
+  if(!g.expansions) g.expansions=[];
+  g.expansions.push({id:uid(),name,owned:true});
+  save(); render();
+  setTimeout(()=>{ const b=document.getElementById('expbody-'+gid),c=document.getElementById('chev-'+gid); if(b){b.classList.add('open');c.classList.add('open');} },10);
+}
+function toggleExpansion(gid,eid,val) {
+  const g=games.find(x=>x.id===gid); if(!g)return;
+  const e=g.expansions.find(x=>x.id===eid); if(!e)return;
+  e.owned=val; save();
+  const span=document.querySelector(`#expbody-${gid} .expansion-item input[onchange*="'${eid}'"] ~ .exp-name`);
+  if(span){span.className='exp-name '+(val?'owned':'not-owned');}
+  updateStats();
+}
+function deleteExpansion(gid,eid) {
+  const g=games.find(x=>x.id===gid); if(!g)return;
+  g.expansions=g.expansions.filter(x=>x.id!==eid);
+  save(); render();
+  setTimeout(()=>{ const b=document.getElementById('expbody-'+gid),c=document.getElementById('chev-'+gid); if(b){b.classList.add('open');c.classList.add('open');} },10);
+}
+
+document.addEventListener('click',e=>{
+  const star=e.target.closest('.star'); if(!star||isReadOnly)return;
+  const starsEl=star.closest('.stars'), id=starsEl.dataset.id, cat=starsEl.dataset.cat, val=parseInt(star.dataset.val);
+  const g=games.find(x=>x.id===id); if(!g)return;
+  g.ratings[cat]=g.ratings[cat]===val?0:val; save(); render();
+});
+function togglePlayed(id,val){
+  const g=games.find(x=>x.id===id);
+  if(g){
+    g.played=val; save(); render();
+  }
+}
+function updateNotes(id,val){const g=games.find(x=>x.id===id);if(g){g.notes=val;save();}}
+function deleteGame(id){if(!confirm('Remove this game from the shelf?'))return;games=games.filter(x=>x.id!==id);save();render();}
+
+document.querySelectorAll('.sort-btn').forEach(btn=>{btn.addEventListener('click',()=>{document.querySelectorAll('.sort-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');currentSort=btn.dataset.sort;render();});});
+document.getElementById('search-input').addEventListener('input',render);
+document.getElementById('filter-played').addEventListener('change',render);
+document.getElementById('filter-series').addEventListener('change',render);
+
+function openAddModal(){document.getElementById('modal-title').textContent='Add a game';document.getElementById('edit-id').value='';['name','edition','players','time','genre','series'].forEach(f=>document.getElementById('f-'+f).value='');document.getElementById('f-copies').value=1;document.getElementById('add-modal').classList.add('open');}
+function openEditModal(id){const g=games.find(x=>x.id===id);if(!g)return;document.getElementById('modal-title').textContent='Edit game';document.getElementById('edit-id').value=id;document.getElementById('f-name').value=g.name;document.getElementById('f-edition').value=g.edition||'';document.getElementById('f-copies').value=g.copies||1;document.getElementById('f-players').value=g.players||'';document.getElementById('f-time').value=g.time||'';document.getElementById('f-genre').value=g.genre||'';document.getElementById('f-series').value=g.series||'';document.getElementById('add-modal').classList.add('open');}
+function closeModal(){document.getElementById('add-modal').classList.remove('open');}
+function saveGame(){
+  const name=document.getElementById('f-name').value.trim();if(!name){document.getElementById('f-name').focus();return;}
+  const id=document.getElementById('edit-id').value;
+  if(id){const g=games.find(x=>x.id===id);if(g){g.name=name;g.edition=document.getElementById('f-edition').value.trim();g.copies=parseInt(document.getElementById('f-copies').value)||1;g.players=document.getElementById('f-players').value.trim();g.time=document.getElementById('f-time').value.trim();g.genre=document.getElementById('f-genre').value.trim();g.series=document.getElementById('f-series').value.trim();}}
+  else{games.push({id:uid(),name,edition:document.getElementById('f-edition').value.trim(),copies:parseInt(document.getElementById('f-copies').value)||1,players:document.getElementById('f-players').value.trim(),time:document.getElementById('f-time').value.trim(),genre:document.getElementById('f-genre').value.trim(),series:document.getElementById('f-series').value.trim(),played:false,ratings:Object.fromEntries(CATEGORIES.map(c=>[c,0])),notes:'',expansions:[],added:Date.now()});}
+  save();populateSeriesFilter();closeModal();render();
+}
+
+function openGhModal() {
+  const c = getConfig();
+  document.getElementById('gh-token').value = c.token||'';
+  document.getElementById('gh-owner').value = c.owner||'';
+  document.getElementById('gh-data-repo').value = c.dataRepo||'';
+  const status = document.getElementById('gh-status');
+  status.textContent = isConfigured() ? '✓ Connected — data in ' + c.owner + '/' + c.dataRepo : 'Not connected';
+  status.style.color = isConfigured() ? 'var(--played)' : 'var(--muted)';
+  document.getElementById('gh-modal').classList.add('open');
+}
+function closeGhModal() { document.getElementById('gh-modal').classList.remove('open'); }
+
+async function connectGh() {
+  const token = document.getElementById('gh-token').value.trim();
+  const owner = document.getElementById('gh-owner').value.trim();
+  const dataRepo = document.getElementById('gh-data-repo').value.trim();
+  const status = document.getElementById('gh-status');
+  if (!token || !owner || !dataRepo) { status.textContent = 'Please fill in all fields.'; status.style.color='var(--red)'; return; }
+  status.textContent = 'Testing connection…'; status.style.color='var(--muted)';
+  setConfig({ token, owner, dataRepo });
+  try {
+    // Test by fetching the data repo info
+    const res = await fetch(`https://api.github.com/repos/${owner}/${dataRepo}`, {
+      headers: { 'Authorization': `token ${token}`, 'Accept': 'application/vnd.github.v3+json' }
+    });
+    if (!res.ok) throw new Error('Could not access data repo — check your token and repo name.');
+    status.textContent = '✓ Connected! Syncing now…'; status.style.color='var(--played)';
+    closeGhModal();
+    // Reset SHA and reload from GitHub
+    localStorage.removeItem('shelf-gh-sha');
+    await load();
+    render();
+  } catch(e) {
+    status.textContent = '✗ ' + e.message; status.style.color='var(--red)';
+    setConfig({});
+  }
+}
+
+function disconnectGh() {
+  if (!confirm('Disconnect from GitHub? Your local data will be kept.')) return;
+  setConfig({});
+  localStorage.removeItem('shelf-gh-sha');
+  closeGhModal();
+  setSyncStatus('Disconnected from GitHub', '');
+}
+
+function openShareModal(){const enc=btoa(unescape(encodeURIComponent(JSON.stringify(games))));const url=window.location.origin+window.location.pathname+'?data='+enc;document.getElementById('share-url-text').textContent=url;document.getElementById('share-modal').classList.add('open');}
+function closeShareModal(){document.getElementById('share-modal').classList.remove('open');}
+function copyShareUrl(){const text=document.getElementById('share-url-text').textContent;navigator.clipboard.writeText(text).then(()=>{const btn=document.querySelector('#share-modal .btn-felt');btn.textContent='Copied!';setTimeout(()=>btn.textContent='Copy',1500);});}
+document.querySelectorAll('.modal-overlay').forEach(el=>{el.addEventListener('click',e=>{if(e.target===el){closeModal();closeShareModal();closeGhModal();}});});
+
+function getDefaultGames() {
+  const t = Date.now();
+  return [
+    {id:uid(),name:'Scooby-Doo! Betrayal at Mystery Mansion',edition:'',copies:1,players:'3-6',time:'45-75 min',genre:'Horror / Adventure',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-2200000,expansions:[]},
+    {id:uid(),name:'5-Minute Dungeon',edition:'',copies:1,players:'2-5',time:'5 min',genre:'Co-op / Party',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-2100000,expansions:[{id:uid(),name:'Curses! Foiled Again',owned:false}]},
+    {id:uid(),name:'Betrayal at House on the Hill',edition:'2nd Edition',copies:2,players:'3-6',time:'60 min',genre:'Horror / Adventure',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-2000000,expansions:[{id:uid(),name:'The Evil of Pennywise',owned:true},{id:uid(),name:"Widow's Walk",owned:true},{id:uid(),name:'Betrayal Legacy',owned:false},{id:uid(),name:"Betrayal at Baldur's Gate",owned:false}]},
+    {id:uid(),name:'Stardew Valley: The Board Game',edition:'',copies:1,players:'1-4',time:'45-200 min',genre:'Co-op / Farming',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-1900000,expansions:[]},
+    {id:uid(),name:'Chronicles of Avel',edition:'',copies:1,players:'1-4',time:'60-90 min',genre:'Adventure / Co-op',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-1800000,expansions:[{id:uid(),name:"Adventurer's Toolkit",owned:true},{id:uid(),name:'New Adventures',owned:false},{id:uid(),name:'Knightly Companions',owned:false}]},
+    {id:uid(),name:'The Big Book of Madness',edition:'',copies:1,players:'2-5',time:'60-90 min',genre:'Co-op / Deck Building',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-1700000,expansions:[]},
+    {id:uid(),name:'Flock Together',edition:'',copies:1,players:'1-5',time:'25 min/player',genre:'Strategy',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-1600000,expansions:[{id:uid(),name:'#SaveTheChickens Promo Pack',owned:true},{id:uid(),name:'Birds of a Feather Eggspansion',owned:true}]},
+    {id:uid(),name:'California Trivia',edition:'',copies:1,players:'2+',time:'',genre:'Trivia',series:'Games Room',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-1500000,expansions:[]},
+    {id:uid(),name:'Point of View: Spooky Festival',edition:'',copies:1,players:'1 team',time:'',genre:'Party / Observation',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-1400000,expansions:[]},
+    {id:uid(),name:'Dice Forge',edition:'',copies:1,players:'2-4',time:'45 min',genre:'Strategy / Dice',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-1300000,expansions:[{id:uid(),name:'Rebellion',owned:false}]},
+    {id:uid(),name:'Potions of Azerland',edition:'',copies:1,players:'',time:'',genre:'Fantasy / Strategy',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-1200000,expansions:[]},
+    {id:uid(),name:'The Initiative',edition:'',copies:1,players:'1-4',time:'',genre:'Co-op / Codebreaking',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-1100000,expansions:[]},
+    {id:uid(),name:'Spirit Island',edition:'',copies:2,players:'1-4',time:'90-120 min',genre:'Co-op / Strategy',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-1000000,expansions:[{id:uid(),name:'Branch & Claw',owned:true},{id:uid(),name:'Jagged Earth',owned:false},{id:uid(),name:'Feather & Flame',owned:false},{id:uid(),name:'Nature Incarnate',owned:true}]},
+    {id:uid(),name:'Pop Culture Trivia',edition:'First Edition',copies:1,players:'2+',time:'',genre:'Trivia',series:'Games Room',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-900000,expansions:[]},
+    {id:uid(),name:'Movie Buff Trivia',edition:'Second Edition',copies:1,players:'2+',time:'',genre:'Trivia',series:'Games Room',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-800000,expansions:[]},
+    {id:uid(),name:'Magical Kitties Save the Day!',edition:'',copies:1,players:'2+',time:'',genre:'RPG',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-700000,expansions:[]},
+    {id:uid(),name:'The Lord of the Rings Adventure Book Game',edition:'Book 3',copies:1,players:'2-4',time:'30-60 min',genre:'Adventure / Co-op',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Ravensburger',added:t-600000,expansions:[]},
+    {id:uid(),name:'Mysterium',edition:'',copies:1,players:'2-7',time:'42 min',genre:'Co-op / Deduction',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-500000,expansions:[{id:uid(),name:'Hidden Signs',owned:false},{id:uid(),name:'Secrets & Lies',owned:true},{id:uid(),name:'Mysterium Park',owned:false}]},
+    {id:uid(),name:'Obscurio',edition:'',copies:1,players:'2-8',time:'45 min',genre:'Co-op / Deduction',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-400000,expansions:[]},
+    {id:uid(),name:'Chronicles of Crime',edition:'',copies:1,players:'1-4',time:'60-90 min',genre:'Co-op / Mystery',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-300000,expansions:[{id:uid(),name:'Millenium Series',owned:false},{id:uid(),name:'1400',owned:false},{id:uid(),name:'1900',owned:false},{id:uid(),name:'Noir',owned:false},{id:uid(),name:'Welcome to Redview',owned:false},{id:uid(),name:'The Conspiracy',owned:false}]},
+    {id:uid(),name:'Weirdwood Manor',edition:'',copies:1,players:'1-5',time:'60-90 min',genre:'Adventure / Co-op',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-200000,expansions:[]},
+    {id:uid(),name:'A Place for All My Books',edition:'',copies:1,players:'1-4',time:'60 min',genre:'Puzzle / Strategy',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Smirk & Dagger',added:t-190000,expansions:[]},
+    {id:uid(),name:'Windmill Valley',edition:'',copies:1,players:'',time:'',genre:'Strategy',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Board & Dice',added:t-180000,expansions:[]},
+    {id:uid(),name:'7 Wonders',edition:'',copies:1,players:'2-7',time:'30 min',genre:'Strategy / Card',series:'7 Wonders',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-170000,expansions:[{id:uid(),name:'Leaders',owned:false},{id:uid(),name:'Cities',owned:false},{id:uid(),name:'Armada',owned:false},{id:uid(),name:'Babel',owned:false},{id:uid(),name:'Edifice',owned:false}]},
+    {id:uid(),name:'7 Wonders Duel',edition:'',copies:1,players:'2',time:'30 min',genre:'Strategy / Card',series:'7 Wonders',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-169000,expansions:[{id:uid(),name:'Pantheon',owned:false},{id:uid(),name:'Agora',owned:false}]},
+    {id:uid(),name:'Path of Civilization: A Story of Humankind',edition:'',copies:1,players:'1-5',time:'20 min/player',genre:'Strategy / Civilization',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Captain Games',added:t-160000,expansions:[]},
+    {id:uid(),name:'Coming of Age',edition:'',copies:1,players:'1-4',time:'40-80 min',genre:'Strategy',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'A life-changing board game',added:t-150000,expansions:[]},
+    {id:uid(),name:'Harvest',edition:'',copies:1,players:'1-4',time:'30-70 min',genre:'Strategy',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Keymaster Games',added:t-140000,expansions:[
+      {id:uid(),name:'Playmat',owned:true}
+    ]},
+    {id:uid(),name:'Critter Kitchen',edition:'',copies:1,players:'',time:'',genre:'Family / Cooking',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Lucky Duck / Cardboard Alchemy',added:t-130000,expansions:[{id:uid(),name:'A La Cart',owned:true}]},
+    {id:uid(),name:'Fromage',edition:'',copies:1,players:'',time:'',genre:'Strategy',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-120000,expansions:[]},
+    {id:uid(),name:'Earth',edition:'',copies:1,players:'1-5',time:'45-90 min',genre:'Strategy / Nature',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Inside Up Games',added:t-110000,expansions:[{id:uid(),name:'Abundance',owned:true},{id:uid(),name:'Underground',owned:false}]},
+    {id:uid(),name:'Steam Up: A Feast of Dim Sum',edition:'Deluxe Edition',copies:1,players:'',time:'',genre:'Strategy / Cooking',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Hot Banana Games',added:t-100000,expansions:[]},
+    {id:uid(),name:'Ticket to Ride: Europe',edition:'',copies:1,players:'2-5',time:'30-90 min',genre:'Strategy / Family',series:'Ticket to Ride',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Days of Wonder',added:t-90000,expansions:[]},
+    {id:uid(),name:'Horrified: Dungeons & Dragons',edition:'',copies:1,players:'1-5',time:'60 min',genre:'Co-op / Horror',series:'Horrified',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Ravensburger',added:t-80000,expansions:[]},
+    {id:uid(),name:'Horrified: Universal Monsters',edition:'',copies:1,players:'1-5',time:'60 min',genre:'Co-op / Horror',series:'Horrified',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Ravensburger',added:t-70000,expansions:[{id:uid(),name:'American Monsters',owned:false},{id:uid(),name:'Greek Monsters',owned:false}]},
+    {id:uid(),name:"Aeon's End",edition:'',copies:1,players:'1-4',time:'60 min',genre:'Co-op / Deck Building',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-60000,expansions:[{id:uid(),name:'The Nameless',owned:false},{id:uid(),name:'War Eternal',owned:false},{id:uid(),name:'The New Age',owned:false},{id:uid(),name:'Outcasts',owned:false},{id:uid(),name:'Into the Wild',owned:false},{id:uid(),name:'The Void',owned:false},{id:uid(),name:'Legacy of Gravehold',owned:false}]},
+    {id:uid(),name:'LA-1: A CyberNoir Detective Board Game',edition:'',copies:1,players:'1-5',time:'',genre:'Co-op / Mystery',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Trick or Treat Studios',added:t-50000,expansions:[{id:uid(),name:'When Laws Fail',owned:false}]},
+    {id:uid(),name:'Taco Cat Goat Cheese Pizza',edition:'Ridiculously Large',copies:1,players:'2-8',time:'15 min',genre:'Party / Card',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-40000,expansions:[]},
+    {id:uid(),name:'Far Away',edition:'',copies:1,players:'',time:'',genre:'Adventure',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Pablosaur',added:t-39000,expansions:[]},
+    {id:uid(),name:'Skyrim: The Adventure Game',edition:'',copies:1,players:'1-4',time:'60-180 min',genre:'Adventure / RPG',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Modiphius / Bethesda. Still sealed!',added:t-38000,expansions:[{id:uid(),name:'The Prophecy of Bone Expansion',owned:false},{id:uid(),name:'The Gates of Oblivion',owned:false},{id:uid(),name:'The Rise of the Brotherhood',owned:false}]},
+    {id:uid(),name:'Shadows of Brimstone: Swamps of Death',edition:'Core Set',copies:1,players:'1-4',time:'90-180 min',genre:'Dungeon Crawler / Co-op',series:'Shadows of Brimstone',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Flying Frog Productions',added:t-37000,expansions:[{id:uid(),name:'Adventures',owned:true}]},
+    {id:uid(),name:'Tea Witches',edition:'',copies:1,players:'',time:'',genre:'Co-op / Cozy',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-36000,expansions:[]},
+    {id:uid(),name:'Comanauts',edition:'',copies:1,players:'2-4',time:'60-120 min',genre:'Adventure / Co-op',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'An Adventure Book Game',added:t-35000,expansions:[]},
+    {id:uid(),name:'Tales from the Red Dragon Inn',edition:'',copies:1,players:'2-4',time:'45-90 min',genre:'Adventure / RPG',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-34000,expansions:[]},
+    {id:uid(),name:'Sushi Go!',edition:'',copies:1,players:'2-5',time:'15 min',genre:'Card / Family',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-33000,expansions:[{id:uid(),name:'Sushi Go Party!',owned:false}]},
+    {id:uid(),name:"My Father's Work",edition:'',copies:1,players:'1-4',time:'30-120 min',genre:'Strategy / Horror',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Renegade Game Studios. Still sealed!',added:t-32000,expansions:[]},
+    {id:uid(),name:'Legends of Sleepy Hollow',edition:'',copies:1,players:'1-4',time:'',genre:'Horror / Adventure',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Still sealed!',added:t-31000,expansions:[]},
+    {id:uid(),name:'Deep Rock Galactic: Danger. Darkness. Dwarves.',edition:'2nd Edition',copies:1,players:'',time:'',genre:'Co-op / Dungeon Crawler',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-30000,expansions:[{id:uid(),name:'Into the Deep',owned:false}]},
+    {id:uid(),name:'Terraria: The Board Game',edition:'',copies:1,players:'1-4',time:'45 min/player',genre:'Adventure / Co-op',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Re-Logic / Paper Fort Games',added:t-29000,expansions:[]},
+    {id:uid(),name:'Tales of the Arthurian Knights',edition:'',copies:1,players:'',time:'',genre:'Adventure / Story',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'WizKids',added:t-28000,expansions:[]},
+    {id:uid(),name:'Pericle: Gathering Darkness',edition:'',copies:1,players:'1-4',time:'30 min',genre:'Strategy / Horror',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-27000,expansions:[{id:uid(),name:'Labyrinth',owned:true}]},
+    {id:uid(),name:'The City of Kings',edition:'',copies:1,players:'1-4',time:'60-150 min',genre:'Adventure / Co-op',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-26000,expansions:[]},
+    {id:uid(),name:'Pandemic Legacy: Season 0',edition:'',copies:1,players:'2-4',time:'60 min',genre:'Co-op / Legacy',series:'Pandemic Legacy',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Z-Man Games',added:t-25000,expansions:[]},
+    {id:uid(),name:'Pandemic Legacy: Season 1',edition:'',copies:1,players:'2-4',time:'60 min',genre:'Co-op / Legacy',series:'Pandemic Legacy',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Z-Man Games',added:t-24000,expansions:[]},
+    {id:uid(),name:'Pandemic Legacy: Season 2',edition:'',copies:1,players:'2-4',time:'60 min',genre:'Co-op / Legacy',series:'Pandemic Legacy',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Z-Man Games',added:t-23000,expansions:[]},
+    {id:uid(),name:'Clank! Legacy 2: Acquisitions Incorporated – Darkest Magic',edition:'',copies:1,players:'2-4',time:'90 min',genre:'Deck Building / Adventure',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-22000,expansions:[]},
+    {id:uid(),name:'Charterstone',edition:'',copies:1,players:'1-6',time:'45-75 min',genre:'Strategy / Legacy',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-21000,expansions:[{id:uid(),name:'Recharge Pack',owned:false}]},
+    {id:uid(),name:'Everdell Duo',edition:'',copies:1,players:'2',time:'30-60 min',genre:'Strategy / Card',series:'Everdell',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-20000,expansions:[]},
+    {id:uid(),name:'Frosthaven',edition:'',copies:1,players:'1-4',time:'30 min/player',genre:'Dungeon Crawler / Co-op',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-18000,expansions:[{id:uid(),name:'Envelope X',owned:false},{id:uid(),name:'Buttons & Bugs Solo Mode',owned:false}]},
+    {id:uid(),name:'Knitting Circle',edition:'',copies:1,players:'1-4',time:'30-45 min',genre:'Puzzle / Tile Laying',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Standalone follow-up to Calico. AEG / Flatout Games.',added:t-17000,expansions:[]},
+    {id:uid(),name:"We're Not Really Strangers",edition:'',copies:1,players:'2-6',time:'30-90 min',genre:'Party / Social',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-16000,expansions:[]},
+    {id:uid(),name:'ATMA: A Roleplaying Card Game',edition:'Act I',copies:2,players:'2-5',time:'120 min',genre:'RPG / Card',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-15000,expansions:[]},
+    {id:uid(),name:'Choose Your Own Adventure: House of Danger',edition:'',copies:1,players:'1-5',time:'60 min',genre:'Co-op / Adventure',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-14000,expansions:[]},
+    {id:uid(),name:'The Ultimate Game for Couples',edition:'',copies:1,players:'2',time:'',genre:'Party / Social',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-13000,expansions:[]},
+    {id:uid(),name:'The Couples Game',edition:'',copies:1,players:'2',time:'',genre:'Party / Social',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-12000,expansions:[]},
+    {id:uid(),name:"Adventure Tactics: Domianne's Tower",edition:'',copies:1,players:'1-5',time:'45-90 min',genre:'Adventure / Co-op',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-11000,expansions:[]},
+    {id:uid(),name:'Terrorscape',edition:"Collector's Big Box",copies:1,players:'1-4',time:'',genre:'Horror / Co-op',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-10000,expansions:[{id:uid(),name:'Amorphous Peril',owned:true},{id:uid(),name:'Feral Instincts',owned:true},{id:uid(),name:'Lethal Immortals',owned:true}]},
+    {id:uid(),name:'Cozy Stickerville',edition:'',copies:1,players:'',time:'',genre:'Cozy / Puzzle',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Unexpected Games',added:t-9000,expansions:[]},
+    {id:uid(),name:'Creature Caravan',edition:'',copies:1,players:'',time:'',genre:'Adventure',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-8000,expansions:[]},
+    {id:uid(),name:'Mansions of Madness',edition:'Second Edition',copies:1,players:'1-5',time:'120-180 min',genre:'Horror / Co-op',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Fantasy Flight Games',added:t-7000,expansions:[{id:uid(),name:'Suppressed Memories',owned:false},{id:uid(),name:'Beyond the Threshold',owned:false},{id:uid(),name:'Streets of Arkham',owned:false},{id:uid(),name:'Horrific Journeys',owned:false},{id:uid(),name:'Path of the Serpent',owned:false},{id:uid(),name:'What Lies Within',owned:false}]},
+    {id:uid(),name:'Legendary: A Marvel Deck Building Game',edition:'',copies:1,players:'1-5',time:'45 min',genre:'Deck Building / Co-op',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Upper Deck',added:t-6000,expansions:[{id:uid(),name:'Dark City',owned:false},{id:uid(),name:'Fantastic Four',owned:true},{id:uid(),name:'Guardians of the Galaxy',owned:true},{id:uid(),name:'Doctor Strange and the Shadows of Nightmare',owned:true},{id:uid(),name:'Paint the Town Red',owned:false},{id:uid(),name:'Secret Wars Vol. 1',owned:false},{id:uid(),name:'Secret Wars Vol. 2',owned:false},{id:uid(),name:'Marvel Studios Phase 1',owned:false},{id:uid(),name:'Captain America 75th Anniversary',owned:false},{id:uid(),name:'Villains',owned:false}]},
+    {id:uid(),name:'Root: A Game of Woodland Might and Right',edition:'',copies:1,players:'2-4',time:'60-90 min',genre:'Strategy / Asymmetric',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-5000,expansions:[{id:uid(),name:'The Riverfolk Expansion',owned:false},{id:uid(),name:'The Underworld Expansion',owned:false},{id:uid(),name:'The Marauder Expansion',owned:false},{id:uid(),name:'The Clockwork Expansion',owned:false},{id:uid(),name:'The Homeland Expansion',owned:false},{id:uid(),name:'Vagabond Pack',owned:false}]},
+    {id:uid(),name:'Arkham Horror: The Card Game',edition:'',copies:2,players:'1-4',time:'60-120 min',genre:'Co-op / LCG',series:'Arkham Horror',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Fantasy Flight Games',added:t-4000,expansions:[{id:uid(),name:'The Dunwich Legacy',owned:false},{id:uid(),name:'The Path to Carcosa',owned:false},{id:uid(),name:'The Forgotten Age',owned:false},{id:uid(),name:'The Circle Undone',owned:false},{id:uid(),name:'The Dream-Eaters',owned:false},{id:uid(),name:'The Innsmouth Conspiracy',owned:false},{id:uid(),name:'Edge of the Earth',owned:false},{id:uid(),name:'The Scarlet Keys',owned:false},{id:uid(),name:'The Feast of Hemlock Vale',owned:false}]},
+    {id:uid(),name:'Welcome to the Moon',edition:'',copies:1,players:'1-6',time:'25 min',genre:'Puzzle / Roll & Write',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Blue Cocker',added:t-3000,expansions:[]},
+    {id:uid(),name:'Gloomhaven: Buttons & Bugs',edition:'',copies:1,players:'1',time:'20 min',genre:'Solo / Dungeon Crawler',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Cephalofair. Solo only.',added:t-2000,expansions:[]},
+    {id:uid(),name:'Arkham Horror',edition:'',copies:1,players:'1-8',time:'120-240 min',genre:'Horror / Co-op',series:'Arkham Horror',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Fantasy Flight Games. Call of Cthulhu board game.',added:t-1500,expansions:[{id:uid(),name:'Dunwich Horror',owned:false},{id:uid(),name:'The King in Yellow',owned:false},{id:uid(),name:'Kingsport Horror',owned:false},{id:uid(),name:'Innsmouth Horror',owned:false}]},
+    {id:uid(),name:'Descent: Legends of the Dark',edition:'',copies:1,players:'1-4',time:'60-150 min',genre:'Dungeon Crawler / Co-op',series:'Descent',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Fantasy Flight Games',added:t-1000,expansions:[{id:uid(),name:"The Betrayer's War",owned:true}]},
+    {id:uid(),name:'Descent: Legends of the Dark',edition:'Act II',copies:1,players:'1-4',time:'60-150 min',genre:'Dungeon Crawler / Co-op',series:'Descent',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Fantasy Flight Games',added:t-900,expansions:[]},
+    {id:uid(),name:'Heat: Pedal to the Metal',edition:'',copies:1,players:'1-6',time:'30-60 min',genre:'Racing / Strategy',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Days of Wonder',added:t-800,expansions:[{id:uid(),name:'Tunnel Vision',owned:true}]},
+    {id:uid(),name:'Sleeping Gods',edition:'',copies:1,players:'1-4',time:'60-120 min',genre:'Adventure / Co-op',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-700,expansions:[{id:uid(),name:'Tides of Ruin',owned:true},{id:uid(),name:'Dungeons',owned:false},{id:uid(),name:'Primeval Peril',owned:false},{id:uid(),name:'Distant Skies',owned:false}]},
+    {id:uid(),name:'Mythwind',edition:'',copies:1,players:'1-4',time:'30-60 min',genre:'Adventure / Exploration',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-600,expansions:[{id:uid(),name:'Winds of Magic',owned:true},{id:uid(),name:'Expanded Horizons',owned:true},{id:uid(),name:'Friends & Family',owned:true}]},
+    {id:uid(),name:'Vantage',edition:'',copies:1,players:'1-5',time:'',genre:'Strategy',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Engelstein Media. 14+',added:t-500,expansions:[]},
+    {id:uid(),name:'Many Bones: A Dice Builder RPG',edition:'',copies:1,players:'1-4',time:'60-90 min',genre:'Solo / RPG / Dice',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Chip Theory Games',added:t-400,expansions:[{id:uid(),name:'Splice & Dice',owned:false},{id:uid(),name:'Vegonia',owned:false},{id:uid(),name:'Taron the Lost',owned:false},{id:uid(),name:'Agebinders',owned:false}]},
+    {id:uid(),name:'Fit to Print',edition:'',copies:1,players:'1-4',time:'30-45 min',genre:'Puzzle / Tile Laying',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Flatout Games',added:t-390,expansions:[]},
+    {id:uid(),name:'Meadow',edition:'',copies:1,players:'1-4',time:'60-90 min',genre:'Strategy / Nature',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-380,expansions:[{id:uid(),name:'Adventure Book',owned:true},{id:uid(),name:'Downstream',owned:false}]},
+    {id:uid(),name:'Reykjolt',edition:'',copies:1,players:'',time:'30-60 min',genre:'Strategy',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Renegade Game Studios. 12+',added:t-370,expansions:[]},
+    {id:uid(),name:'Everdell',edition:'',copies:1,players:'1-4',time:'40-80 min',genre:'Strategy / Card',series:'Everdell',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-360,expansions:[{id:uid(),name:'Pearlbrook',owned:false},{id:uid(),name:'Spirecrest',owned:false},{id:uid(),name:'Bellfaire',owned:false},{id:uid(),name:'Newleaf',owned:false},{id:uid(),name:'Mistwood',owned:false},{id:uid(),name:'Glimmergold',owned:false}]},
+    {id:uid(),name:'Threads of Fate',edition:'',copies:1,players:'',time:'',genre:'Puzzle / Story',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'A puzzletale',added:t-350,expansions:[]},
+    {id:uid(),name:'Unlock!',edition:'',copies:1,players:'1-6',time:'60 min',genre:'Co-op / Escape Room',series:'Unlock!',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Space Cowboys. You have all Unlock! games — check off the ones you own.',added:t-340,expansions:[
+      {id:uid(),name:'Escape Adventures',owned:false},
+      {id:uid(),name:'Mystery Adventures',owned:false},
+      {id:uid(),name:'Secret Adventures',owned:false},
+      {id:uid(),name:'Heroic Adventures',owned:false},
+      {id:uid(),name:'Timeless Adventures',owned:false},
+      {id:uid(),name:'Exotic Adventures',owned:false},
+      {id:uid(),name:'Epic Adventures',owned:false},
+      {id:uid(),name:'Star Wars',owned:false},
+      {id:uid(),name:'Mythic Adventures',owned:false},
+      {id:uid(),name:'Legendary Adventures',owned:false},
+      {id:uid(),name:'Game Adventures',owned:false},
+      {id:uid(),name:'Short Adventures',owned:false},
+      {id:uid(),name:'Kids Adventures',owned:false},
+      {id:uid(),name:'Crazy Mystery',owned:false},
+      {id:uid(),name:'Remarkable Adventures',owned:false},
+      {id:uid(),name:'Thrilling Adventures',owned:false}
+    ]},
+    {id:uid(),name:'Shadows of Brimstone: Gates of Valhalla',edition:'',copies:1,players:'1-4',time:'90-180 min',genre:'Dungeon Crawler / Co-op',series:'Shadows of Brimstone',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Flying Frog Productions. Standalone core set.',added:t-330,expansions:[]},
+    {id:uid(),name:'Cozy Stickerville',edition:'',copies:1,players:'',time:'',genre:'Cozy / Puzzle',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Unexpected Games',added:t-9000,expansions:[]},
+    {id:uid(),name:"My Father's Work",edition:'',copies:1,players:'1-4',time:'30-120 min',genre:'Strategy / Horror',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Renegade Game Studios. Still sealed!',added:t-32000,expansions:[]},
+    {id:uid(),name:'Herd Mentality',edition:'',copies:1,players:'4-20',time:'20 min',genre:'Party',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Big Potato Games',added:t-320,expansions:[]},
+    {id:uid(),name:'Jenga',edition:'Classic',copies:1,players:'1+',time:'',genre:'Dexterity / Party',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-310,expansions:[]},
+    {id:uid(),name:'Blank Slate',edition:'',copies:1,players:'3-8',time:'30 min',genre:'Party / Word',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'The game where minds think alike',added:t-300,expansions:[]},
+    {id:uid(),name:'Namiji',edition:'',copies:1,players:'2-5',time:'45 min',genre:'Strategy / Journey',series:'Tokaido',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Tokaido follow-up by Funforge',added:t-290,expansions:[]},
+    {id:uid(),name:'Small World Underground',edition:'',copies:1,players:'2-5',time:'40-80 min',genre:'Strategy',series:'Small World',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Days of Wonder',added:t-280,expansions:[]},
+    {id:uid(),name:'Trekking the National Parks',edition:'',copies:1,players:'2-5',time:'30-60 min',genre:'Strategy / Family',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Underdog Games',added:t-270,expansions:[]},
+    {id:uid(),name:'The Search for Lost Species',edition:'',copies:1,players:'',time:'',genre:'Strategy / Nature',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-260,expansions:[]},
+    {id:uid(),name:'Super Dungeon Explore',edition:'',copies:1,players:'2-6',time:'60-120 min',genre:'Dungeon Crawler',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Soda Pop Miniatures',added:t-250,expansions:[]},
+    {id:uid(),name:'Mycelia',edition:'',copies:1,players:'2-4',time:'',genre:'Strategy',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Ravensburger. 9+',added:t-240,expansions:[]},
+    {id:uid(),name:'Dungeons, Dice & Danger',edition:'',copies:1,players:'1-4',time:'',genre:'Puzzle / Dice',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Alea',added:t-230,expansions:[]},
+    {id:uid(),name:'Monopoly',edition:'Classic',copies:1,players:'2-8',time:'60-180 min',genre:'Family / Classic',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-220,expansions:[]},
+    {id:uid(),name:'Wow Okay',edition:'',copies:1,players:'2+',time:'',genre:'Party / Challenges',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'The hilarious challenges of family & party game',added:t-210,expansions:[]},
+    {id:uid(),name:'Skull',edition:'',copies:1,players:'2-6',time:'15 min',genre:'Bluffing / Party',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-200,expansions:[]},
+    {id:uid(),name:'Loaded Questions Adult',edition:'',copies:1,players:'3-6',time:'',genre:'Party',series:'Loaded Questions',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-199,expansions:[]},
+    {id:uid(),name:'Loaded Questions',edition:'Classic',copies:1,players:'3-6',time:'',genre:'Party',series:'Loaded Questions',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-198,expansions:[]},
+    {id:uid(),name:"Agatha Christie's Death on the Cards",edition:'',copies:1,players:'2-6',time:'30 min',genre:'Deduction / Party',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-197,expansions:[]},
+    {id:uid(),name:'Catan',edition:'',copies:1,players:'3-4',time:'60-120 min',genre:'Strategy',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Klaus Teuber',added:t-196,expansions:[{id:uid(),name:'Seafarers',owned:false},{id:uid(),name:'Cities & Knights',owned:false},{id:uid(),name:'Traders & Barbarians',owned:false},{id:uid(),name:'Explorers & Pirates',owned:false},{id:uid(),name:'Legend of the Conquerors',owned:false}]},
+    {id:uid(),name:'Shadows in the Forest',edition:'',copies:1,players:'2-7',time:'20 min',genre:'Strategy / Party',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'ThinkFun. Play in the dark!',added:t-195,expansions:[]},
+    {id:uid(),name:'Roll Player',edition:'',copies:1,players:'1-4',time:'60-90 min',genre:'Strategy / Dice',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Keith Matejka',added:t-194,expansions:[{id:uid(),name:'Monsters & Minions',owned:false},{id:uid(),name:'Fiends & Familiars',owned:false},{id:uid(),name:'Undead & Unstoppable',owned:false}]},
+    {id:uid(),name:'Oath: Chronicles of Empire & Exile',edition:'',copies:1,players:'1-6',time:'60-120 min',genre:'Strategy / Asymmetric',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-193,expansions:[]},
+    {id:uid(),name:'Dice Miner',edition:'',copies:1,players:'2-4',time:'20-40 min',genre:'Dice / Strategy',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-192,expansions:[]},
+    {id:uid(),name:'Stonespine Architects',edition:'',copies:1,players:'',time:'',genre:'Strategy',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-191,expansions:[]},
+    {id:uid(),name:'Kepler 3042',edition:'',copies:1,players:'1-4',time:'90 min',genre:'Strategy / Sci-Fi',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Indie Boards & Cards',added:t-190,expansions:[]},
+    {id:uid(),name:'Kodama Forest',edition:'',copies:1,players:'',time:'',genre:'Strategy / Nature',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-189,expansions:[]},
+    {id:uid(),name:'Dragonrealm',edition:'',copies:1,players:'3-8',time:'30 min',genre:'Party / Bluffing',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'A game of goblins & gold',added:t-188,expansions:[]},
+    {id:uid(),name:'Eco Sfera',edition:'',copies:1,players:'',time:'',genre:'Strategy / Nature',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Julibert',added:t-187,expansions:[]},
+    {id:uid(),name:'The Red Dragon Inn',edition:'',copies:1,players:'2-4',time:'30-60 min',genre:'Party / Card',series:'Red Dragon Inn',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Slugfest Games',added:t-186,expansions:[]},
+    {id:uid(),name:'The Red Dragon Inn 3',edition:'',copies:1,players:'2-4',time:'30-60 min',genre:'Party / Card',series:'Red Dragon Inn',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Slugfest Games',added:t-185,expansions:[]},
+    {id:uid(),name:'Meeples & Monsters',edition:'',copies:1,players:'1-4',time:'45-75 min',genre:'Strategy / Adventure',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'AEG',added:t-184,expansions:[]},
+    {id:uid(),name:'Castles of Mad King Ludwig',edition:'',copies:1,players:'1-4',time:'75 min',genre:'Strategy / Tile Laying',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Ted Alspach / Bezier Games',added:t-183,expansions:[{id:uid(),name:'Secrets',owned:false},{id:uid(),name:'Moat',owned:false}]},
+    {id:uid(),name:'Eternal Palace',edition:'',copies:1,players:'1-4',time:'45-75 min',genre:'Strategy / Dice',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Alley Cat Games',added:t-182,expansions:[]},
+    {id:uid(),name:'Cosmogenesis',edition:'',copies:1,players:'',time:'',genre:'Strategy / Sci-Fi',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Yves Tourigny',added:t-181,expansions:[]},
+    {id:uid(),name:'The Guild of Merchant Explorers',edition:'',copies:1,players:'1-4',time:'45-60 min',genre:'Strategy / Exploration',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'AEG',added:t-180,expansions:[]},
+    {id:uid(),name:'Ticket to Ride',edition:'',copies:1,players:'2-5',time:'30-90 min',genre:'Strategy / Family',series:'Ticket to Ride',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Alan R. Moon / Days of Wonder. Original 2004 edition.',added:t-179,expansions:[]},
+    {id:uid(),name:'Drunk Stoned or Stupid',edition:'',copies:1,players:'4+',time:'30 min',genre:'Party',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-178,expansions:[]},
+    {id:uid(),name:'Midnight Taboo',edition:'',copies:1,players:'4+',time:'',genre:'Party / Word',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Hasbro',added:t-177,expansions:[]},
+    {id:uid(),name:'One Night Ultimate Werewolf',edition:'',copies:1,players:'3-10',time:'10 min',genre:'Party / Deduction',series:'One Night Ultimate',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Bezier Games',added:t-176,expansions:[]},
+    {id:uid(),name:'Unstable Unicorns',edition:'',copies:1,players:'2-8',time:'30-45 min',genre:'Party / Card',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Build a unicorn army. Betray your friends.',added:t-175,expansions:[]},
+    {id:uid(),name:'Do You Know Me?',edition:'',copies:1,players:'4+',time:'30 min',genre:'Party / Social',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:"It's about to get personal",added:t-174,expansions:[]},
+    {id:uid(),name:'Uno',edition:'',copies:1,players:'2-10',time:'15 min',genre:'Card / Family',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-173,expansions:[]},
+    {id:uid(),name:'Caverna: The Cave Farmers',edition:'',copies:1,players:'1-7',time:'30 min/player',genre:'Strategy / Worker Placement',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Uwe Rosenberg / Lookout Games. 12+',added:t-172,expansions:[]},
+    {id:uid(),name:'Ghosted: The Game of Boo-Dunnit',edition:'',copies:1,players:'3-6',time:'30 min',genre:'Party / Deduction',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-171,expansions:[]},
+    {id:uid(),name:'The Chameleon',edition:'',copies:1,players:'3-8',time:'15 min',genre:'Party / Deduction',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Blend in. Don\'t get caught.',added:t-170,expansions:[]},
+    {id:uid(),name:"Let's Go! To Japan",edition:'',copies:1,players:'',time:'',genre:'Strategy / Travel',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'AEG',added:t-169,expansions:[]},
+    {id:uid(),name:'Smash Up',edition:'',copies:1,players:'2-4',time:'45 min',genre:'Strategy / Card',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-168,expansions:[{id:uid(),name:'The Obligatory Cthulhu Set',owned:false},{id:uid(),name:'Science Fiction Double Feature',owned:false},{id:uid(),name:'Pretty Pretty Smash Up',owned:true},{id:uid(),name:'Monster Smash',owned:false},{id:uid(),name:'Big in Japan',owned:false},{id:uid(),name:'It\'s Your Fault!',owned:false},{id:uid(),name:'What Were We Thinking',owned:false},{id:uid(),name:'Munchkin',owned:true}]},
+    {id:uid(),name:'Clue Conspiracy',edition:'',copies:1,players:'',time:'45 min',genre:'Deduction / Party',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'14+',added:t-167,expansions:[]},
+    {id:uid(),name:'Rack-O',edition:'Classic',copies:1,players:'2-4',time:'',genre:'Card / Family',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Winning Moves Games',added:t-166,expansions:[]},
+    {id:uid(),name:'Star Wars R2-D2 is in Trouble',edition:'',copies:1,players:'2-4',time:'',genre:'Family / Classic',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Hasbro. Pop-O-Matic Trouble variant.',added:t-165,expansions:[]},
+    {id:uid(),name:'Exploding Kittens',edition:'',copies:1,players:'2-5',time:'15 min',genre:'Party / Card',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-164,expansions:[{id:uid(),name:'Imploding Kittens',owned:false},{id:uid(),name:'Streaking Kittens',owned:false},{id:uid(),name:'Barking Kittens',owned:false}]},
+    {id:uid(),name:'Vedur',edition:'',copies:1,players:'2-4',time:'10-20 min/player',genre:'Deck Building / Strategy',series:'Nordic Heritage',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Gamia Games. Inspired by Icelandic weather. Part of the Nordic Heritage collection.',added:t-163,expansions:[]},
+    {id:uid(),name:'Bang!',edition:'',copies:1,players:'4-7',time:'20-40 min',genre:'Card / Bluffing',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-162,expansions:[{id:uid(),name:'Dodge City',owned:false},{id:uid(),name:'The Bullet',owned:false}]},
+    {id:uid(),name:'Phase 10',edition:'',copies:1,players:'2-6',time:'45-90 min',genre:'Card / Family',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-161,expansions:[]},
+    {id:uid(),name:'Bananagrams',edition:'',copies:1,players:'1-8',time:'15 min',genre:'Word / Party',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-160,expansions:[]},
+    {id:uid(),name:'Ramen Fury',edition:'',copies:1,players:'2-5',time:'20-30 min',genre:'Card / Family',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-159,expansions:[]},
+    {id:uid(),name:'Dutch Blitz',edition:'',copies:1,players:'2-4',time:'15 min',genre:'Card / Speed',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-158,expansions:[{id:uid(),name:'Expansion Pack',owned:false}]},
+    {id:uid(),name:"Aeon's End: The Depths",edition:'',copies:1,players:'1-4',time:'60 min',genre:'Co-op / Deck Building',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Standalone expansion set',added:t-157,expansions:[]},
+    {id:uid(),name:"Aeon's End: The Nameless",edition:'',copies:1,players:'1-4',time:'60 min',genre:'Co-op / Deck Building',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Standalone expansion set',added:t-156,expansions:[]},
+    {id:uid(),name:'Earth: Abundance',edition:'',copies:1,players:'1-5',time:'45-90 min',genre:'Strategy / Nature',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Expansion for Earth',added:t-155,expansions:[]},
+    {id:uid(),name:'Descent: Journeys in the Dark',edition:'2nd Edition',copies:1,players:'2-5',time:'120 min',genre:'Dungeon Crawler',series:'Descent',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-154,expansions:[]},
+    {id:uid(),name:'Space Cadets',edition:'',copies:1,players:'3-6',time:'60-120 min',genre:'Co-op / Party',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'',added:t-153,expansions:[]},
+    {id:uid(),name:'Too Many Bones',edition:'',copies:1,players:'1-4',time:'60-120 min',genre:'Solo / RPG / Dice',series:'',played:false,ratings:{Fun:0,Replayability:0,Complexity:0,Presentation:0},notes:'Chip Theory Games',added:t-152,expansions:[{id:uid(),name:'Undertow',owned:false},{id:uid(),name:'Splice & Dice',owned:false},{id:uid(),name:'Age of Tyranny',owned:false}]}
+  ];
+}
+
+checkLock();
+</script>
+</body>
+</html>
