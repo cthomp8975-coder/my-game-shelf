@@ -596,7 +596,7 @@
     "time": "30 min",
     "genre": "Strategy / Card",
     "series": "7 Wonders",
-    "played": false,
+    "played": true,
     "ratings": {
       "Fun": 0,
       "Replayability": 0,
