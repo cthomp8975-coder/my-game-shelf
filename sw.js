@@ -5,7 +5,9 @@ const CACHE_NAME = 'the-shelf-v1';
 const ASSETS = [
   '/my-game-shelf/board-game-catalogue.html',
   '/my-game-shelf/manifest.json',
-  '/my-game-shelf/icon-512.svg',
+  '/my-game-shelf/icon-192.png',
+  '/my-game-shelf/icon-512.png',
+  '/my-game-shelf/apple-touch-icon.png',
   'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600&display=swap'
 ];
 
