@@ -1,7 +1,7 @@
 // The Shelf — Service Worker
 // Caches the app shell for offline access
 
-const CACHE_NAME = 'the-shelf-v1';
+const CACHE_NAME = 'the-shelf-v2';
 const ASSETS = [
   '/my-game-shelf/board-game-catalogue.html',
   '/my-game-shelf/manifest.json',
