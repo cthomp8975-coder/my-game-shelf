@@ -1,13 +1,8 @@
-// The Shelf — Service Worker
-// Caches the app shell for offline access
-
-const CACHE_NAME = 'the-shelf-v3';
+// The Shelf — Service Worker v8
+const CACHE_NAME = 'the-shelf-v8';
 const ASSETS = [
   '/my-game-shelf/board-game-catalogue.html',
   '/my-game-shelf/manifest.json',
-  '/my-game-shelf/icon-192.png',
-  '/my-game-shelf/icon-512.png',
-  '/my-game-shelf/apple-touch-icon.png',
   'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600&display=swap'
 ];
 
@@ -27,34 +22,15 @@ self.addEventListener('activate', event => {
   );
 });
 
-// Fetch: serve from cache, fall back to network
-// GitHub API calls always go to network (never cache)
+// Fetch: only serve cached app shell files — never intercept external API calls
 self.addEventListener('fetch', event => {
   const url = new URL(event.request.url);
 
-  // Never cache GitHub API or Anthropic API calls
-  if (url.hostname === 'api.github.com' || url.hostname === 'api.anthropic.com' || url.hostname === 'raw.githubusercontent.com') {
-    event.respondWith(fetch(event.request));
-    return;
-  }
+  // Pass through all external requests (BGG, GitHub, fonts data, etc.)
+  if (url.origin !== self.location.origin) return;
 
-  // Cache-first for app shell assets
+  // Cache-first for same-origin app shell assets
   event.respondWith(
-    caches.match(event.request).then(cached => {
-      if (cached) return cached;
-      return fetch(event.request).then(response => {
-        // Cache successful responses for app assets
-        if (response.ok && event.request.method === 'GET') {
-          const clone = response.clone();
-          caches.open(CACHE_NAME).then(cache => cache.put(event.request, clone));
-        }
-        return response;
-      }).catch(() => {
-        // Offline fallback for navigation requests
-        if (event.request.mode === 'navigate') {
-          return caches.match('/my-game-shelf/board-game-catalogue.html');
-        }
-      });
-    })
+    caches.match(event.request).then(cached => cached || fetch(event.request))
   );
 });
