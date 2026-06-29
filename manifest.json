@@ -1,0 +1,19 @@
+{
+  "name": "The Shelf — Board Game Catalogue",
+  "short_name": "The Shelf",
+  "description": "Your personal board game collection tracker",
+  "start_url": "/my-game-shelf/board-game-catalogue.html",
+  "scope": "/my-game-shelf/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#2d4a3e",
+  "theme_color": "#2d4a3e",
+  "icons": [
+    {
+      "src": "icon-512.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
