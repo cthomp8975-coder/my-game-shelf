@@ -393,7 +393,7 @@ async function fetchBggCollection() {
   statusEl.textContent = '⏳ Fetching from BGG…';
 
   // BGG API sometimes returns 202 (queuing) — retry up to 3 times
-  const BGG_URL = `https://boardgamegeek.com/xmlapi2/collection?username=${encodeURIComponent(username)}&own=1&excludesubtype=boardgameexpansion&stats=1`;
+  const BGG_URL = `https://odd-limit-0003.cthomp8975.workers.dev/xmlapi2/collection?username=${encodeURIComponent(username)}&own=1&excludesubtype=boardgameexpansion&stats=1`;
   let xml = null;
   for (let attempt = 0; attempt < 4; attempt++) {
     if (attempt > 0) {
@@ -543,7 +543,7 @@ async function fetchFromBggLink() {
   statusEl.style.color = 'var(--muted)';
   btn.disabled = true;
   try {
-    const res = await fetch(`https://boardgamegeek.com/xmlapi2/thing?id=${id}&stats=1`);
+    const res = await fetch(`https://odd-limit-0003.cthomp8975.workers.dev/xmlapi2/thing?id=${id}&stats=1`);
     if (!res.ok) throw new Error('HTTP ' + res.status);
     const text = await res.text();
     const doc = new DOMParser().parseFromString(text, 'text/xml');
