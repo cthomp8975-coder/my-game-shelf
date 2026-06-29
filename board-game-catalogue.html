@@ -402,7 +402,7 @@ async function fetchBggCollection() {
       await new Promise(r => setTimeout(r, 3000));
     }
     try {
-      const res = await fetch(`https://corsproxy.io/?url=${encodeURIComponent(BGG_URL)}`);
+      const res = await fetch(BGG_URL);
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const text = await res.text();
       if (text.includes('<message>')) {
@@ -532,7 +532,7 @@ async function bggSearchFromModal() {
 
   try {
     const searchUrl = `https://boardgamegeek.com/xmlapi2/search?query=${encodeURIComponent(query)}&type=boardgame`;
-    const res = await fetch(`https://corsproxy.io/?url=${encodeURIComponent(searchUrl)}`);
+    const res = await fetch(searchUrl);
     if (!res.ok) throw new Error('Search failed');
     const text = await res.text();
     const doc = new DOMParser().parseFromString(text, 'text/xml');
@@ -542,7 +542,7 @@ async function bggSearchFromModal() {
     // Fetch stats for all results in one batch call
     const ids = items.map(i => i.getAttribute('id')).join(',');
     const thingUrl = `https://boardgamegeek.com/xmlapi2/thing?id=${ids}&stats=1`;
-    const thingRes = await fetch(`https://corsproxy.io/?url=${encodeURIComponent(thingUrl)}`);
+    const thingRes = await fetch(thingUrl);
     const thingText = await thingRes.text();
     const thingDoc = new DOMParser().parseFromString(thingText, 'text/xml');
     const things = Array.from(thingDoc.querySelectorAll('item'));
