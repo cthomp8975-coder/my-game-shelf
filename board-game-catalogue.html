@@ -299,6 +299,10 @@
       <input type="password" id="gh-token" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx">
     </div>
     <div class="form-field">
+      <label>Anthropic API Key <span style="font-weight:400;color:var(--muted);">(for 📷 photo scanning)</span></label>
+      <input type="password" id="gh-anthropic-key" placeholder="sk-ant-xxxxxxxxxxxxxxxxxxxx">
+    </div>
+    <div class="form-field">
       <label>GitHub Username</label>
       <input type="text" id="gh-owner" placeholder="your-username">
     </div>
@@ -308,7 +312,8 @@
     </div>
     <div id="gh-status" style="font-size:0.8rem;margin-top:4px;min-height:20px;"></div>
     <div style="font-size:0.75rem;color:var(--muted);margin-top:12px;line-height:1.7;background:var(--gold-pale);padding:10px 12px;border-radius:6px;">
-      <strong>Setup:</strong> your public <em>my-game-shelf</em> repo hosts the app, and your private <em>game-shelf-data</em> repo stores your collection. Only you can see the data.
+      <strong>Setup:</strong> your public <em>my-game-shelf</em> repo hosts the app, and your private <em>game-shelf-data</em> repo stores your collection. Only you can see the data.<br>
+      Your Anthropic API key enables 📷 photo scanning. Get one at <a href="https://console.anthropic.com/settings/keys" target="_blank" rel="noopener" style="color:var(--felt);">console.anthropic.com</a>.
     </div>
     <div class="modal-footer">
       <button class="btn btn-outline" style="color:var(--red);border-color:var(--red);" onclick="disconnectGh()">Disconnect</button>
@@ -441,9 +446,18 @@ Return ONLY a valid JSON array, no other text, no markdown fences.
 Example: [{"name":"Catan","edition":"","players":"3-4","time":"60-120 min","genre":"Strategy","notes":"","isExpansion":false,"baseGame":""}]`;
 
   try {
+    const anthropicKey = getConfig().anthropicKey || '';
+    if (!anthropicKey) {
+      throw new Error('No Anthropic API key set. Add your key in ⚙ Settings to enable photo scanning.');
+    }
     const response = await fetch('https://api.anthropic.com/v1/messages', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: {
+        'Content-Type': 'application/json',
+        'x-api-key': anthropicKey,
+        'anthropic-version': '2023-06-01',
+        'anthropic-dangerous-direct-browser-access': 'true'
+      },
       body: JSON.stringify({
         model: 'claude-sonnet-4-6',
         max_tokens: 2000,
@@ -459,7 +473,7 @@ Example: [{"name":"Catan","edition":"","players":"3-4","time":"60-120 min","genr
 
     if (!response.ok) {
       if (response.status === 401 || response.status === 403) {
-        throw new Error('API authentication failed. The scan feature requires a valid Anthropic API key. This feature may not be available in the current hosting environment.');
+        throw new Error('API key invalid or missing. Check your Anthropic API key in ⚙ Settings.');
       }
       if (response.status === 529 || response.status === 503) {
         throw new Error('The AI service is temporarily overloaded. Please try again in a moment.');
@@ -540,7 +554,6 @@ function addScannedGames() {
 }
 
 
-// Stored in localStorage (device-local, never sent anywhere except GitHub)
 function getConfig() {
   try { return JSON.parse(localStorage.getItem('shelf-gh-config')||'{}'); } catch(e) { return {}; }
 }
@@ -1330,6 +1343,7 @@ function openGhModal() {
   document.getElementById('gh-token').value = c.token||'';
   document.getElementById('gh-owner').value = c.owner||'';
   document.getElementById('gh-data-repo').value = c.dataRepo||'';
+  document.getElementById('gh-anthropic-key').value = c.anthropicKey||'';
   const status = document.getElementById('gh-status');
   status.textContent = isConfigured() ? '✓ Connected — data in ' + c.owner + '/' + c.dataRepo : 'Not connected';
   status.style.color = isConfigured() ? 'var(--played)' : 'var(--muted)';
@@ -1341,10 +1355,11 @@ async function connectGh() {
   const token = document.getElementById('gh-token').value.trim();
   const owner = document.getElementById('gh-owner').value.trim();
   const dataRepo = document.getElementById('gh-data-repo').value.trim();
+  const anthropicKey = document.getElementById('gh-anthropic-key').value.trim();
   const status = document.getElementById('gh-status');
   if (!token || !owner || !dataRepo) { status.textContent = 'Please fill in all fields.'; status.style.color='var(--red)'; return; }
   status.textContent = 'Testing connection…'; status.style.color='var(--muted)';
-  setConfig({ token, owner, dataRepo });
+  setConfig({ token, owner, dataRepo, anthropicKey });
   try {
     // Test by fetching the data repo info
     const res = await fetch(`https://api.github.com/repos/${owner}/${dataRepo}`, {
