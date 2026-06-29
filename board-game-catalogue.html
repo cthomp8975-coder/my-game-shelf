@@ -580,7 +580,7 @@ async function fetchFromBggLink() {
     statusEl.style.color = 'var(--played)';
     setTimeout(() => { statusEl.textContent = ''; }, 3000);
   } catch(e) {
-    statusEl.textContent = '✗ Could not fetch game. Check the BGG link and try again.';
+    statusEl.textContent = '✗ ' + e.message;
     statusEl.style.color = 'var(--red)';
     console.error('BGG fetch error:', e);
   }
