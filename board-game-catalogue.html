@@ -118,11 +118,7 @@
   .game-card.status-prev-owned .card-header { background:#6a6a6a; filter:grayscale(100%); }
   .tag.wishlist { background:#fff8e0; color:#b36200; font-weight:600; }
   .tag.prev-owned { background:#ebebeb; color:#666; }
-  .bgg-search-item { padding:8px 12px; cursor:pointer; border-bottom:1px solid var(--border); font-size:0.84rem; }
-  .bgg-search-item:last-child { border-bottom:none; }
-  .bgg-search-item:hover { background:var(--gold-pale); }
-  .bgg-search-item-name { font-weight:600; color:var(--ink); }
-  .bgg-search-item-meta { font-size:0.72rem; color:var(--muted); margin-top:1px; }
+  
   .bgg-result-item.selected { border-color:var(--felt); background:#f0f7f4; }
   .bgg-result-check { width:16px; height:16px; accent-color:var(--felt); flex-shrink:0; cursor:pointer; margin-top:2px; }
   .bgg-result-info { flex:1; min-width:0; }
@@ -254,14 +250,17 @@
     <input type="hidden" id="edit-id">
     <div class="form-field">
       <label>Game name *</label>
+      <input type="text" id="f-name" placeholder="e.g. Catan">
+    </div>
+    <div class="form-field">
+      <label>BGG Link <span style="font-weight:400;color:var(--muted);">— paste to auto-fill details</span></label>
       <div style="display:flex;gap:6px;">
-        <input type="text" id="f-name" placeholder="e.g. Catan" style="flex:1;" onkeydown="if(event.key==='Enter'){event.preventDefault();bggSearchFromModal();}">
-        <button type="button" class="btn btn-outline btn-sm" id="bgg-search-btn" onclick="bggSearchFromModal()" style="color:var(--felt);border-color:var(--felt);white-space:nowrap;padding:8px 12px;">🔍 BGG</button>
+        <input type="text" id="f-bgg" placeholder="https://boardgamegeek.com/boardgame/…" style="flex:1;" oninput="onBggLinkInput(this.value)">
+        <button type="button" class="btn btn-outline btn-sm" id="bgg-fetch-btn" onclick="fetchFromBggLink()" style="color:var(--felt);border-color:var(--felt);white-space:nowrap;padding:8px 12px;">↓ Fill</button>
       </div>
-      <div id="bgg-search-results" style="display:none;margin-top:6px;border:1px solid var(--border);border-radius:6px;overflow:hidden;max-height:200px;overflow-y:auto;"></div>
       <div id="bgg-search-status" style="font-size:0.75rem;color:var(--muted);margin-top:4px;min-height:16px;"></div>
     </div>
-    <div class="form-field"><label>Edition / Version</label><input type="text" id="f-edition" placeholder="e.g. 5th Edition, Deluxe…"></div>    <div class="form-row">
+    <div class="form-row">
       <div class="form-field"><label>Copies owned</label><input type="number" id="f-copies" min="1" max="99" value="1"></div>
       <div class="form-field"><label>Player count</label><input type="text" id="f-players" placeholder="e.g. 2–4"></div>
     </div>
@@ -270,7 +269,6 @@
       <div class="form-field"><label>Genre / Type</label><input type="text" id="f-genre" placeholder="e.g. Strategy, Party…"></div>
     </div>
     <div class="form-field"><label>Series (optional)</label><input type="text" id="f-series" placeholder="e.g. Unlock!, Shadows of Brimstone…"></div>
-    <div class="form-field"><label>BGG Link (optional)</label><input type="text" id="f-bgg" placeholder="https://boardgamegeek.com/boardgame/…"></div>
     <div class="form-row">
       <div class="form-field">
         <label>Replayable?</label>
@@ -518,93 +516,76 @@ function addBggGames() {
 }
 
 
-// ── BGG SEARCH (Add Game modal) ───────────────────────────
-async function bggSearchFromModal() {
-  const query = document.getElementById('f-name').value.trim();
-  if (!query) return;
-  const statusEl = document.getElementById('bgg-search-status');
-  const resultsEl = document.getElementById('bgg-search-results');
-  const btn = document.getElementById('bgg-search-btn');
-  statusEl.textContent = '⏳ Searching…';
-  resultsEl.style.display = 'none';
-  resultsEl.innerHTML = '';
-  btn.disabled = true;
+// ── BGG LINK AUTO-FILL (Add Game modal) ───────────────────
+function onBggLinkInput(val) {
+  // Auto-trigger fill as soon as a valid BGG URL is pasted
+  const id = extractBggId(val);
+  if (id) fetchFromBggLink();
+}
 
+function extractBggId(url) {
+  const m = url.match(/boardgamegeek\.com\/boardgame\/(\d+)/);
+  return m ? m[1] : null;
+}
+
+async function fetchFromBggLink() {
+  const url = document.getElementById('f-bgg').value.trim();
+  const id = extractBggId(url);
+  const statusEl = document.getElementById('bgg-search-status');
+  const btn = document.getElementById('bgg-fetch-btn');
+  if (!id) {
+    statusEl.textContent = 'Paste a full BGG URL first, e.g. boardgamegeek.com/boardgame/123/game-name';
+    statusEl.style.color = 'var(--red)';
+    return;
+  }
+  statusEl.textContent = '⏳ Fetching from BGG…';
+  statusEl.style.color = 'var(--muted)';
+  btn.disabled = true;
   try {
-    const searchUrl = `https://boardgamegeek.com/xmlapi2/search?query=${encodeURIComponent(query)}&type=boardgame`;
-    const res = await fetch(searchUrl);
-    if (!res.ok) throw new Error('Search failed');
+    const res = await fetch(`https://boardgamegeek.com/xmlapi2/thing?id=${id}&stats=1`);
+    if (!res.ok) throw new Error('HTTP ' + res.status);
     const text = await res.text();
     const doc = new DOMParser().parseFromString(text, 'text/xml');
-    const items = Array.from(doc.querySelectorAll('item')).slice(0, 8);
-    if (!items.length) { statusEl.textContent = 'No results found.'; btn.disabled = false; return; }
+    const t = doc.querySelector('item');
+    if (!t) throw new Error('Game not found');
 
-    // Fetch stats for all results in one batch call
-    const ids = items.map(i => i.getAttribute('id')).join(',');
-    const thingUrl = `https://boardgamegeek.com/xmlapi2/thing?id=${ids}&stats=1`;
-    const thingRes = await fetch(thingUrl);
-    const thingText = await thingRes.text();
-    const thingDoc = new DOMParser().parseFromString(thingText, 'text/xml');
-    const things = Array.from(thingDoc.querySelectorAll('item'));
+    const name = t.querySelector('name[type="primary"]')?.getAttribute('value') || '';
+    const minP = t.querySelector('minplayers')?.getAttribute('value') || '';
+    const maxP = t.querySelector('maxplayers')?.getAttribute('value') || '';
+    const minT = t.querySelector('minplaytime')?.getAttribute('value') || '';
+    const maxT = t.querySelector('maxplaytime')?.getAttribute('value') || '';
+    const players = minP && maxP && minP !== maxP ? `${minP}–${maxP}` : (minP || '');
+    let time = '';
+    if (minT && maxT && minT !== '0' && maxT !== '0' && minT !== maxT) time = `${minT}–${maxT} min`;
+    else if (maxT && maxT !== '0') time = `${maxT} min`;
+    else if (minT && minT !== '0') time = `${minT} min`;
 
-    const parsed = things.map(t => {
-      const id = t.getAttribute('id');
-      const name = t.querySelector('name[type="primary"]')?.getAttribute('value') || '';
-      const year = t.querySelector('yearpublished')?.getAttribute('value') || '';
-      const minP = t.querySelector('minplayers')?.getAttribute('value') || '';
-      const maxP = t.querySelector('maxplayers')?.getAttribute('value') || '';
-      const minT = t.querySelector('minplaytime')?.getAttribute('value') || '';
-      const maxT = t.querySelector('maxplaytime')?.getAttribute('value') || '';
-      const players = minP && maxP && minP !== maxP ? `${minP}–${maxP}` : (minP || '');
-      let time = '';
-      if (minT && maxT && minT !== '0' && maxT !== '0' && minT !== maxT) time = `${minT}–${maxT} min`;
-      else if (maxT && maxT !== '0') time = `${maxT} min`;
-      else if (minT && minT !== '0') time = `${minT} min`;
+    const cats = Array.from(t.querySelectorAll('link[type="boardgamecategory"]')).map(l=>l.getAttribute('value'));
+    const mechs = Array.from(t.querySelectorAll('link[type="boardgamemechanic"]')).map(l=>l.getAttribute('value'));
+    const typeKeywords = ['Co-operative','Deduction','Party','Trivia','Word','Dice','Deck Building','Worker Placement','Tile Placement','Area Control','Push Your Luck','Hidden Roles'];
+    const themeKeywords = ['Fantasy','Science Fiction','Horror','Adventure','Medieval','Ancient','Nautical','Space Exploration','Wargame','Economic','Environmental'];
+    const leadCats = cats.filter(c => typeKeywords.some(k => c.includes(k)));
+    const themeCats = cats.filter(c => themeKeywords.some(k => c.includes(k)));
+    const mechCats = mechs.filter(m => typeKeywords.some(k => m.includes(k)));
+    const genreParts = [...new Set([...leadCats, ...themeCats, ...mechCats, ...cats])].slice(0, 2);
+    const genre = genreParts.join(' / ');
 
-      // Build genre from BGG categories and mechanics
-      const cats = Array.from(t.querySelectorAll('link[type="boardgamecategory"]')).map(l=>l.getAttribute('value'));
-      const mechs = Array.from(t.querySelectorAll('link[type="boardgamemechanic"]')).map(l=>l.getAttribute('value'));
-      // Priority categories to lead with
-      const typeKeywords = ['Co-operative','Deduction','Party','Trivia','Word','Dice','Deck Building','Worker Placement','Tile Placement','Area Control','Push Your Luck','Hidden Roles'];
-      const themeKeywords = ['Fantasy','Science Fiction','Horror','Adventure','Medieval','Ancient','Nautical','Space Exploration','Wargame','Economic','Environmental'];
-      const leadCats = cats.filter(c => typeKeywords.some(k => c.includes(k)));
-      const themeCats = cats.filter(c => themeKeywords.some(k => c.includes(k)));
-      const mechCats = mechs.filter(m => typeKeywords.some(k => m.includes(k)));
-      // Fallback: just use first 2 categories
-      const genreParts = [...new Set([...leadCats, ...themeCats, ...mechCats, ...cats])].slice(0, 2);
-      const genre = genreParts.join(' / ');
+    if (name) document.getElementById('f-name').value = name;
+    if (players) document.getElementById('f-players').value = players;
+    if (time) document.getElementById('f-time').value = time;
+    if (genre) document.getElementById('f-genre').value = genre;
 
-      return { id, name, year, players, time, genre, bgg: `https://boardgamegeek.com/boardgame/${id}` };
-    }).filter(g => g.name);
-
-    if (!parsed.length) { statusEl.textContent = 'No results found.'; btn.disabled = false; return; }
-
-    statusEl.textContent = '';
-    resultsEl.innerHTML = parsed.map(g => {
-      const safe = esc(JSON.stringify(g));
-      return `<div class="bgg-search-item" onclick='fillFromBgg(${JSON.stringify(g).replace(/'/g,"&#39;")})'>
-        <div class="bgg-search-item-name">${esc(g.name)}${g.year ? ` <span style="font-weight:400;color:var(--muted);">(${esc(g.year)})</span>` : ''}</div>
-        <div class="bgg-search-item-meta">${[g.players ? '👥 '+g.players : '', g.time ? '⏱ '+g.time : ''].filter(Boolean).join(' · ')}</div>
-      </div>`;
-    }).join('');
-    resultsEl.style.display = 'block';
+    statusEl.textContent = '✓ Details filled from BGG';
+    statusEl.style.color = 'var(--played)';
+    setTimeout(() => { statusEl.textContent = ''; }, 3000);
   } catch(e) {
-    statusEl.textContent = '✗ Error: ' + e.message;
-    console.error('BGG search error:', e);
+    statusEl.textContent = '✗ Could not fetch game. Check the BGG link and try again.';
+    statusEl.style.color = 'var(--red)';
+    console.error('BGG fetch error:', e);
   }
   btn.disabled = false;
 }
 
-function fillFromBgg(g) {
-  document.getElementById('f-name').value = g.name;
-  if (g.players) document.getElementById('f-players').value = g.players;
-  if (g.time) document.getElementById('f-time').value = g.time;
-  if (g.bgg) document.getElementById('f-bgg').value = g.bgg;
-  if (g.genre) document.getElementById('f-genre').value = g.genre;
-  document.getElementById('bgg-search-results').style.display = 'none';
-  document.getElementById('bgg-search-status').textContent = '✓ Filled from BGG';
-  setTimeout(() => { document.getElementById('bgg-search-status').textContent = ''; }, 2000);
-}
 
 function getConfig() {
   try { return JSON.parse(localStorage.getItem('shelf-gh-config')||'{}'); } catch(e) { return {}; }
@@ -1376,7 +1357,7 @@ document.getElementById('filter-played').addEventListener('change',render);
 document.getElementById('filter-status').addEventListener('change',render);
 document.getElementById('filter-series').addEventListener('change',render);
 
-function openAddModal(){document.getElementById('modal-title').textContent='Add a game';document.getElementById('edit-id').value='';['name','edition','players','time','genre','series','bgg'].forEach(f=>document.getElementById('f-'+f).value='');document.getElementById('f-copies').value=1;document.getElementById('f-replayable').value='yes';document.getElementById('f-legacy').checked=false;document.getElementById('bgg-search-results').style.display='none';document.getElementById('bgg-search-status').textContent='';document.getElementById('add-modal').classList.add('open');}
+function openAddModal(){document.getElementById('modal-title').textContent='Add a game';document.getElementById('edit-id').value='';['name','edition','players','time','genre','series','bgg'].forEach(f=>document.getElementById('f-'+f).value='');document.getElementById('f-copies').value=1;document.getElementById('f-replayable').value='yes';document.getElementById('f-legacy').checked=false;document.getElementById('bgg-search-status').textContent='';document.getElementById('add-modal').classList.add('open');}
 function openEditModal(id){const g=games.find(x=>x.id===id);if(!g)return;document.getElementById('modal-title').textContent='Edit game';document.getElementById('edit-id').value=id;document.getElementById('f-name').value=g.name;document.getElementById('f-edition').value=g.edition||'';document.getElementById('f-copies').value=g.copies||1;document.getElementById('f-players').value=g.players||'';document.getElementById('f-time').value=g.time||'';document.getElementById('f-genre').value=g.genre||'';document.getElementById('f-series').value=g.series||'';document.getElementById('f-bgg').value=g.bgg||'';document.getElementById('f-replayable').value=g.replayable||'yes';document.getElementById('f-legacy').checked=g.isLegacy||false;document.getElementById('add-modal').classList.add('open');}
 function closeModal(){document.getElementById('add-modal').classList.remove('open');}
 function saveGame(){
