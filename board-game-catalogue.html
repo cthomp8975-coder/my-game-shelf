@@ -589,7 +589,8 @@ async function bggSearchFromModal() {
     }).join('');
     resultsEl.style.display = 'block';
   } catch(e) {
-    statusEl.textContent = '✗ Could not reach BGG. Check your connection.';
+    statusEl.textContent = '✗ Error: ' + e.message;
+    console.error('BGG search error:', e);
   }
   btn.disabled = false;
 }
