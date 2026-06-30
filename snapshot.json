@@ -773,7 +773,7 @@
       }
     ],
     "ownerStatus": "owned",
-    "replayable": "no",
+    "replayable": "yes",
     "isLegacy": false,
     "bgg": "https://boardgamegeek.com/boardgame/68448"
   },
