@@ -178,7 +178,21 @@
   .share-url-wrap { display:flex; gap:8px; margin-top:10px; }
   .share-url { flex:1; padding:9px 12px; border:1px solid var(--border); border-radius:6px; font-size:0.8rem; background:var(--cream); color:var(--muted); font-family:monospace; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
   .share-info { font-size:0.82rem; color:var(--muted); line-height:1.6; margin-top:8px; }
-  @media (max-width:600px) { header,main,.stats-bar { padding-left:16px; padding-right:16px; } #game-grid,.series-grid { grid-template-columns:1fr; } .form-row { grid-template-columns:1fr; } }
+  @media (max-width:600px) {
+    header { padding:10px 16px 0; }
+    main, .stats-bar { padding-left:16px; padding-right:16px; }
+    #game-grid, .series-grid { grid-template-columns:1fr; }
+    .form-row { grid-template-columns:1fr; }
+    .logo-block h1 { font-size:1.3rem; }
+    .logo-block p { display:none; }
+    .header-inner { flex-wrap:nowrap; }
+    .header-controls { display:none; }
+    #mobile-top-bar { display:block !important; }
+    .stats-inner { gap:10px; font-size:0.75rem; }
+    .stat-sep { display:none; }
+  }
+  .mobile-filter-select { width:100%; padding:9px 12px; background:rgba(255,255,255,0.12); border:1px solid rgba(255,255,255,0.2); border-radius:6px; color:#fff; font-size:0.88rem; font-family:'Inter',sans-serif; outline:none; }
+  .mobile-filter-select option { background:var(--felt); color:#fff; }
 </style>
 </head>
 <body>
@@ -210,6 +224,41 @@
       <button id="btn-add-game" class="btn btn-gold" onclick="openAddModal()">+ Add Game</button>
       <button class="btn btn-outline btn-sm" onclick="openBggModal()" title="Import from BoardGameGeek" style="background:rgba(201,168,76,0.15);color:var(--gold);border-color:var(--gold);font-size:0.82rem;padding:7px 12px;">🎲 BGG Import</button>
       <button id="btn-gh-settings" class="btn btn-outline btn-sm" onclick="openGhModal()" title="GitHub sync settings" style="font-size:1rem;padding:7px 10px;">⚙</button>
+    </div>
+  </div>
+  <!-- Mobile filter drawer (hidden by default) -->
+  <div id="mobile-filter-drawer" style="display:none;">
+    <div style="padding:10px 16px 12px;border-top:1px solid rgba(255,255,255,0.1);display:flex;flex-direction:column;gap:8px;">
+      <select class="filter-select" id="filter-status-m" onchange="document.getElementById('filter-status').value=this.value;render();">
+        <option value="">All statuses</option>
+        <option value="owned">✅ Owned</option>
+        <option value="wishlist">⭐ Wishlist</option>
+        <option value="prev-owned">📦 Prev. Owned</option>
+      </select>
+      <select class="filter-select" id="filter-played-m" onchange="document.getElementById('filter-played').value=this.value;render();">
+        <option value="">Played & unplayed</option>
+        <option value="played">Played</option>
+        <option value="unplayed">Not yet played</option>
+      </select>
+      <select class="filter-select" id="filter-series-m" onchange="document.getElementById('filter-series').value=this.value;render();">
+        <option value="">All series</option>
+      </select>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;">
+        <button class="btn btn-gold btn-sm" onclick="openAddModal();toggleMobileFilters();">+ Add Game</button>
+        <button class="btn btn-outline btn-sm" onclick="openBggModal();toggleMobileFilters();" style="background:rgba(201,168,76,0.15);color:var(--gold);border-color:var(--gold);">🎲 BGG Import</button>
+        <button class="btn btn-outline btn-sm" onclick="openGhModal();toggleMobileFilters();" style="color:#fff;border-color:rgba(255,255,255,0.3);">⚙ Sync</button>
+      </div>
+    </div>
+  </div>
+  <!-- Mobile top bar (only shown on mobile via CSS) -->
+  <div id="mobile-top-bar" style="display:none;">
+    <div style="display:flex;gap:8px;align-items:center;padding-top:8px;">
+      <div class="search-wrap" style="flex:1;">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <input type="text" id="search-input-m" placeholder="Search games…" oninput="document.getElementById('search-input').value=this.value;render();">
+      </div>
+      <button id="mobile-filter-btn" onclick="toggleMobileFilters()" style="flex-shrink:0;width:36px;height:36px;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.2);border-radius:6px;cursor:pointer;color:#fff;font-size:1rem;padding:0;font-family:'Inter',sans-serif;" title="Filters">☰</button>
+      <button class="btn btn-gold btn-sm" onclick="openAddModal()" style="flex-shrink:0;white-space:nowrap;">+ Add</button>
     </div>
   </div>
   <div style="max-width:1100px;margin:0 auto;padding:4px 0 0;min-height:18px;">
@@ -517,11 +566,27 @@ function getConfig() {
 function setConfig(c) { localStorage.setItem('shelf-gh-config', JSON.stringify(c)); }
 function isConfigured() { const c=getConfig(); return !!(c.token && c.owner && c.dataRepo); }
 
+// ── MOBILE FILTER DRAWER ──────────────────────────────────
+function toggleMobileFilters() {
+  const drawer = document.getElementById('mobile-filter-drawer');
+  const btn = document.getElementById('mobile-filter-btn');
+  if (!drawer) return;
+  const open = drawer.style.display === 'none' || !drawer.style.display;
+  drawer.style.display = open ? 'block' : 'none';
+  if (btn) btn.style.background = open ? 'rgba(201,168,76,0.3)' : 'rgba(255,255,255,0.12)';
+}
+
 // ── SYNC STATUS UI ────────────────────────────────────────
 function hideEditUI() {
-  document.getElementById('btn-add-game').style.display='none';
-  document.getElementById('btn-share').style.display='none';
-  document.getElementById('btn-gh-settings').style.display='none';
+  ['btn-add-game','btn-share','btn-gh-settings'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.style.display = 'none';
+  });
+  // Hide mobile add button too
+  const mobileAdd = document.querySelector('.mobile-add-btn');
+  if (mobileAdd) mobileAdd.style.display = 'none';
+  const mobileFilterBtn = document.getElementById('mobile-filter-btn');
+  if (mobileFilterBtn) mobileFilterBtn.style.display = 'none';
   document.getElementById('sync-status').style.display='none';
   document.querySelector('.sort-row .share-btn-wrap').innerHTML='<span style="font-size:0.78rem;color:var(--muted);">👁 Viewing shared collection</span>';
 }
@@ -784,9 +849,11 @@ async function load() {
 
 
 function populateSeriesFilter() {
-  const sel = document.getElementById('filter-series');
   const series = [...new Set(games.map(g=>g.series).filter(Boolean))].sort();
-  sel.innerHTML = '<option value="">All series</option>' + series.map(s=>`<option value="${esc(s)}">${esc(s)}</option>`).join('');
+  const opts = '<option value="">All series</option>' + series.map(s=>`<option value="${esc(s)}">${esc(s)}</option>`).join('');
+  document.getElementById('filter-series').innerHTML = opts;
+  const mSel = document.getElementById('filter-series-m');
+  if (mSel) mSel.innerHTML = opts;
 }
 
 function setView(v) {
