@@ -1001,7 +1001,7 @@ function cardHTML(g) {
   allCats.forEach(cat => { if (g.ratings[cat] === undefined) g.ratings[cat] = 0; });
 
   const ratingRows = allCats.map(cat => `
-    <div class="rating-row">
+    <div class="rating-row${cat === REPLAYABILITY_CAT ? ' replayability-row' : ''}">
       <div class="rating-cat">${cat}</div>
       <div class="stars" data-id="${g.id}" data-cat="${cat}">
         ${[1,2,3,4,5].map(n=>`<svg class="star ${(g.ratings[cat]||0)>=n?'filled':''}" data-val="${n}" viewBox="0 0 24 24" fill="${(g.ratings[cat]||0)>=n?'currentColor':'none'}" stroke="currentColor" stroke-width="1.5"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>`).join('')}
