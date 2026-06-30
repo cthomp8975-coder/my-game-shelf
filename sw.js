@@ -1,5 +1,5 @@
-// The Shelf — Service Worker v8
-const CACHE_NAME = 'the-shelf-v13';
+// The Shelf — Service Worker
+const CACHE_NAME = 'the-shelf-v14';
 const ASSETS = [
   '/my-game-shelf/board-game-catalogue.html',
   '/my-game-shelf/manifest.json',
