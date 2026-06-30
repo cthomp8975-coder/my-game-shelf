@@ -13,11 +13,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780981346102,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "wxeufq3s",
@@ -33,7 +38,9 @@
       "Fun": 3,
       "Replayability": 2,
       "Complexity": 1,
-      "Presentation": 2
+      "Presentation": 2,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780981446102,
@@ -43,7 +50,10 @@
         "name": "Curses! Foiled Again",
         "owned": false
       }
-    ]
+    ],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "p0uhn79p",
@@ -59,7 +69,9 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780981546102,
@@ -84,7 +96,10 @@
         "name": "Betrayal at Baldur's Gate",
         "owned": false
       }
-    ]
+    ],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "752ip6y6",
@@ -100,11 +115,16 @@
       "Fun": 4,
       "Replayability": 2,
       "Complexity": 3,
-      "Presentation": 5
+      "Presentation": 5,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780981646102,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "p3hjko1q",
@@ -120,7 +140,9 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780981746102,
@@ -140,7 +162,10 @@
         "name": "Knightly Companions",
         "owned": false
       }
-    ]
+    ],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "udnzpy54",
@@ -156,11 +181,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780981846102,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "g4g21juq",
@@ -176,7 +206,9 @@
       "Fun": 5,
       "Replayability": 3,
       "Complexity": 3,
-      "Presentation": 5
+      "Presentation": 5,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780981946102,
@@ -191,7 +223,10 @@
         "name": "Birds of a Feather Eggspansion",
         "owned": true
       }
-    ]
+    ],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "24jyu3q3",
@@ -207,11 +242,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780982046102,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "k17i7oc1",
@@ -227,11 +267,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780982146102,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "wpp18j83",
@@ -247,7 +292,9 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780982246102,
@@ -257,7 +304,10 @@
         "name": "Rebellion",
         "owned": false
       }
-    ]
+    ],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "fajegn2h",
@@ -273,11 +323,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780982346102,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "1ffdfruz",
@@ -293,11 +348,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780982446102,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "9dhx7tdb",
@@ -313,7 +373,9 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780982546102,
@@ -338,7 +400,10 @@
         "name": "Nature Incarnate",
         "owned": true
       }
-    ]
+    ],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "nyo68ngr",
@@ -354,11 +419,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780982646102,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "lsihsj3b",
@@ -374,11 +444,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780982746102,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "i9t1zxsr",
@@ -394,11 +469,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780982846102,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "kkknscc3",
@@ -411,14 +491,19 @@
     "series": "",
     "played": true,
     "ratings": {
-      "Fun": 0,
+      "Fun": 3,
       "Replayability": 1,
-      "Complexity": 0,
-      "Presentation": 0
+      "Complexity": 2,
+      "Presentation": 3,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Ravensburger",
     "added": 1780982946102,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "dvdiprfw",
@@ -434,7 +519,9 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780983046102,
@@ -454,7 +541,10 @@
         "name": "Mysterium Park",
         "owned": false
       }
-    ]
+    ],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "jf3l80ns",
@@ -470,11 +560,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780983146102,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "wgd7i6d7",
@@ -490,7 +585,9 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780983246102,
@@ -525,7 +622,10 @@
         "name": "The Conspiracy",
         "owned": false
       }
-    ]
+    ],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "mh3tbjox",
@@ -541,11 +641,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780983346102,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "ljz62ak6",
@@ -558,14 +663,19 @@
     "series": "",
     "played": true,
     "ratings": {
-      "Fun": 0,
-      "Replayability": 0,
-      "Complexity": 0,
-      "Presentation": 0
+      "Fun": 4,
+      "Replayability": 2,
+      "Complexity": 3,
+      "Presentation": 5,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Smirk & Dagger",
     "added": 1780983356102,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "yzm2t62h",
@@ -581,11 +691,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Board & Dice",
     "added": 1780983366102,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "a8ihwah9",
@@ -601,7 +716,9 @@
       "Fun": 4,
       "Replayability": 5,
       "Complexity": 3,
-      "Presentation": 3
+      "Presentation": 3,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780983376102,
@@ -631,7 +748,10 @@
         "name": "Edifice",
         "owned": false
       }
-    ]
+    ],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "zeqoltb4",
@@ -647,7 +767,9 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780983377102,
@@ -662,7 +784,10 @@
         "name": "Agora",
         "owned": false
       }
-    ]
+    ],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "nt9wlha6",
@@ -678,11 +803,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Captain Games",
     "added": 1780983386102,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "nshv737j",
@@ -698,11 +828,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "A life-changing board game",
     "added": 1780983396102,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "xlk9tbmk",
@@ -718,7 +853,9 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Keymaster Games",
     "added": 1780983406102,
@@ -728,7 +865,10 @@
         "name": "Playmat",
         "owned": true
       }
-    ]
+    ],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "er68bq9z",
@@ -744,7 +884,9 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Lucky Duck / Cardboard Alchemy",
     "added": 1780983416102,
@@ -754,7 +896,10 @@
         "name": "A La Cart",
         "owned": true
       }
-    ]
+    ],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "idzzq00o",
@@ -770,11 +915,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780983426102,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "ycu4m79n",
@@ -790,7 +940,9 @@
       "Fun": 5,
       "Replayability": 3,
       "Complexity": 3,
-      "Presentation": 4
+      "Presentation": 4,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Inside Up Games",
     "added": 1780983436102,
@@ -805,7 +957,10 @@
         "name": "Underground",
         "owned": false
       }
-    ]
+    ],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "ek4lpluo",
@@ -821,11 +976,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Hot Banana Games",
     "added": 1780983446102,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "6fkd0gzy",
@@ -841,11 +1001,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Days of Wonder",
     "added": 1780983456102,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "ld5gcsg4",
@@ -861,11 +1026,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Ravensburger",
     "added": 1780983466102,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "n0t48hso",
@@ -881,7 +1051,9 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Ravensburger",
     "added": 1780983476102,
@@ -896,7 +1068,10 @@
         "name": "Greek Monsters",
         "owned": false
       }
-    ]
+    ],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "fenkyz8n",
@@ -912,7 +1087,9 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780983486102,
@@ -957,7 +1134,10 @@
         "name": "The Depths",
         "owned": true
       }
-    ]
+    ],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "e9o6c7cd",
@@ -973,7 +1153,9 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Trick or Treat Studios",
     "added": 1780983496102,
@@ -983,7 +1165,10 @@
         "name": "When Laws Fail",
         "owned": false
       }
-    ]
+    ],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "2c5lbk95",
@@ -999,11 +1184,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780983506102,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "tflf389q",
@@ -1019,11 +1209,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Pablosaur",
     "added": 1780983507102,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "h9pcwx4s",
@@ -1039,7 +1234,9 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Modiphius / Bethesda. Still sealed!",
     "added": 1780983508102,
@@ -1059,7 +1256,10 @@
         "name": "The Rise of the Brotherhood",
         "owned": false
       }
-    ]
+    ],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "9p6fbdvx",
@@ -1075,11 +1275,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Flying Frog Productions",
     "added": 1780983509102,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "u11pre85",
@@ -1095,11 +1300,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780983510102,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "gaij13hr",
@@ -1115,11 +1325,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780983511102,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "bjcwdqdi",
@@ -1135,11 +1350,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780983512102,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "v0s617x5",
@@ -1155,7 +1375,9 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780983513102,
@@ -1165,7 +1387,10 @@
         "name": "Sushi Go Party!",
         "owned": false
       }
-    ]
+    ],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "yr2nj5b3",
@@ -1181,11 +1406,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Renegade Game Studios. Still sealed!",
     "added": 1780983514102,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "mitw46zg",
@@ -1201,11 +1431,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Still sealed!",
     "added": 1780983515102,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "0fs1jlfl",
@@ -1221,7 +1456,9 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780983516102,
@@ -1231,7 +1468,10 @@
         "name": "Into the Deep",
         "owned": false
       }
-    ]
+    ],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "p3na4svt",
@@ -1247,11 +1487,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Re-Logic / Paper Fort Games",
     "added": 1780983517102,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "dt6nmahh",
@@ -1267,11 +1512,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "WizKids",
     "added": 1780983518102,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "9w8unvyp",
@@ -1287,7 +1537,9 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780983519102,
@@ -1297,7 +1549,10 @@
         "name": "Labyrinth",
         "owned": true
       }
-    ]
+    ],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "rxyg5qsd",
@@ -1313,11 +1568,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780983520102,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "gmo9hggr",
@@ -1333,11 +1593,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Z-Man Games",
     "added": 1780983521102,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "g72yxxhh",
@@ -1353,11 +1618,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Z-Man Games",
     "added": 1780983522102,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "t1f7yo1e",
@@ -1373,11 +1643,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Z-Man Games",
     "added": 1780983523102,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "azugfcpb",
@@ -1393,11 +1668,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780983524102,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "5giqstoi",
@@ -1413,7 +1693,9 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780983525102,
@@ -1423,7 +1705,10 @@
         "name": "Recharge Pack",
         "owned": false
       }
-    ]
+    ],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "3p6hhjhf",
@@ -1439,11 +1724,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780983526102,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "bhdg6b7c",
@@ -1459,7 +1749,9 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780983528102,
@@ -1474,7 +1766,10 @@
         "name": "Buttons & Bugs Solo Mode",
         "owned": false
       }
-    ]
+    ],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "i7toi2ee",
@@ -1490,11 +1785,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Standalone follow-up to Calico. AEG / Flatout Games.",
     "added": 1780983529102,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "ugro9rxi",
@@ -1510,11 +1810,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780983530102,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "yvzx9gra",
@@ -1530,11 +1835,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780983531102,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "u1mnoyry",
@@ -1550,11 +1860,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780983532102,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "fvh795v0",
@@ -1570,11 +1885,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780983533102,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "mxoeicco",
@@ -1590,11 +1910,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780983534102,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "1ir30hvv",
@@ -1610,11 +1935,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780983535102,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "53li7v2a",
@@ -1630,7 +1960,9 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780983536102,
@@ -1650,7 +1982,10 @@
         "name": "Lethal Immortals",
         "owned": true
       }
-    ]
+    ],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "11x09d9w",
@@ -1666,11 +2001,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Unexpected Games",
     "added": 1780983537102,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "60hput48",
@@ -1686,11 +2026,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780983538102,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "ew8vecfw",
@@ -1706,7 +2051,9 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Fantasy Flight Games",
     "added": 1780983539102,
@@ -1741,7 +2088,10 @@
         "name": "What Lies Within",
         "owned": false
       }
-    ]
+    ],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "rxtzrrh3",
@@ -1757,7 +2107,9 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Upper Deck",
     "added": 1780983540102,
@@ -1812,7 +2164,10 @@
         "name": "Villains",
         "owned": false
       }
-    ]
+    ],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "hx2fpt62",
@@ -1828,7 +2183,9 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780983541102,
@@ -1863,7 +2220,10 @@
         "name": "Vagabond Pack",
         "owned": false
       }
-    ]
+    ],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "2hizhsvp",
@@ -1879,7 +2239,9 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780983542102,
@@ -1929,7 +2291,10 @@
         "name": "The Feast of Hemlock Vale",
         "owned": false
       }
-    ]
+    ],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "v8tpo02k",
@@ -1945,11 +2310,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Blue Cocker",
     "added": 1780983543102,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "r75vtuin",
@@ -1965,11 +2335,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Cephalofair. Solo only.",
     "added": 1780983544102,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "lkljqfy6",
@@ -1985,7 +2360,9 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780983544602,
@@ -2010,7 +2387,10 @@
         "name": "Innsmouth Horror",
         "owned": false
       }
-    ]
+    ],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "5o5erirn",
@@ -2026,7 +2406,9 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Fantasy Flight Games",
     "added": 1780983545102,
@@ -2036,7 +2418,10 @@
         "name": "The Betrayer's War",
         "owned": true
       }
-    ]
+    ],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "x49xru97",
@@ -2052,7 +2437,9 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Days of Wonder",
     "added": 1780983545302,
@@ -2072,7 +2459,10 @@
         "name": "Rough Roads",
         "owned": false
       }
-    ]
+    ],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "wozq4p2j",
@@ -2088,7 +2478,9 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780983545402,
@@ -2113,7 +2505,10 @@
         "name": "Distant Skies",
         "owned": false
       }
-    ]
+    ],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "ro9hg418",
@@ -2129,7 +2524,9 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780983545502,
@@ -2149,7 +2546,10 @@
         "name": "Friends & Family",
         "owned": true
       }
-    ]
+    ],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "djsu9whk",
@@ -2165,11 +2565,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Engelstein Media. 14+",
     "added": 1780983545602,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "ep4hjf8m",
@@ -2185,11 +2590,16 @@
       "Fun": 5,
       "Replayability": 5,
       "Complexity": 1,
-      "Presentation": 5
+      "Presentation": 5,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Flatout Games",
     "added": 1780983545712,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "xbd0pmu0",
@@ -2205,7 +2615,9 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780983545722,
@@ -2220,7 +2632,10 @@
         "name": "Downstream",
         "owned": false
       }
-    ]
+    ],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "tznnyxgv",
@@ -2236,11 +2651,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Renegade Game Studios. 12+",
     "added": 1780983545732,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "j7l7uvra",
@@ -2256,7 +2676,9 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780983545742,
@@ -2291,7 +2713,10 @@
         "name": "Glimmergold",
         "owned": false
       }
-    ]
+    ],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "zxg5htoi",
@@ -2307,11 +2732,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "A puzzletale",
     "added": 1780983545752,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "hviamlkm",
@@ -2327,7 +2757,9 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780983545762,
@@ -2412,7 +2844,10 @@
         "name": "Enchanted Adventures",
         "owned": true
       }
-    ]
+    ],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "717zw722",
@@ -2428,11 +2863,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Flying Frog Productions. Standalone core set.",
     "added": 1780983545772,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "2z0tb7yu",
@@ -2448,11 +2888,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Big Potato Games",
     "added": 1780983545782,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "3n2iebzu",
@@ -2468,11 +2913,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780983545792,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "zx8xs2lg",
@@ -2488,11 +2938,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "The game where minds think alike",
     "added": 1780983545802,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "22h38bzt",
@@ -2508,11 +2963,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Tokaido follow-up by Funforge",
     "added": 1780983545812,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "muec16w6",
@@ -2528,11 +2988,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Days of Wonder",
     "added": 1780983545822,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "xdt86zme",
@@ -2548,11 +3013,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Underdog Games",
     "added": 1780983545832,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "u9kfqqsv",
@@ -2568,11 +3038,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780983545842,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "ak0hedgy",
@@ -2588,11 +3063,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Soda Pop Miniatures",
     "added": 1780983545852,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "alieeq1k",
@@ -2608,11 +3088,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Ravensburger. 9+",
     "added": 1780983545862,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "a161dufb",
@@ -2628,11 +3113,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Alea",
     "added": 1780983545872,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "09n7azv0",
@@ -2648,11 +3138,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780983545882,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "ysc2jo8i",
@@ -2668,11 +3163,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "The hilarious challenges of family & party game",
     "added": 1780983545892,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "k176xa9g",
@@ -2688,11 +3188,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780983545902,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "fetw9kbr",
@@ -2708,11 +3213,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780983545903,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "iz245v9p",
@@ -2728,11 +3238,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780983545904,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "goauee5u",
@@ -2748,11 +3263,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780983545905,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "qffssoxl",
@@ -2768,7 +3288,9 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Klaus Teuber",
     "added": 1780983545906,
@@ -2798,7 +3320,10 @@
         "name": "Legend of the Conquerors",
         "owned": false
       }
-    ]
+    ],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "wifq22l3",
@@ -2814,11 +3339,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "ThinkFun. Play in the dark!",
     "added": 1780983545907,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "kqmre3a2",
@@ -2834,7 +3364,9 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Keith Matejka",
     "added": 1780983545908,
@@ -2854,7 +3386,10 @@
         "name": "Undead & Unstoppable",
         "owned": false
       }
-    ]
+    ],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "c3n70tnl",
@@ -2870,11 +3405,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780983545909,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "lr1sktxf",
@@ -2890,11 +3430,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780983545910,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "bml9olk2",
@@ -2910,11 +3455,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780983545911,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "bbk1ue57",
@@ -2930,11 +3480,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Indie Boards & Cards",
     "added": 1780983545912,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "p4vl0nzx",
@@ -2950,11 +3505,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780983545913,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "yleowr7z",
@@ -2970,11 +3530,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "A game of goblins & gold",
     "added": 1780983545914,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "uvtp8puk",
@@ -2990,11 +3555,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Julibert",
     "added": 1780983545915,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "5nxqch9c",
@@ -3010,11 +3580,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Slugfest Games",
     "added": 1780983545916,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "lckge3n2",
@@ -3030,11 +3605,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Slugfest Games",
     "added": 1780983545917,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "8isvh4vy",
@@ -3050,11 +3630,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "AEG",
     "added": 1780983545918,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "esaw19hx",
@@ -3070,7 +3655,9 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Ted Alspach / Bezier Games",
     "added": 1780983545919,
@@ -3085,7 +3672,10 @@
         "name": "Moat",
         "owned": false
       }
-    ]
+    ],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "1zk7z5hh",
@@ -3101,11 +3691,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Alley Cat Games",
     "added": 1780983545920,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "r8jwf0rk",
@@ -3121,11 +3716,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Yves Tourigny",
     "added": 1780983545921,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "lnuv2a63",
@@ -3141,11 +3741,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "AEG",
     "added": 1780983545922,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "tnpjo66f",
@@ -3161,11 +3766,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Alan R. Moon / Days of Wonder. Original 2004 edition.",
     "added": 1780983545923,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "ezltjd9p",
@@ -3181,11 +3791,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780983545924,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "jtk3w6y0",
@@ -3201,11 +3816,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Hasbro",
     "added": 1780983545925,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "zfqzn6em",
@@ -3221,11 +3841,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Bezier Games",
     "added": 1780983545926,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "6h7ije1s",
@@ -3241,11 +3866,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Build a unicorn army. Betray your friends.",
     "added": 1780983545927,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "rc3z2f2c",
@@ -3261,11 +3891,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "It's about to get personal",
     "added": 1780983545928,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "6o40p9qx",
@@ -3281,11 +3916,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780983545929,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "z3s3guen",
@@ -3301,11 +3941,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Uwe Rosenberg / Lookout Games. 12+",
     "added": 1780983545930,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "a36ps0g4",
@@ -3321,11 +3966,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780983545931,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "qzbqix5f",
@@ -3341,11 +3991,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Blend in. Don't get caught.",
     "added": 1780983545932,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "prgmqxr9",
@@ -3361,11 +4016,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "AEG",
     "added": 1780983545933,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "zk3i5v0u",
@@ -3381,7 +4041,9 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780983545934,
@@ -3426,7 +4088,10 @@
         "name": "Munchkin",
         "owned": true
       }
-    ]
+    ],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "xe2id5cr",
@@ -3442,11 +4107,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "14+",
     "added": 1780983545935,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "53sq4xkx",
@@ -3462,11 +4132,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Winning Moves Games",
     "added": 1780983545936,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "yyucmwvn",
@@ -3482,11 +4157,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Hasbro. Pop-O-Matic Trouble variant.",
     "added": 1780983545937,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "68bsrwe3",
@@ -3502,7 +4182,9 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780983545938,
@@ -3522,7 +4204,10 @@
         "name": "Barking Kittens",
         "owned": false
       }
-    ]
+    ],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "5adps2qk",
@@ -3538,11 +4223,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Part of the Nordic Heritage collection.",
     "added": 1780983545939,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "a2nay7ji",
@@ -3558,7 +4248,9 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780983545940,
@@ -3573,7 +4265,10 @@
         "name": "The Bullet",
         "owned": false
       }
-    ]
+    ],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "8xp635st",
@@ -3589,11 +4284,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780983545941,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "m7w7pd1z",
@@ -3609,11 +4309,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780983545942,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "qm24p92n",
@@ -3629,11 +4334,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780983545943,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "i5obfbto",
@@ -3646,10 +4356,12 @@
     "series": "",
     "played": true,
     "ratings": {
-      "Fun": 0,
+      "Fun": 3,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780983545944,
@@ -3659,7 +4371,10 @@
         "name": "Expansion Pack",
         "owned": false
       }
-    ]
+    ],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "mdft905i",
@@ -3675,11 +4390,16 @@
       "Fun": 0,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "added": 1780983545949,
-    "expansions": []
+    "expansions": [],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "8g0jmuv5",
@@ -3693,9 +4413,11 @@
     "played": true,
     "ratings": {
       "Fun": 0,
-      "Replayability": 0,
+      "Replayability": 2,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "Chip Theory Games",
     "added": 1780983545950,
@@ -3715,7 +4437,10 @@
         "name": "Age of Tyranny",
         "owned": false
       }
-    ]
+    ],
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
   },
   {
     "id": "twspmois",
@@ -3729,12 +4454,42 @@
     "played": true,
     "ratings": {
       "Fun": 0,
-      "Replayability": 0,
+      "Replayability": 1,
       "Complexity": 0,
-      "Presentation": 0
+      "Presentation": 0,
+      "Mechanics": 0,
+      "Theme": 0
     },
     "notes": "",
     "expansions": [],
-    "added": 1780986314740
+    "added": 1780986314740,
+    "ownerStatus": "owned",
+    "replayable": "yes",
+    "isLegacy": false
+  },
+  {
+    "id": "kf8mnp9s",
+    "name": "Cozy Cat Cafe",
+    "edition": "",
+    "copies": 1,
+    "players": "",
+    "time": "",
+    "genre": "",
+    "series": "",
+    "bgg": "https://boardgamegeek.com/boardgame/439361/cozy-cat-cafe",
+    "complexity": 0,
+    "replayable": "yes",
+    "isLegacy": false,
+    "played": false,
+    "ratings": {
+      "Fun": 0,
+      "Mechanics": 0,
+      "Theme": 0,
+      "Presentation": 0,
+      "Replayability": 0
+    },
+    "notes": "",
+    "expansions": [],
+    "added": 1782778178565
   }
 ]
