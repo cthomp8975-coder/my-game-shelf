@@ -40,7 +40,8 @@
       "Complexity": 1,
       "Presentation": 5,
       "Mechanics": 1,
-      "Theme": 4
+      "Theme": 4,
+      "Replayability": 5
     },
     "notes": "Spin Master.",
     "added": 1780981446102,
@@ -52,7 +53,7 @@
       }
     ],
     "ownerStatus": "owned",
-    "replayable": "no",
+    "replayable": "yes",
     "isLegacy": false,
     "bgg": "https://boardgamegeek.com/boardgame/207830",
     "complexity": 1
