@@ -37,10 +37,9 @@
     "played": true,
     "ratings": {
       "Fun": 3,
-      "Replayability": 2,
       "Complexity": 1,
       "Presentation": 5,
-      "Mechanics": 0,
+      "Mechanics": 1,
       "Theme": 4
     },
     "notes": "Spin Master.",
