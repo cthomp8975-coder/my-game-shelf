@@ -52,7 +52,7 @@
         "owned": false
       }
     ],
-    "ownerStatus": "owned",
+    "ownerStatus": "prev-owned",
     "replayable": "yes",
     "isLegacy": false,
     "bgg": "https://boardgamegeek.com/boardgame/207830"
