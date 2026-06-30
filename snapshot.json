@@ -22,7 +22,8 @@
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "wxeufq3s",
@@ -42,7 +43,7 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "",
+    "notes": "Spin Master.",
     "added": 1780981446102,
     "expansions": [
       {
@@ -53,7 +54,8 @@
     ],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/207830"
   },
   {
     "id": "p0uhn79p",
@@ -73,7 +75,7 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "",
+    "notes": "Avalon Hill.",
     "added": 1780981546102,
     "expansions": [
       {
@@ -99,7 +101,8 @@
     ],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/10547"
   },
   {
     "id": "752ip6y6",
@@ -124,7 +127,8 @@
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/338988"
   },
   {
     "id": "p3hjko1q",
@@ -144,7 +148,7 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "",
+    "notes": "Rebel Studio.",
     "added": 1780981746102,
     "expansions": [
       {
@@ -165,7 +169,8 @@
     ],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "udnzpy54",
@@ -185,12 +190,13 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "",
+    "notes": "iello.",
     "added": 1780981846102,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "g4g21juq",
@@ -199,7 +205,7 @@
     "copies": 1,
     "players": "1-5",
     "time": "25 min/player",
-    "genre": "Strategy",
+    "genre": "Strategy / Bird",
     "series": "",
     "played": true,
     "ratings": {
@@ -210,7 +216,7 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "",
+    "notes": "Devir Games.",
     "added": 1780981946102,
     "expansions": [
       {
@@ -226,7 +232,8 @@
     ],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "24jyu3q3",
@@ -234,7 +241,7 @@
     "edition": "",
     "copies": 1,
     "players": "2+",
-    "time": "",
+    "time": "30-60 min",
     "genre": "Trivia",
     "series": "Games Room",
     "played": true,
@@ -251,7 +258,8 @@
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "k17i7oc1",
@@ -259,7 +267,7 @@
     "edition": "",
     "copies": 1,
     "players": "1 team",
-    "time": "",
+    "time": "30 min",
     "genre": "Party / Observation",
     "series": "",
     "played": true,
@@ -276,7 +284,8 @@
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "wpp18j83",
@@ -296,7 +305,7 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "",
+    "notes": "Libellud.",
     "added": 1780982246102,
     "expansions": [
       {
@@ -307,15 +316,16 @@
     ],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/194594"
   },
   {
     "id": "fajegn2h",
     "name": "Potions of Azerland",
     "edition": "",
     "copies": 1,
-    "players": "",
-    "time": "",
+    "players": "2-4",
+    "time": "30-45 min",
     "genre": "Fantasy / Strategy",
     "series": "",
     "played": true,
@@ -332,7 +342,8 @@
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "1ffdfruz",
@@ -340,7 +351,7 @@
     "edition": "",
     "copies": 1,
     "players": "1-4",
-    "time": "",
+    "time": "30-60 min",
     "genre": "Co-op / Codebreaking",
     "series": "",
     "played": true,
@@ -352,12 +363,13 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "",
+    "notes": "Unexpected Games.",
     "added": 1780982446102,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "9dhx7tdb",
@@ -377,7 +389,7 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "",
+    "notes": "Greater Than Games.",
     "added": 1780982546102,
     "expansions": [
       {
@@ -403,7 +415,8 @@
     ],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/162886"
   },
   {
     "id": "nyo68ngr",
@@ -411,7 +424,7 @@
     "edition": "First Edition",
     "copies": 1,
     "players": "2+",
-    "time": "",
+    "time": "30-60 min",
     "genre": "Trivia",
     "series": "Games Room",
     "played": true,
@@ -428,7 +441,8 @@
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "lsihsj3b",
@@ -436,7 +450,7 @@
     "edition": "Second Edition",
     "copies": 1,
     "players": "2+",
-    "time": "",
+    "time": "30-60 min",
     "genre": "Trivia",
     "series": "Games Room",
     "played": true,
@@ -453,15 +467,16 @@
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "i9t1zxsr",
     "name": "Magical Kitties Save the Day!",
     "edition": "",
     "copies": 1,
-    "players": "2+",
-    "time": "",
+    "players": "2-6",
+    "time": "60-90 min",
     "genre": "RPG",
     "series": "",
     "played": false,
@@ -473,12 +488,13 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "",
+    "notes": "Atlas Games.",
     "added": 1780982846102,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "kkknscc3",
@@ -498,12 +514,13 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "Ravensburger",
+    "notes": "Ravensburger.",
     "added": 1780982946102,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "dvdiprfw",
@@ -523,7 +540,7 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "",
+    "notes": "Libellud.",
     "added": 1780983046102,
     "expansions": [
       {
@@ -544,7 +561,8 @@
     ],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/181304"
   },
   {
     "id": "jf3l80ns",
@@ -564,12 +582,13 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "",
+    "notes": "Libellud.",
     "added": 1780983146102,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/273477"
   },
   {
     "id": "wgd7i6d7",
@@ -589,7 +608,7 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "",
+    "notes": "Lucky Duck.",
     "added": 1780983246102,
     "expansions": [
       {
@@ -625,7 +644,8 @@
     ],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/239188"
   },
   {
     "id": "mh3tbjox",
@@ -645,12 +665,13 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "",
+    "notes": "Grail Games.",
     "added": 1780983346102,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "ljz62ak6",
@@ -670,21 +691,22 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "Smirk & Dagger",
+    "notes": "Smirk & Dagger.",
     "added": 1780983356102,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "yzm2t62h",
     "name": "Windmill Valley",
     "edition": "",
     "copies": 1,
-    "players": "",
-    "time": "",
-    "genre": "Strategy",
+    "players": "1-4",
+    "time": "60-90 min",
+    "genre": "Strategy / Nature",
     "series": "",
     "played": true,
     "ratings": {
@@ -695,12 +717,13 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "Board & Dice",
+    "notes": "Board & Dice.",
     "added": 1780983366102,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "a8ihwah9",
@@ -709,7 +732,7 @@
     "copies": 1,
     "players": "2-7",
     "time": "30 min",
-    "genre": "Strategy / Card",
+    "genre": "Strategy / Card Drafting",
     "series": "7 Wonders",
     "played": true,
     "ratings": {
@@ -720,7 +743,7 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "",
+    "notes": "Repos Production.",
     "added": 1780983376102,
     "expansions": [
       {
@@ -751,7 +774,8 @@
     ],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/68448"
   },
   {
     "id": "zeqoltb4",
@@ -760,7 +784,7 @@
     "copies": 1,
     "players": "2",
     "time": "30 min",
-    "genre": "Strategy / Card",
+    "genre": "Strategy / Card Drafting",
     "series": "7 Wonders",
     "played": true,
     "ratings": {
@@ -771,7 +795,7 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "",
+    "notes": "Repos Production.",
     "added": 1780983377102,
     "expansions": [
       {
@@ -787,7 +811,8 @@
     ],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/173346"
   },
   {
     "id": "nt9wlha6",
@@ -807,12 +832,13 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "Captain Games",
+    "notes": "Captain Games.",
     "added": 1780983386102,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "nshv737j",
@@ -832,12 +858,13 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "A life-changing board game",
+    "notes": "A life-changing board game.",
     "added": 1780983396102,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "xlk9tbmk",
@@ -846,7 +873,7 @@
     "copies": 1,
     "players": "1-4",
     "time": "30-70 min",
-    "genre": "Strategy",
+    "genre": "Strategy / Farming",
     "series": "",
     "played": true,
     "ratings": {
@@ -857,7 +884,7 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "Keymaster Games",
+    "notes": "Keymaster Games.",
     "added": 1780983406102,
     "expansions": [
       {
@@ -868,15 +895,16 @@
     ],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "er68bq9z",
     "name": "Critter Kitchen",
     "edition": "",
     "copies": 1,
-    "players": "",
-    "time": "",
+    "players": "2-5",
+    "time": "30-45 min",
     "genre": "Family / Cooking",
     "series": "",
     "played": true,
@@ -888,7 +916,7 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "Lucky Duck / Cardboard Alchemy",
+    "notes": "Lucky Duck / Cardboard Alchemy.",
     "added": 1780983416102,
     "expansions": [
       {
@@ -899,16 +927,17 @@
     ],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "idzzq00o",
     "name": "Fromage",
     "edition": "",
     "copies": 1,
-    "players": "",
-    "time": "",
-    "genre": "Strategy",
+    "players": "2-5",
+    "time": "20-40 min",
+    "genre": "Strategy / Card",
     "series": "",
     "played": true,
     "ratings": {
@@ -919,12 +948,13 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "",
+    "notes": "Birdwood Games.",
     "added": 1780983426102,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "ycu4m79n",
@@ -944,7 +974,7 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "Inside Up Games",
+    "notes": "Inside Up Games.",
     "added": 1780983436102,
     "expansions": [
       {
@@ -960,15 +990,16 @@
     ],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/350184"
   },
   {
     "id": "ek4lpluo",
     "name": "Steam Up: A Feast of Dim Sum",
     "edition": "Deluxe Edition",
     "copies": 1,
-    "players": "",
-    "time": "",
+    "players": "1-5",
+    "time": "45-75 min",
     "genre": "Strategy / Cooking",
     "series": "",
     "played": true,
@@ -980,12 +1011,13 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "Hot Banana Games",
+    "notes": "Hot Banana Games. Deluxe Edition.",
     "added": 1780983446102,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "6fkd0gzy",
@@ -1005,12 +1037,13 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "Days of Wonder",
+    "notes": "Days of Wonder.",
     "added": 1780983456102,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/14996"
   },
   {
     "id": "ld5gcsg4",
@@ -1030,12 +1063,13 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "Ravensburger",
+    "notes": "Ravensburger.",
     "added": 1780983466102,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "n0t48hso",
@@ -1055,7 +1089,7 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "Ravensburger",
+    "notes": "Ravensburger.",
     "added": 1780983476102,
     "expansions": [
       {
@@ -1071,7 +1105,8 @@
     ],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/282524"
   },
   {
     "id": "fenkyz8n",
@@ -1091,7 +1126,7 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "",
+    "notes": "Indie Boards & Cards.",
     "added": 1780983486102,
     "expansions": [
       {
@@ -1137,7 +1172,8 @@
     ],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/191189"
   },
   {
     "id": "e9o6c7cd",
@@ -1145,7 +1181,7 @@
     "edition": "",
     "copies": 1,
     "players": "1-5",
-    "time": "",
+    "time": "60-120 min",
     "genre": "Co-op / Mystery",
     "series": "",
     "played": true,
@@ -1157,7 +1193,7 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "Trick or Treat Studios",
+    "notes": "Trick or Treat Studios.",
     "added": 1780983496102,
     "expansions": [
       {
@@ -1168,7 +1204,8 @@
     ],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "2c5lbk95",
@@ -1188,21 +1225,22 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "",
+    "notes": "Dolphin Hat Games.",
     "added": 1780983506102,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/264045"
   },
   {
     "id": "tflf389q",
     "name": "Far Away",
     "edition": "",
     "copies": 1,
-    "players": "",
-    "time": "",
-    "genre": "Adventure",
+    "players": "2-4",
+    "time": "30-60 min",
+    "genre": "Adventure / Exploration",
     "series": "",
     "played": false,
     "ratings": {
@@ -1213,12 +1251,13 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "Pablosaur",
+    "notes": "Pablosaur.",
     "added": 1780983507102,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "h9pcwx4s",
@@ -1259,7 +1298,8 @@
     ],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/352297"
   },
   {
     "id": "9p6fbdvx",
@@ -1279,20 +1319,21 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "Flying Frog Productions",
+    "notes": "Flying Frog Productions.",
     "added": 1780983509102,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/150997"
   },
   {
     "id": "u11pre85",
     "name": "Tea Witches",
     "edition": "",
     "copies": 1,
-    "players": "",
-    "time": "",
+    "players": "1-4",
+    "time": "30-60 min",
     "genre": "Co-op / Cozy",
     "series": "",
     "played": false,
@@ -1309,7 +1350,8 @@
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "gaij13hr",
@@ -1329,12 +1371,13 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "",
+    "notes": "Plaid Hat Games.",
     "added": 1780983511102,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/256680"
   },
   {
     "id": "bjcwdqdi",
@@ -1354,12 +1397,13 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "",
+    "notes": "Slugfest Games.",
     "added": 1780983512102,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "v0s617x5",
@@ -1368,7 +1412,7 @@
     "copies": 1,
     "players": "2-5",
     "time": "15 min",
-    "genre": "Card / Family",
+    "genre": "Card Drafting / Family",
     "series": "",
     "played": true,
     "ratings": {
@@ -1379,7 +1423,7 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "",
+    "notes": "Gamewright.",
     "added": 1780983513102,
     "expansions": [
       {
@@ -1390,7 +1434,8 @@
     ],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/133473"
   },
   {
     "id": "yr2nj5b3",
@@ -1404,7 +1449,6 @@
     "played": false,
     "ratings": {
       "Fun": 0,
-      "Replayability": 0,
       "Complexity": 0,
       "Presentation": 0,
       "Mechanics": 0,
@@ -1414,8 +1458,9 @@
     "added": 1780983514102,
     "expansions": [],
     "ownerStatus": "owned",
-    "replayable": "yes",
-    "isLegacy": false
+    "replayable": "no",
+    "isLegacy": true,
+    "bgg": ""
   },
   {
     "id": "mitw46zg",
@@ -1423,7 +1468,7 @@
     "edition": "",
     "copies": 1,
     "players": "1-4",
-    "time": "",
+    "time": "60-90 min",
     "genre": "Horror / Adventure",
     "series": "",
     "played": false,
@@ -1435,20 +1480,21 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "Still sealed!",
+    "notes": "Final Frontier Games. Still sealed!",
     "added": 1780983515102,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "0fs1jlfl",
     "name": "Deep Rock Galactic: Danger. Darkness. Dwarves.",
     "edition": "2nd Edition",
     "copies": 1,
-    "players": "",
-    "time": "",
+    "players": "1-4",
+    "time": "45-90 min",
     "genre": "Co-op / Dungeon Crawler",
     "series": "",
     "played": true,
@@ -1471,7 +1517,8 @@
     ],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "p3na4svt",
@@ -1491,20 +1538,21 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "Re-Logic / Paper Fort Games",
+    "notes": "Re-Logic / Paper Fort Games.",
     "added": 1780983517102,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "dt6nmahh",
     "name": "Tales of the Arthurian Knights",
     "edition": "",
     "copies": 1,
-    "players": "",
-    "time": "",
+    "players": "1-4",
+    "time": "60-90 min",
     "genre": "Adventure / Story",
     "series": "",
     "played": true,
@@ -1516,12 +1564,13 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "WizKids",
+    "notes": "WizKids.",
     "added": 1780983518102,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "9w8unvyp",
@@ -1552,7 +1601,8 @@
     ],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "rxyg5qsd",
@@ -1572,12 +1622,13 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "",
+    "notes": "The City of Games.",
     "added": 1780983520102,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "gmo9hggr",
@@ -1591,18 +1642,18 @@
     "played": false,
     "ratings": {
       "Fun": 0,
-      "Replayability": 0,
       "Complexity": 0,
       "Presentation": 0,
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "Z-Man Games",
+    "notes": "Z-Man Games.",
     "added": 1780983521102,
     "expansions": [],
     "ownerStatus": "owned",
-    "replayable": "yes",
-    "isLegacy": false
+    "replayable": "no",
+    "isLegacy": true,
+    "bgg": "https://boardgamegeek.com/boardgame/314040"
   },
   {
     "id": "g72yxxhh",
@@ -1616,18 +1667,18 @@
     "played": true,
     "ratings": {
       "Fun": 0,
-      "Replayability": 0,
       "Complexity": 0,
       "Presentation": 0,
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "Z-Man Games",
+    "notes": "Z-Man Games.",
     "added": 1780983522102,
     "expansions": [],
     "ownerStatus": "owned",
-    "replayable": "yes",
-    "isLegacy": false
+    "replayable": "no",
+    "isLegacy": true,
+    "bgg": "https://boardgamegeek.com/boardgame/161936"
   },
   {
     "id": "t1f7yo1e",
@@ -1641,18 +1692,18 @@
     "played": false,
     "ratings": {
       "Fun": 0,
-      "Replayability": 0,
       "Complexity": 0,
       "Presentation": 0,
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "Z-Man Games",
+    "notes": "Z-Man Games.",
     "added": 1780983523102,
     "expansions": [],
     "ownerStatus": "owned",
-    "replayable": "yes",
-    "isLegacy": false
+    "replayable": "no",
+    "isLegacy": true,
+    "bgg": "https://boardgamegeek.com/boardgame/221107"
   },
   {
     "id": "azugfcpb",
@@ -1666,18 +1717,18 @@
     "played": true,
     "ratings": {
       "Fun": 0,
-      "Replayability": 0,
       "Complexity": 0,
       "Presentation": 0,
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "",
+    "notes": "Renegade Game Studios.",
     "added": 1780983524102,
     "expansions": [],
     "ownerStatus": "owned",
-    "replayable": "yes",
-    "isLegacy": false
+    "replayable": "no",
+    "isLegacy": true,
+    "bgg": ""
   },
   {
     "id": "5giqstoi",
@@ -1691,13 +1742,12 @@
     "played": true,
     "ratings": {
       "Fun": 0,
-      "Replayability": 0,
       "Complexity": 0,
       "Presentation": 0,
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "",
+    "notes": "Stonemaier Games.",
     "added": 1780983525102,
     "expansions": [
       {
@@ -1707,8 +1757,9 @@
       }
     ],
     "ownerStatus": "owned",
-    "replayable": "yes",
-    "isLegacy": false
+    "replayable": "no",
+    "isLegacy": true,
+    "bgg": "https://boardgamegeek.com/boardgame/197376"
   },
   {
     "id": "3p6hhjhf",
@@ -1728,12 +1779,13 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "",
+    "notes": "Starling Games.",
     "added": 1780983526102,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "bhdg6b7c",
@@ -1753,7 +1805,7 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "",
+    "notes": "Cephalofair.",
     "added": 1780983528102,
     "expansions": [
       {
@@ -1769,7 +1821,8 @@
     ],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/295770"
   },
   {
     "id": "i7toi2ee",
@@ -1789,12 +1842,13 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "Standalone follow-up to Calico. AEG / Flatout Games.",
+    "notes": "AEG / Flatout Games. Standalone follow-up to Calico.",
     "added": 1780983529102,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "ugro9rxi",
@@ -1819,7 +1873,8 @@
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/285547"
   },
   {
     "id": "yvzx9gra",
@@ -1844,7 +1899,8 @@
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "u1mnoyry",
@@ -1864,12 +1920,13 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "",
+    "notes": "Z-Man Games.",
     "added": 1780983532102,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "fvh795v0",
@@ -1877,7 +1934,7 @@
     "edition": "",
     "copies": 1,
     "players": "2",
-    "time": "",
+    "time": "30-60 min",
     "genre": "Party / Social",
     "series": "",
     "played": true,
@@ -1894,7 +1951,8 @@
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "mxoeicco",
@@ -1902,7 +1960,7 @@
     "edition": "",
     "copies": 1,
     "players": "2",
-    "time": "",
+    "time": "30-60 min",
     "genre": "Party / Social",
     "series": "",
     "played": true,
@@ -1919,7 +1977,8 @@
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "1ir30hvv",
@@ -1939,12 +1998,13 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "",
+    "notes": "Letiman Games.",
     "added": 1780983535102,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "53li7v2a",
@@ -1952,7 +2012,7 @@
     "edition": "Collector's Big Box",
     "copies": 1,
     "players": "1-4",
-    "time": "",
+    "time": "45-90 min",
     "genre": "Horror / Co-op",
     "series": "",
     "played": true,
@@ -1985,15 +2045,16 @@
     ],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "11x09d9w",
     "name": "Cozy Stickerville",
     "edition": "",
     "copies": 1,
-    "players": "",
-    "time": "",
+    "players": "1-4",
+    "time": "20-40 min",
     "genre": "Cozy / Puzzle",
     "series": "",
     "played": true,
@@ -2005,21 +2066,22 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "Unexpected Games",
+    "notes": "Unexpected Games.",
     "added": 1780983537102,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "60hput48",
     "name": "Creature Caravan",
     "edition": "",
     "copies": 1,
-    "players": "",
-    "time": "",
-    "genre": "Adventure",
+    "players": "1-4",
+    "time": "45-75 min",
+    "genre": "Adventure / Family",
     "series": "",
     "played": true,
     "ratings": {
@@ -2035,7 +2097,8 @@
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "ew8vecfw",
@@ -2055,7 +2118,7 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "Fantasy Flight Games",
+    "notes": "Fantasy Flight Games.",
     "added": 1780983539102,
     "expansions": [
       {
@@ -2091,7 +2154,8 @@
     ],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/205059"
   },
   {
     "id": "rxtzrrh3",
@@ -2111,7 +2175,7 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "Upper Deck",
+    "notes": "Upper Deck.",
     "added": 1780983540102,
     "expansions": [
       {
@@ -2167,7 +2231,8 @@
     ],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/129437"
   },
   {
     "id": "hx2fpt62",
@@ -2187,7 +2252,7 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "",
+    "notes": "Leder Games.",
     "added": 1780983541102,
     "expansions": [
       {
@@ -2223,7 +2288,8 @@
     ],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/237182"
   },
   {
     "id": "2hizhsvp",
@@ -2243,7 +2309,7 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "",
+    "notes": "Fantasy Flight Games.",
     "added": 1780983542102,
     "expansions": [
       {
@@ -2294,7 +2360,8 @@
     ],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/205637"
   },
   {
     "id": "v8tpo02k",
@@ -2314,12 +2381,13 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "Blue Cocker",
+    "notes": "Blue Cocker.",
     "added": 1780983543102,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "r75vtuin",
@@ -2344,7 +2412,8 @@
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/366013"
   },
   {
     "id": "lkljqfy6",
@@ -2364,7 +2433,7 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "",
+    "notes": "Fantasy Flight Games.",
     "added": 1780983544602,
     "expansions": [
       {
@@ -2390,7 +2459,8 @@
     ],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/257499"
   },
   {
     "id": "5o5erirn",
@@ -2410,7 +2480,7 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "Fantasy Flight Games",
+    "notes": "Fantasy Flight Games.",
     "added": 1780983545102,
     "expansions": [
       {
@@ -2421,7 +2491,8 @@
     ],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/322508"
   },
   {
     "id": "x49xru97",
@@ -2441,7 +2512,7 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "Days of Wonder",
+    "notes": "Days of Wonder.",
     "added": 1780983545302,
     "expansions": [
       {
@@ -2462,7 +2533,8 @@
     ],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/291453"
   },
   {
     "id": "wozq4p2j",
@@ -2482,7 +2554,7 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "",
+    "notes": "Red Raven Games.",
     "added": 1780983545402,
     "expansions": [
       {
@@ -2508,7 +2580,8 @@
     ],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/255984"
   },
   {
     "id": "ro9hg418",
@@ -2528,7 +2601,7 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "",
+    "notes": "Renegade Game Studios.",
     "added": 1780983545502,
     "expansions": [
       {
@@ -2549,7 +2622,8 @@
     ],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "djsu9whk",
@@ -2557,7 +2631,7 @@
     "edition": "",
     "copies": 1,
     "players": "1-5",
-    "time": "",
+    "time": "45-75 min",
     "genre": "Strategy",
     "series": "",
     "played": true,
@@ -2574,7 +2648,8 @@
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "ep4hjf8m",
@@ -2594,12 +2669,13 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "Flatout Games",
+    "notes": "Flatout Games.",
     "added": 1780983545712,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "xbd0pmu0",
@@ -2619,7 +2695,7 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "",
+    "notes": "Rebel Studio.",
     "added": 1780983545722,
     "expansions": [
       {
@@ -2635,14 +2711,15 @@
     ],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/314491"
   },
   {
     "id": "tznnyxgv",
     "name": "Reykjolt",
     "edition": "",
     "copies": 1,
-    "players": "",
+    "players": "2-4",
     "time": "30-60 min",
     "genre": "Strategy",
     "series": "",
@@ -2660,7 +2737,8 @@
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "j7l7uvra",
@@ -2680,7 +2758,7 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "",
+    "notes": "Starling Games.",
     "added": 1780983545742,
     "expansions": [
       {
@@ -2716,15 +2794,16 @@
     ],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/199792"
   },
   {
     "id": "zxg5htoi",
     "name": "Threads of Fate",
     "edition": "",
     "copies": 1,
-    "players": "",
-    "time": "",
+    "players": "1-5",
+    "time": "45-75 min",
     "genre": "Puzzle / Story",
     "series": "",
     "played": true,
@@ -2736,12 +2815,13 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "A puzzletale",
+    "notes": "A puzzletale.",
     "added": 1780983545752,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "hviamlkm",
@@ -2761,7 +2841,7 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "",
+    "notes": "Space Cowboys.",
     "added": 1780983545762,
     "expansions": [
       {
@@ -2847,7 +2927,8 @@
     ],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/213460"
   },
   {
     "id": "717zw722",
@@ -2872,7 +2953,8 @@
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "2z0tb7yu",
@@ -2892,12 +2974,13 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "Big Potato Games",
+    "notes": "Big Potato Games.",
     "added": 1780983545782,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "3n2iebzu",
@@ -2905,7 +2988,7 @@
     "edition": "Classic",
     "copies": 1,
     "players": "1+",
-    "time": "",
+    "time": "20 min",
     "genre": "Dexterity / Party",
     "series": "",
     "played": true,
@@ -2922,7 +3005,8 @@
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/2452"
   },
   {
     "id": "zx8xs2lg",
@@ -2942,12 +3026,13 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "The game where minds think alike",
+    "notes": "USAopoly.",
     "added": 1780983545802,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/272222"
   },
   {
     "id": "22h38bzt",
@@ -2967,12 +3052,13 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "Tokaido follow-up by Funforge",
+    "notes": "Funforge. Tokaido follow-up.",
     "added": 1780983545812,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/326983"
   },
   {
     "id": "muec16w6",
@@ -2981,7 +3067,7 @@
     "copies": 1,
     "players": "2-5",
     "time": "40-80 min",
-    "genre": "Strategy",
+    "genre": "Strategy / Area Control",
     "series": "Small World",
     "played": true,
     "ratings": {
@@ -2992,12 +3078,13 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "Days of Wonder",
+    "notes": "Days of Wonder.",
     "added": 1780983545822,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/116780"
   },
   {
     "id": "xdt86zme",
@@ -3017,20 +3104,21 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "Underdog Games",
+    "notes": "Underdog Games.",
     "added": 1780983545832,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/172077"
   },
   {
     "id": "u9kfqqsv",
     "name": "The Search for Lost Species",
     "edition": "",
     "copies": 1,
-    "players": "",
-    "time": "",
+    "players": "1-4",
+    "time": "45-75 min",
     "genre": "Strategy / Nature",
     "series": "",
     "played": true,
@@ -3047,7 +3135,8 @@
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "ak0hedgy",
@@ -3067,12 +3156,13 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "Soda Pop Miniatures",
+    "notes": "Soda Pop Miniatures.",
     "added": 1780983545852,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/96848"
   },
   {
     "id": "alieeq1k",
@@ -3080,8 +3170,8 @@
     "edition": "",
     "copies": 1,
     "players": "2-4",
-    "time": "",
-    "genre": "Strategy",
+    "time": "30-45 min",
+    "genre": "Strategy / Nature",
     "series": "",
     "played": true,
     "ratings": {
@@ -3097,7 +3187,8 @@
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "a161dufb",
@@ -3105,7 +3196,7 @@
     "edition": "",
     "copies": 1,
     "players": "1-4",
-    "time": "",
+    "time": "30-45 min",
     "genre": "Puzzle / Dice",
     "series": "",
     "played": true,
@@ -3117,12 +3208,13 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "Alea",
+    "notes": "Alea.",
     "added": 1780983545872,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "09n7azv0",
@@ -3147,7 +3239,8 @@
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/1406"
   },
   {
     "id": "ysc2jo8i",
@@ -3155,7 +3248,7 @@
     "edition": "",
     "copies": 1,
     "players": "2+",
-    "time": "",
+    "time": "20-30 min",
     "genre": "Party / Challenges",
     "series": "",
     "played": true,
@@ -3167,12 +3260,13 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "The hilarious challenges of family & party game",
+    "notes": "",
     "added": 1780983545892,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "k176xa9g",
@@ -3192,12 +3286,13 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "",
+    "notes": "Asmodee.",
     "added": 1780983545902,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/92415"
   },
   {
     "id": "fetw9kbr",
@@ -3205,7 +3300,7 @@
     "edition": "",
     "copies": 1,
     "players": "3-6",
-    "time": "",
+    "time": "30-60 min",
     "genre": "Party",
     "series": "Loaded Questions",
     "played": true,
@@ -3222,7 +3317,8 @@
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "iz245v9p",
@@ -3230,7 +3326,7 @@
     "edition": "Classic",
     "copies": 1,
     "players": "3-6",
-    "time": "",
+    "time": "30-60 min",
     "genre": "Party",
     "series": "Loaded Questions",
     "played": true,
@@ -3247,7 +3343,8 @@
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "goauee5u",
@@ -3267,12 +3364,13 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "",
+    "notes": "Cartamundi.",
     "added": 1780983545905,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/290177"
   },
   {
     "id": "qffssoxl",
@@ -3292,7 +3390,7 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "Klaus Teuber",
+    "notes": "Klaus Teuber.",
     "added": 1780983545906,
     "expansions": [
       {
@@ -3323,7 +3421,8 @@
     ],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/13"
   },
   {
     "id": "wifq22l3",
@@ -3343,12 +3442,13 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "ThinkFun. Play in the dark!",
+    "notes": "ThinkFun.",
     "added": 1780983545907,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "kqmre3a2",
@@ -3368,7 +3468,7 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "Keith Matejka",
+    "notes": "Thunderworks Games.",
     "added": 1780983545908,
     "expansions": [
       {
@@ -3389,7 +3489,8 @@
     ],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/169426"
   },
   {
     "id": "c3n70tnl",
@@ -3409,12 +3510,13 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "",
+    "notes": "Leder Games.",
     "added": 1780983545909,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/291572"
   },
   {
     "id": "lr1sktxf",
@@ -3434,21 +3536,22 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "",
+    "notes": "Atlas Games.",
     "added": 1780983545910,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "bml9olk2",
     "name": "Stonespine Architects",
     "edition": "",
     "copies": 1,
-    "players": "",
-    "time": "",
-    "genre": "Strategy",
+    "players": "1-5",
+    "time": "45-75 min",
+    "genre": "Strategy / Dungeon Building",
     "series": "",
     "played": true,
     "ratings": {
@@ -3464,7 +3567,8 @@
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "bbk1ue57",
@@ -3484,20 +3588,21 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "Indie Boards & Cards",
+    "notes": "Indie Boards & Cards.",
     "added": 1780983545912,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/204805"
   },
   {
     "id": "p4vl0nzx",
     "name": "Kodama Forest",
     "edition": "",
     "copies": 1,
-    "players": "",
-    "time": "",
+    "players": "2-5",
+    "time": "20-40 min",
     "genre": "Strategy / Nature",
     "series": "",
     "played": true,
@@ -3509,12 +3614,13 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "",
+    "notes": "Action Phase Games.",
     "added": 1780983545913,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "yleowr7z",
@@ -3534,20 +3640,21 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "A game of goblins & gold",
+    "notes": "A game of goblins & gold.",
     "added": 1780983545914,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "uvtp8puk",
     "name": "Eco Sfera",
     "edition": "",
     "copies": 1,
-    "players": "",
-    "time": "",
+    "players": "2-4",
+    "time": "45-60 min",
     "genre": "Strategy / Nature",
     "series": "",
     "played": true,
@@ -3559,12 +3666,13 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "Julibert",
+    "notes": "Julibert.",
     "added": 1780983545915,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "5nxqch9c",
@@ -3584,12 +3692,13 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "Slugfest Games",
+    "notes": "Slugfest Games.",
     "added": 1780983545916,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/36491"
   },
   {
     "id": "lckge3n2",
@@ -3609,12 +3718,13 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "Slugfest Games",
+    "notes": "Slugfest Games.",
     "added": 1780983545917,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "8isvh4vy",
@@ -3634,12 +3744,13 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "AEG",
+    "notes": "AEG.",
     "added": 1780983545918,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "esaw19hx",
@@ -3659,7 +3770,7 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "Ted Alspach / Bezier Games",
+    "notes": "Ted Alspach / Bezier Games.",
     "added": 1780983545919,
     "expansions": [
       {
@@ -3675,7 +3786,8 @@
     ],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/155426"
   },
   {
     "id": "1zk7z5hh",
@@ -3695,20 +3807,21 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "Alley Cat Games",
+    "notes": "Alley Cat Games.",
     "added": 1780983545920,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "r8jwf0rk",
     "name": "Cosmogenesis",
     "edition": "",
     "copies": 1,
-    "players": "",
-    "time": "",
+    "players": "1-4",
+    "time": "60-90 min",
     "genre": "Strategy / Sci-Fi",
     "series": "",
     "played": false,
@@ -3720,12 +3833,13 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "Yves Tourigny",
+    "notes": "Yves Tourigny.",
     "added": 1780983545921,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "lnuv2a63",
@@ -3745,12 +3859,13 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "AEG",
+    "notes": "AEG.",
     "added": 1780983545922,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/350933"
   },
   {
     "id": "tnpjo66f",
@@ -3775,7 +3890,8 @@
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/9209"
   },
   {
     "id": "ezltjd9p",
@@ -3800,7 +3916,8 @@
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "jtk3w6y0",
@@ -3808,7 +3925,7 @@
     "edition": "",
     "copies": 1,
     "players": "4+",
-    "time": "",
+    "time": "30-60 min",
     "genre": "Party / Word",
     "series": "",
     "played": true,
@@ -3820,12 +3937,13 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "Hasbro",
+    "notes": "Hasbro.",
     "added": 1780983545925,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "zfqzn6em",
@@ -3845,12 +3963,13 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "Bezier Games",
+    "notes": "Bezier Games.",
     "added": 1780983545926,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/147949"
   },
   {
     "id": "6h7ije1s",
@@ -3870,12 +3989,13 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "Build a unicorn army. Betray your friends.",
+    "notes": "",
     "added": 1780983545927,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/234190"
   },
   {
     "id": "rc3z2f2c",
@@ -3895,12 +4015,13 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "It's about to get personal",
+    "notes": "",
     "added": 1780983545928,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "6o40p9qx",
@@ -3925,7 +4046,8 @@
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/2223"
   },
   {
     "id": "z3s3guen",
@@ -3950,7 +4072,8 @@
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/102794"
   },
   {
     "id": "a36ps0g4",
@@ -3975,7 +4098,8 @@
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "qzbqix5f",
@@ -3995,20 +4119,21 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "Blend in. Don't get caught.",
+    "notes": "Big Potato Games.",
     "added": 1780983545932,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/227072"
   },
   {
     "id": "prgmqxr9",
     "name": "Let's Go! To Japan",
     "edition": "",
     "copies": 1,
-    "players": "",
-    "time": "",
+    "players": "2-4",
+    "time": "45-90 min",
     "genre": "Strategy / Travel",
     "series": "",
     "played": true,
@@ -4020,12 +4145,13 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "AEG",
+    "notes": "AEG.",
     "added": 1780983545933,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "zk3i5v0u",
@@ -4045,7 +4171,7 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "",
+    "notes": "AEG.",
     "added": 1780983545934,
     "expansions": [
       {
@@ -4091,14 +4217,15 @@
     ],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/122522"
   },
   {
     "id": "xe2id5cr",
     "name": "Clue Conspiracy",
     "edition": "",
     "copies": 1,
-    "players": "",
+    "players": "3-6",
     "time": "45 min",
     "genre": "Deduction / Party",
     "series": "",
@@ -4111,12 +4238,13 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "14+",
+    "notes": "Hasbro. 14+",
     "added": 1780983545935,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "53sq4xkx",
@@ -4124,7 +4252,7 @@
     "edition": "Classic",
     "copies": 1,
     "players": "2-4",
-    "time": "",
+    "time": "30-45 min",
     "genre": "Card / Family",
     "series": "",
     "played": true,
@@ -4136,12 +4264,13 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "Winning Moves Games",
+    "notes": "Winning Moves Games.",
     "added": 1780983545936,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "yyucmwvn",
@@ -4149,7 +4278,7 @@
     "edition": "",
     "copies": 1,
     "players": "2-4",
-    "time": "",
+    "time": "20-30 min",
     "genre": "Family / Classic",
     "series": "",
     "played": false,
@@ -4161,12 +4290,13 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "Hasbro. Pop-O-Matic Trouble variant.",
+    "notes": "Hasbro.",
     "added": 1780983545937,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "68bsrwe3",
@@ -4207,7 +4337,8 @@
     ],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/172225"
   },
   {
     "id": "5adps2qk",
@@ -4227,12 +4358,13 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "Part of the Nordic Heritage collection.",
+    "notes": "Gamia Games. Part of the Nordic Heritage collection.",
     "added": 1780983545939,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "a2nay7ji",
@@ -4252,7 +4384,7 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "",
+    "notes": "dV Giochi.",
     "added": 1780983545940,
     "expansions": [
       {
@@ -4268,7 +4400,8 @@
     ],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/3955"
   },
   {
     "id": "8xp635st",
@@ -4293,7 +4426,8 @@
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "m7w7pd1z",
@@ -4318,7 +4452,8 @@
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/37386"
   },
   {
     "id": "qm24p92n",
@@ -4338,12 +4473,13 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "",
+    "notes": "AEG.",
     "added": 1780983545943,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": ""
   },
   {
     "id": "i5obfbto",
@@ -4374,7 +4510,8 @@
     ],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/148203"
   },
   {
     "id": "mdft905i",
@@ -4394,12 +4531,13 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "",
+    "notes": "Stronghold Games.",
     "added": 1780983545949,
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/123096"
   },
   {
     "id": "8g0jmuv5",
@@ -4419,7 +4557,7 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "Chip Theory Games",
+    "notes": "Chip Theory Games.",
     "added": 1780983545950,
     "expansions": [
       {
@@ -4440,7 +4578,8 @@
     ],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false
+    "isLegacy": false,
+    "bgg": "https://boardgamegeek.com/boardgame/219452"
   },
   {
     "id": "twspmois",
@@ -4454,29 +4593,29 @@
     "played": true,
     "ratings": {
       "Fun": 0,
-      "Replayability": 1,
       "Complexity": 0,
       "Presentation": 0,
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "",
+    "notes": "Indie Boards & Cards.",
     "expansions": [],
     "added": 1780986314740,
     "ownerStatus": "owned",
-    "replayable": "yes",
-    "isLegacy": false
+    "replayable": "no",
+    "isLegacy": true,
+    "bgg": "https://boardgamegeek.com/boardgame/265066"
   },
   {
     "id": "kf8mnp9s",
     "name": "Cozy Cat Cafe",
     "edition": "",
     "copies": 1,
-    "players": "",
-    "time": "",
-    "genre": "",
+    "players": "1-5",
+    "time": "30-60 min",
+    "genre": "Strategy / Tile Placement",
     "series": "",
-    "bgg": "https://boardgamegeek.com/boardgame/439361/cozy-cat-cafe",
+    "bgg": "https://boardgamegeek.com/boardgame/439361",
     "complexity": 0,
     "replayable": "yes",
     "isLegacy": false,
@@ -4490,6 +4629,91 @@
     },
     "notes": "",
     "expansions": [],
-    "added": 1782778178565
+    "added": 1782778178565,
+    "ownerStatus": "owned"
+  },
+  {
+    "id": "kf9abc01",
+    "name": "Kinfire Chronicles: Night's Fall",
+    "edition": "",
+    "copies": 1,
+    "players": "1-4",
+    "time": "45-90 min",
+    "genre": "Adventure / Co-op",
+    "series": "",
+    "bgg": "",
+    "complexity": 0,
+    "replayable": "yes",
+    "isLegacy": false,
+    "played": false,
+    "ratings": {
+      "Fun": 0,
+      "Mechanics": 0,
+      "Theme": 0,
+      "Presentation": 0,
+      "Replayability": 0
+    },
+    "notes": "Kids Table Board Gaming.",
+    "expansions": [
+      {
+        "id": "kf9abc02",
+        "name": "Seeking Aethea",
+        "owned": false
+      }
+    ],
+    "added": 1782790000000,
+    "ownerStatus": "owned"
+  },
+  {
+    "id": "cm9abc03",
+    "name": "Cats of Mont Saint-Michel",
+    "edition": "",
+    "copies": 1,
+    "players": "1-4",
+    "time": "30-60 min",
+    "genre": "Strategy / Tile Laying",
+    "series": "",
+    "bgg": "https://boardgamegeek.com/boardgame/385193",
+    "complexity": 0,
+    "replayable": "yes",
+    "isLegacy": false,
+    "played": false,
+    "ratings": {
+      "Fun": 0,
+      "Mechanics": 0,
+      "Theme": 0,
+      "Presentation": 0,
+      "Replayability": 0
+    },
+    "notes": "Catch Up Games.",
+    "expansions": [],
+    "added": 1782790000001,
+    "ownerStatus": "owned"
+  },
+  {
+    "id": "mc9abc04",
+    "name": "Moon Colony Bloodbath",
+    "edition": "",
+    "copies": 1,
+    "players": "3-6",
+    "time": "45-75 min",
+    "genre": "Strategy / Sci-Fi",
+    "series": "",
+    "bgg": "https://boardgamegeek.com/boardgame/361545",
+    "complexity": 0,
+    "replayable": "yes",
+    "isLegacy": false,
+    "played": false,
+    "ratings": {
+      "Fun": 0,
+      "Mechanics": 0,
+      "Theme": 0,
+      "Presentation": 0,
+      "Replayability": 0
+    },
+    "notes": "Exploding Kittens.",
+    "expansions": [],
+    "added": 1782790000002,
+    "ownerStatus": "owned"
   }
 ]
