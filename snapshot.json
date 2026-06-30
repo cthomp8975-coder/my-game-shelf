@@ -686,7 +686,7 @@
     "played": true,
     "ratings": {
       "Fun": 4,
-      "Replayability": 2,
+      "Replayability": 3,
       "Complexity": 3,
       "Presentation": 5,
       "Mechanics": 4,
@@ -698,7 +698,8 @@
     "ownerStatus": "owned",
     "replayable": "yes",
     "isLegacy": false,
-    "bgg": ""
+    "bgg": "",
+    "complexity": 3
   },
   {
     "id": "yzm2t62h",
