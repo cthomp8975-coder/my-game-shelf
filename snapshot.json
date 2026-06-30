@@ -776,7 +776,8 @@
     "ownerStatus": "owned",
     "replayable": "yes",
     "isLegacy": false,
-    "bgg": "https://boardgamegeek.com/boardgame/68448"
+    "bgg": "https://boardgamegeek.com/boardgame/68448",
+    "complexity": 4
   },
   {
     "id": "zeqoltb4",
