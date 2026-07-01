@@ -2007,7 +2007,8 @@
     "ownerStatus": "owned",
     "replayable": "yes",
     "isLegacy": true,
-    "bgg": ""
+    "bgg": "",
+    "complexity": 4
   },
   {
     "id": "53li7v2a",
