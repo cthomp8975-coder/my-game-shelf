@@ -1994,11 +1994,11 @@
     "series": "",
     "played": true,
     "ratings": {
-      "Fun": 0,
+      "Fun": 3,
       "Replayability": 0,
       "Complexity": 0,
       "Presentation": 0,
-      "Mechanics": 0,
+      "Mechanics": 5,
       "Theme": 0
     },
     "notes": "Letiman Games.",
