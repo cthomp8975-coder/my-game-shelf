@@ -2465,7 +2465,8 @@
     "ownerStatus": "owned",
     "replayable": "yes",
     "isLegacy": false,
-    "bgg": "https://boardgamegeek.com/boardgame/257499"
+    "bgg": "https://boardgamegeek.com/boardgame/257499",
+    "complexity": 4
   },
   {
     "id": "5o5erirn",
