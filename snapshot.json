@@ -1889,7 +1889,7 @@
     "time": "120 min",
     "genre": "RPG / Card",
     "series": "",
-    "played": true,
+    "played": false,
     "ratings": {
       "Fun": 0,
       "Replayability": 0,
