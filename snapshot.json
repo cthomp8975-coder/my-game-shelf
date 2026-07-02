@@ -4597,10 +4597,10 @@
     "series": "Aeon's End",
     "played": true,
     "ratings": {
-      "Fun": 0,
+      "Fun": 2,
       "Complexity": 0,
-      "Presentation": 0,
-      "Mechanics": 0,
+      "Presentation": 3,
+      "Mechanics": 4,
       "Theme": 5
     },
     "notes": "Indie Boards & Cards.",
