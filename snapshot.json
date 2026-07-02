@@ -2432,7 +2432,7 @@
     "played": true,
     "ratings": {
       "Fun": 3,
-      "Replayability": 0,
+      "Replayability": 3,
       "Complexity": 0,
       "Presentation": 5,
       "Mechanics": 4,
@@ -2464,7 +2464,7 @@
     ],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false,
+    "isLegacy": true,
     "bgg": "https://boardgamegeek.com/boardgame/257499",
     "complexity": 4
   },
