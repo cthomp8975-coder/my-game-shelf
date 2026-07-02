@@ -4409,7 +4409,8 @@
     "ownerStatus": "owned",
     "replayable": "yes",
     "isLegacy": false,
-    "bgg": "https://boardgamegeek.com/boardgame/3955"
+    "bgg": "https://boardgamegeek.com/boardgame/3955",
+    "complexity": 1
   },
   {
     "id": "8xp635st",
