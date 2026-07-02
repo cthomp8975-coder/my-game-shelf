@@ -3363,9 +3363,9 @@
     "played": true,
     "ratings": {
       "Fun": 3,
-      "Replayability": 0,
+      "Replayability": 3,
       "Complexity": 0,
-      "Presentation": 0,
+      "Presentation": 4,
       "Mechanics": 0,
       "Theme": 4
     },
