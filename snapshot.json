@@ -4601,7 +4601,7 @@
       "Complexity": 0,
       "Presentation": 0,
       "Mechanics": 0,
-      "Theme": 0
+      "Theme": 5
     },
     "notes": "Indie Boards & Cards.",
     "expansions": [],
@@ -4609,7 +4609,8 @@
     "ownerStatus": "owned",
     "replayable": "no",
     "isLegacy": true,
-    "bgg": "https://boardgamegeek.com/boardgame/265066"
+    "bgg": "https://boardgamegeek.com/boardgame/265066",
+    "complexity": 4
   },
   {
     "id": "kf8mnp9s",
