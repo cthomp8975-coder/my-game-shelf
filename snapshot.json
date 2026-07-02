@@ -69,12 +69,12 @@
     "series": "",
     "played": true,
     "ratings": {
-      "Fun": 0,
+      "Fun": 4,
       "Replayability": 0,
       "Complexity": 0,
       "Presentation": 0,
-      "Mechanics": 0,
-      "Theme": 0
+      "Mechanics": 5,
+      "Theme": 5
     },
     "notes": "Avalon Hill.",
     "added": 1780981546102,
