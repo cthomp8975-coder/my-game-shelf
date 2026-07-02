@@ -2308,7 +2308,7 @@
     "played": true,
     "ratings": {
       "Fun": 3,
-      "Replayability": 0,
+      "Replayability": 3,
       "Complexity": 0,
       "Presentation": 3,
       "Mechanics": 4,
@@ -2366,7 +2366,8 @@
     "ownerStatus": "owned",
     "replayable": "yes",
     "isLegacy": false,
-    "bgg": "https://boardgamegeek.com/boardgame/205637"
+    "bgg": "https://boardgamegeek.com/boardgame/205637",
+    "complexity": 4
   },
   {
     "id": "v8tpo02k",
