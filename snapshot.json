@@ -4449,11 +4449,11 @@
     "played": true,
     "ratings": {
       "Fun": 5,
-      "Replayability": 0,
+      "Replayability": 5,
       "Complexity": 0,
-      "Presentation": 0,
+      "Presentation": 5,
       "Mechanics": 5,
-      "Theme": 0
+      "Theme": 4
     },
     "notes": "",
     "added": 1780983545942,
