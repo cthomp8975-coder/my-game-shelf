@@ -603,11 +603,11 @@
     "series": "",
     "played": true,
     "ratings": {
-      "Fun": 0,
+      "Fun": 2,
       "Replayability": 1,
       "Complexity": 0,
       "Presentation": 0,
-      "Mechanics": 0,
+      "Mechanics": 4,
       "Theme": 1
     },
     "notes": "Lucky Duck.",
