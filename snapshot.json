@@ -3397,7 +3397,7 @@
     "played": true,
     "ratings": {
       "Fun": 2,
-      "Replayability": 0,
+      "Replayability": 4,
       "Complexity": 0,
       "Presentation": 3,
       "Mechanics": 3,
@@ -3435,7 +3435,8 @@
     "ownerStatus": "owned",
     "replayable": "yes",
     "isLegacy": false,
-    "bgg": "https://boardgamegeek.com/boardgame/13"
+    "bgg": "https://boardgamegeek.com/boardgame/13",
+    "complexity": 3
   },
   {
     "id": "wifq22l3",
