@@ -3780,7 +3780,7 @@
       "Replayability": 4,
       "Complexity": 0,
       "Presentation": 5,
-      "Mechanics": 4,
+      "Mechanics": 3,
       "Theme": 5
     },
     "notes": "Ted Alspach / Bezier Games.",
@@ -3800,7 +3800,8 @@
     "ownerStatus": "owned",
     "replayable": "yes",
     "isLegacy": false,
-    "bgg": "https://boardgamegeek.com/boardgame/155426"
+    "bgg": "https://boardgamegeek.com/boardgame/155426",
+    "complexity": 1
   },
   {
     "id": "1zk7z5hh",
