@@ -248,12 +248,12 @@
     "series": "Games Room",
     "played": true,
     "ratings": {
-      "Fun": 0,
+      "Fun": 5,
       "Replayability": 0,
       "Complexity": 0,
-      "Presentation": 0,
-      "Mechanics": 0,
-      "Theme": 0
+      "Presentation": 1,
+      "Mechanics": 3,
+      "Theme": 1
     },
     "notes": "",
     "added": 1780982046102,
