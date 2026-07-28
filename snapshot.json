@@ -261,7 +261,8 @@
     "ownerStatus": "owned",
     "replayable": "yes",
     "isLegacy": false,
-    "bgg": ""
+    "bgg": "",
+    "complexity": 1
   },
   {
     "id": "k17i7oc1",
