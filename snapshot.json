@@ -3777,9 +3777,9 @@
     "played": true,
     "ratings": {
       "Fun": 4,
-      "Replayability": 0,
+      "Replayability": 4,
       "Complexity": 0,
-      "Presentation": 0,
+      "Presentation": 5,
       "Mechanics": 4,
       "Theme": 5
     },
