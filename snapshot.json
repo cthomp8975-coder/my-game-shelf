@@ -172,7 +172,8 @@
     "ownerStatus": "owned",
     "replayable": "yes",
     "isLegacy": false,
-    "bgg": "https://boardgamegeek.com/boardgame/347137/chronicles-of-avel"
+    "bgg": "https://boardgamegeek.com/boardgame/347137/chronicles-of-avel",
+    "complexity": 3
   },
   {
     "id": "udnzpy54",
