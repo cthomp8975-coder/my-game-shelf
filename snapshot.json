@@ -1767,7 +1767,8 @@
     "ownerStatus": "owned",
     "replayable": "no",
     "isLegacy": true,
-    "bgg": "https://boardgamegeek.com/boardgame/197376"
+    "bgg": "https://boardgamegeek.com/boardgame/197376",
+    "complexity": 3
   },
   {
     "id": "3p6hhjhf",
