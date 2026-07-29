@@ -1923,7 +1923,7 @@
     "played": true,
     "ratings": {
       "Fun": 2,
-      "Replayability": 0,
+      "Replayability": 3,
       "Complexity": 0,
       "Presentation": 3,
       "Mechanics": 3,
@@ -1935,7 +1935,8 @@
     "ownerStatus": "owned",
     "replayable": "yes",
     "isLegacy": true,
-    "bgg": "https://boardgamegeek.com/boardgame/251420/choose-your-own-adventure-house-of-danger"
+    "bgg": "https://boardgamegeek.com/boardgame/251420/choose-your-own-adventure-house-of-danger",
+    "complexity": 1
   },
   {
     "id": "fvh795v0",
