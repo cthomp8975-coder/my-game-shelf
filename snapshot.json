@@ -1934,7 +1934,7 @@
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false,
+    "isLegacy": true,
     "bgg": "https://boardgamegeek.com/boardgame/251420/choose-your-own-adventure-house-of-danger"
   },
   {
