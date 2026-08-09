@@ -2974,7 +2974,13 @@
     },
     "notes": "Flying Frog Productions. Standalone core set.",
     "added": 1780983545772,
-    "expansions": [],
+    "expansions": [
+      {
+        "id": "9qxssxdx",
+        "name": "Map tile pack",
+        "owned": true
+      }
+    ],
     "ownerStatus": "owned",
     "replayable": "yes",
     "isLegacy": false,
