@@ -1277,7 +1277,7 @@
     "time": "60-180 min",
     "genre": "Adventure / RPG",
     "series": "",
-    "played": false,
+    "played": true,
     "ratings": {
       "Fun": 0,
       "Replayability": 0,
@@ -1286,7 +1286,7 @@
       "Mechanics": 0,
       "Theme": 0
     },
-    "notes": "Modiphius / Bethesda. Still sealed!",
+    "notes": "Modiphius / Bethesda.",
     "added": 1780983508102,
     "expansions": [
       {
