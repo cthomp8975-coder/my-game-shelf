@@ -4833,5 +4833,30 @@
     "notes": "",
     "expansions": [],
     "added": 1786318251989
+  },
+  {
+    "id": "xws9ypq1",
+    "name": "Tales of the Arabian Nights",
+    "edition": "40th Anniversary",
+    "copies": 1,
+    "players": "1-6",
+    "time": "120 mins",
+    "genre": "",
+    "series": "",
+    "bgg": "",
+    "complexity": 0,
+    "replayable": "yes",
+    "isLegacy": false,
+    "played": false,
+    "ratings": {
+      "Fun": 0,
+      "Mechanics": 0,
+      "Theme": 0,
+      "Presentation": 0,
+      "Replayability": 0
+    },
+    "notes": "",
+    "expansions": [],
+    "added": 1786318302331
   }
 ]
