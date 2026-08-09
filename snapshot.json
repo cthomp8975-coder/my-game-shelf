@@ -4778,5 +4778,30 @@
     "notes": "",
     "expansions": [],
     "added": 1786318066939
+  },
+  {
+    "id": "nc0n3oxp",
+    "name": "Six Sojourns",
+    "edition": "",
+    "copies": 1,
+    "players": "2-4",
+    "time": "40 mins",
+    "genre": "",
+    "series": "",
+    "bgg": "",
+    "complexity": 0,
+    "replayable": "yes",
+    "isLegacy": true,
+    "played": false,
+    "ratings": {
+      "Fun": 0,
+      "Mechanics": 0,
+      "Theme": 0,
+      "Presentation": 0,
+      "Replayability": 0
+    },
+    "notes": "",
+    "expansions": [],
+    "added": 1786318169800
   }
 ]
