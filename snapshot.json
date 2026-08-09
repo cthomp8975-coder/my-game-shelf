@@ -4782,7 +4782,8 @@
     },
     "notes": "",
     "expansions": [],
-    "added": 1786318066939
+    "added": 1786318066939,
+    "ownerStatus": "owned"
   },
   {
     "id": "nc0n3oxp",
@@ -4807,7 +4808,8 @@
     },
     "notes": "",
     "expansions": [],
-    "added": 1786318169800
+    "added": 1786318169800,
+    "ownerStatus": "owned"
   },
   {
     "id": "d53s6yj6",
@@ -4832,7 +4834,8 @@
     },
     "notes": "",
     "expansions": [],
-    "added": 1786318251989
+    "added": 1786318251989,
+    "ownerStatus": "owned"
   },
   {
     "id": "xws9ypq1",
@@ -4857,7 +4860,8 @@
     },
     "notes": "",
     "expansions": [],
-    "added": 1786318302331
+    "added": 1786318302331,
+    "ownerStatus": "owned"
   },
   {
     "id": "ad0y7all",
@@ -4882,7 +4886,8 @@
     },
     "notes": "",
     "expansions": [],
-    "added": 1786318383794
+    "added": 1786318383794,
+    "ownerStatus": "owned"
   },
   {
     "id": "vt2qsovf",
@@ -4907,7 +4912,8 @@
     },
     "notes": "",
     "expansions": [],
-    "added": 1786318487760
+    "added": 1786318487760,
+    "ownerStatus": "owned"
   },
   {
     "id": "agjd9n74",
@@ -4932,7 +4938,8 @@
     },
     "notes": "",
     "expansions": [],
-    "added": 1786318510132
+    "added": 1786318510132,
+    "ownerStatus": "owned"
   },
   {
     "id": "dkxhcgp7",
@@ -4957,7 +4964,8 @@
     },
     "notes": "",
     "expansions": [],
-    "added": 1786318558445
+    "added": 1786318558445,
+    "ownerStatus": "owned"
   },
   {
     "id": "z4ull7xh",
@@ -4982,6 +4990,32 @@
     },
     "notes": "",
     "expansions": [],
-    "added": 1786318589279
+    "added": 1786318589279,
+    "ownerStatus": "owned"
+  },
+  {
+    "id": "pd8gkujl",
+    "name": "Shadows of Brimstone: Blasted Wastes",
+    "edition": "",
+    "copies": 1,
+    "players": "",
+    "time": "",
+    "genre": "",
+    "series": "",
+    "bgg": "",
+    "complexity": 0,
+    "replayable": "yes",
+    "isLegacy": true,
+    "played": false,
+    "ratings": {
+      "Fun": 0,
+      "Mechanics": 0,
+      "Theme": 0,
+      "Presentation": 0,
+      "Replayability": 0
+    },
+    "notes": "",
+    "expansions": [],
+    "added": 1786318660557
   }
 ]
