@@ -4808,5 +4808,30 @@
     "notes": "",
     "expansions": [],
     "added": 1786318169800
+  },
+  {
+    "id": "d53s6yj6",
+    "name": "Super Boss Monster",
+    "edition": "",
+    "copies": 1,
+    "players": "1-4",
+    "time": "30 mins",
+    "genre": "",
+    "series": "",
+    "bgg": "",
+    "complexity": 0,
+    "replayable": "yes",
+    "isLegacy": false,
+    "played": false,
+    "ratings": {
+      "Fun": 0,
+      "Mechanics": 0,
+      "Theme": 0,
+      "Presentation": 0,
+      "Replayability": 0
+    },
+    "notes": "",
+    "expansions": [],
+    "added": 1786318251989
   }
 ]
