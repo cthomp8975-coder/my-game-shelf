@@ -5017,5 +5017,30 @@
     "notes": "",
     "expansions": [],
     "added": 1786318660557
+  },
+  {
+    "id": "ogpgljgy",
+    "name": "Shadows of Brimstone: City of the Ancients",
+    "edition": "",
+    "copies": 1,
+    "players": "",
+    "time": "",
+    "genre": "",
+    "series": "Shadow of Brimstones",
+    "bgg": "",
+    "complexity": 0,
+    "replayable": "yes",
+    "isLegacy": true,
+    "played": false,
+    "ratings": {
+      "Fun": 0,
+      "Mechanics": 0,
+      "Theme": 0,
+      "Presentation": 0,
+      "Replayability": 0
+    },
+    "notes": "",
+    "expansions": [],
+    "added": 1786318695893
   }
 ]
