@@ -4883,5 +4883,30 @@
     "notes": "",
     "expansions": [],
     "added": 1786318383794
+  },
+  {
+    "id": "vt2qsovf",
+    "name": "Trial of the Forest",
+    "edition": "",
+    "copies": 1,
+    "players": "2-4",
+    "time": "60-120 mins",
+    "genre": "",
+    "series": "",
+    "bgg": "",
+    "complexity": 0,
+    "replayable": "yes",
+    "isLegacy": false,
+    "played": false,
+    "ratings": {
+      "Fun": 0,
+      "Mechanics": 0,
+      "Theme": 0,
+      "Presentation": 0,
+      "Replayability": 0
+    },
+    "notes": "",
+    "expansions": [],
+    "added": 1786318487760
   }
 ]
