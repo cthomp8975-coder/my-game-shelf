@@ -4753,5 +4753,30 @@
     "expansions": [],
     "added": 1782790000002,
     "ownerStatus": "owned"
+  },
+  {
+    "id": "a9f3fn3r",
+    "name": "Mountain Goats Legacy",
+    "edition": "",
+    "copies": 1,
+    "players": "2-5",
+    "time": "25 mins",
+    "genre": "Cozy Competitive",
+    "series": "Mountain Goats",
+    "bgg": "",
+    "complexity": 0,
+    "replayable": "yes",
+    "isLegacy": true,
+    "played": false,
+    "ratings": {
+      "Fun": 0,
+      "Mechanics": 0,
+      "Theme": 0,
+      "Presentation": 0,
+      "Replayability": 0
+    },
+    "notes": "",
+    "expansions": [],
+    "added": 1786318066939
   }
 ]
