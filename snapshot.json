@@ -4958,5 +4958,30 @@
     "notes": "",
     "expansions": [],
     "added": 1786318558445
+  },
+  {
+    "id": "z4ull7xh",
+    "name": "Wandering Galaxy",
+    "edition": "",
+    "copies": 1,
+    "players": "",
+    "time": "",
+    "genre": "",
+    "series": "",
+    "bgg": "",
+    "complexity": 0,
+    "replayable": "yes",
+    "isLegacy": false,
+    "played": false,
+    "ratings": {
+      "Fun": 0,
+      "Mechanics": 0,
+      "Theme": 0,
+      "Presentation": 0,
+      "Replayability": 0
+    },
+    "notes": "",
+    "expansions": [],
+    "added": 1786318589279
   }
 ]
