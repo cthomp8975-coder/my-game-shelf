@@ -5042,5 +5042,30 @@
     "notes": "",
     "expansions": [],
     "added": 1786318695893
+  },
+  {
+    "id": "cpe2y9ck",
+    "name": "Vagrantsong",
+    "edition": "",
+    "copies": 1,
+    "players": "2-4",
+    "time": "30 mins/player",
+    "genre": "",
+    "series": "",
+    "bgg": "",
+    "complexity": 0,
+    "replayable": "yes",
+    "isLegacy": false,
+    "played": false,
+    "ratings": {
+      "Fun": 0,
+      "Mechanics": 0,
+      "Theme": 0,
+      "Presentation": 0,
+      "Replayability": 0
+    },
+    "notes": "",
+    "expansions": [],
+    "added": 1786321944395
   }
 ]
