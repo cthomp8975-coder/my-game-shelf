@@ -1509,7 +1509,7 @@
     "expansions": [],
     "ownerStatus": "owned",
     "replayable": "yes",
-    "isLegacy": false,
+    "isLegacy": true,
     "bgg": ""
   },
   {
