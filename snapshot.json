@@ -4830,7 +4830,7 @@
     "complexity": 0,
     "replayable": "yes",
     "isLegacy": false,
-    "played": false,
+    "played": true,
     "ratings": {
       "Fun": 0,
       "Mechanics": 0,
