@@ -4937,8 +4937,8 @@
     "played": true,
     "ratings": {
       "Fun": 5,
-      "Mechanics": 0,
-      "Theme": 0,
+      "Mechanics": 5,
+      "Theme": 3,
       "Presentation": 0,
       "Replayability": 0
     },
