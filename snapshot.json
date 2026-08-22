@@ -4671,7 +4671,13 @@
       "Replayability": 0
     },
     "notes": "",
-    "expansions": [],
+    "expansions": [
+      {
+        "id": "o2ep7cyj",
+        "name": "Mousing Around",
+        "owned": true
+      }
+    ],
     "added": 1782778178565,
     "ownerStatus": "owned"
   },
