@@ -4752,13 +4752,13 @@
     "complexity": 0,
     "replayable": "yes",
     "isLegacy": false,
-    "played": false,
+    "played": true,
     "ratings": {
-      "Fun": 0,
-      "Mechanics": 0,
-      "Theme": 0,
-      "Presentation": 0,
-      "Replayability": 0
+      "Fun": 5,
+      "Mechanics": 5,
+      "Theme": 5,
+      "Presentation": 5,
+      "Replayability": 5
     },
     "notes": "Exploding Kittens.",
     "expansions": [],
