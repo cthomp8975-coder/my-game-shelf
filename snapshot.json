@@ -1363,7 +1363,7 @@
     "played": true,
     "ratings": {
       "Fun": 5,
-      "Replayability": 0,
+      "Replayability": 4,
       "Complexity": 0,
       "Presentation": 5,
       "Mechanics": 4,
@@ -1375,7 +1375,8 @@
     "ownerStatus": "owned",
     "replayable": "yes",
     "isLegacy": false,
-    "bgg": ""
+    "bgg": "",
+    "complexity": 4
   },
   {
     "id": "gaij13hr",
