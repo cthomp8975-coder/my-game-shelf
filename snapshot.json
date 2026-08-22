@@ -4934,9 +4934,9 @@
     "complexity": 0,
     "replayable": "yes",
     "isLegacy": false,
-    "played": false,
+    "played": true,
     "ratings": {
-      "Fun": 0,
+      "Fun": 5,
       "Mechanics": 0,
       "Theme": 0,
       "Presentation": 0,
