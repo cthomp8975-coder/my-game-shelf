@@ -4876,7 +4876,7 @@
     "complexity": 0,
     "replayable": "yes",
     "isLegacy": false,
-    "played": false,
+    "played": true,
     "ratings": {
       "Fun": 0,
       "Mechanics": 0,
@@ -5016,7 +5016,8 @@
     },
     "notes": "",
     "expansions": [],
-    "added": 1786318660557
+    "added": 1786318660557,
+    "ownerStatus": "owned"
   },
   {
     "id": "ogpgljgy",
@@ -5041,7 +5042,8 @@
     },
     "notes": "",
     "expansions": [],
-    "added": 1786318695893
+    "added": 1786318695893,
+    "ownerStatus": "owned"
   },
   {
     "id": "cpe2y9ck",
@@ -5066,6 +5068,7 @@
     },
     "notes": "",
     "expansions": [],
-    "added": 1786321944395
+    "added": 1786321944395,
+    "ownerStatus": "owned"
   }
 ]
