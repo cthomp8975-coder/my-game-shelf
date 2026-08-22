@@ -1360,9 +1360,9 @@
     "time": "30-60 min",
     "genre": "Co-op / Cozy",
     "series": "",
-    "played": false,
+    "played": true,
     "ratings": {
-      "Fun": 0,
+      "Fun": 5,
       "Replayability": 0,
       "Complexity": 0,
       "Presentation": 0,
