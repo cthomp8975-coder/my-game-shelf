@@ -4696,10 +4696,10 @@
     "isLegacy": true,
     "played": true,
     "ratings": {
-      "Fun": 0,
-      "Mechanics": 0,
-      "Theme": 0,
-      "Presentation": 0,
+      "Fun": 5,
+      "Mechanics": 5,
+      "Theme": 5,
+      "Presentation": 5,
       "Replayability": 0
     },
     "notes": "Kids Table Board Gaming.",
