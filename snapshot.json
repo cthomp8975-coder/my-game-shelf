@@ -5064,8 +5064,8 @@
     "bgg": "",
     "complexity": 0,
     "replayable": "yes",
-    "isLegacy": false,
-    "played": false,
+    "isLegacy": true,
+    "played": true,
     "ratings": {
       "Fun": 0,
       "Mechanics": 0,
