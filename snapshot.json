@@ -1470,9 +1470,9 @@
     "time": "30-120 min",
     "genre": "Strategy / Horror",
     "series": "",
-    "played": false,
+    "played": true,
     "ratings": {
-      "Fun": 0,
+      "Fun": 4,
       "Complexity": 0,
       "Presentation": 0,
       "Mechanics": 0,
