@@ -4912,10 +4912,10 @@
     "played": true,
     "ratings": {
       "Fun": 5,
-      "Mechanics": 0,
-      "Theme": 0,
-      "Presentation": 0,
-      "Replayability": 0
+      "Mechanics": 5,
+      "Theme": 5,
+      "Presentation": 5,
+      "Replayability": 5
     },
     "notes": "",
     "expansions": [],
