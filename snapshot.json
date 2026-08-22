@@ -4853,16 +4853,16 @@
     "genre": "",
     "series": "",
     "bgg": "",
-    "complexity": 0,
+    "complexity": 3,
     "replayable": "yes",
     "isLegacy": false,
     "played": true,
     "ratings": {
-      "Fun": 5,
-      "Mechanics": 0,
-      "Theme": 0,
-      "Presentation": 0,
-      "Replayability": 0
+      "Fun": 4,
+      "Mechanics": 4,
+      "Theme": 5,
+      "Presentation": 5,
+      "Replayability": 5
     },
     "notes": "",
     "expansions": [],
